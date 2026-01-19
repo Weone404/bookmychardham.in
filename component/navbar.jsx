@@ -17,7 +17,7 @@ const Navigation = () => {
         { path: "/wedding-services", label: "Wedding Services" },
         { path: "/flower-dropping", label: "Flower Dropping" },
         { path: "/charter-services", label: "Charter Services" },
-        { path: "/about", label: "About Us" },
+        { path: "/about-us", label: "About Us" },
         { path: "/contact", label: "Contact" },
     ];
 
