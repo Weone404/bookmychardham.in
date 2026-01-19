@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # bookmychardham.in
 Book My Charter
 =======
@@ -39,3 +40,6 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 >>>>>>> 6a9f07e (first commit)
+=======
+
+>>>>>>> b02c81b67dfc7e4aeec507eda75b6173d2ccfca5
