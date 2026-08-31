@@ -3,11 +3,13 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
-import { Phone, Calendar, Menu, X, Shield, ArrowRight } from 'lucide-react';
+import { Phone, Calendar, Menu, X, Shield, ArrowRight, LogIn } from 'lucide-react';
 import { BookMyChardhamLogo } from './FlyStarLogo';
+import { LoginModal } from './modals/LoginModal';
 
 export const Navbar = ({ currentPage: propCurrentPage, onNavigate }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [loginModalOpen, setLoginModalOpen] = useState(false);
   const pathname = usePathname();
   const router = useRouter();
 
@@ -70,7 +72,7 @@ export const Navbar = ({ currentPage: propCurrentPage, onNavigate }) => {
           })}
         </nav>
 
-        {/* Right Section: Phone, Book Now CTA & Mobile Hamburger */}
+        {/* Right Section: Phone, Login, Book Now CTA & Mobile Hamburger */}
         <div className="flex items-center gap-3 sm:gap-4">
           {/* Phone Dispatch Link (Desktop) */}
           <a
@@ -83,6 +85,15 @@ export const Navbar = ({ currentPage: propCurrentPage, onNavigate }) => {
               +91 98765 43210
             </span>
           </a>
+
+          {/* Login Button (Desktop) */}
+          <button
+            onClick={() => setLoginModalOpen(true)}
+            className="hidden sm:flex items-center gap-2 px-4 py-2 text-[#A67C52] hover:text-[#6B4E3D] border border-[#A67C52]/30 hover:border-[#A67C52]/50 rounded-xs text-[11.5px] font-bold tracking-[0.14em] uppercase transition-all cursor-pointer"
+          >
+            <LogIn className="w-3.5 h-3.5" />
+            <span>LOGIN</span>
+          </button>
 
           {/* Primary Book Now CTA Button */}
           <button
@@ -129,6 +140,17 @@ export const Navbar = ({ currentPage: propCurrentPage, onNavigate }) => {
             })}
 
             <div className="pt-4 mt-2 border-t border-white/10 flex flex-col gap-3">
+              <button
+                onClick={() => {
+                  setLoginModalOpen(true);
+                  setMobileMenuOpen(false);
+                }}
+                className="flex items-center justify-center gap-2 p-3 bg-white/5 hover:bg-white/10 rounded-xs text-xs font-bold tracking-wider text-neutral-200 transition-colors cursor-pointer"
+              >
+                <LogIn className="w-4 h-4 text-[#A67C52]" />
+                <span>LOGIN</span>
+              </button>
+
               <a
                 href="tel:+919876543210"
                 className="flex items-center justify-center gap-2 p-3 bg-white/5 rounded-xs text-xs font-bold tracking-wider text-neutral-200"
@@ -145,6 +167,9 @@ export const Navbar = ({ currentPage: propCurrentPage, onNavigate }) => {
           </div>
         </div>
       )}
+
+      {/* Login Modal */}
+      <LoginModal isOpen={loginModalOpen} onClose={() => setLoginModalOpen(false)} />
     </header>
   );
 };
