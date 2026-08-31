@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const FlyStarLogo = ({
+export const BookMyChardhamLogo = ({
   className = '',
   showText = true,
   onClick,
@@ -26,7 +26,7 @@ export const FlyStarLogo = ({
       {showText && (
         <div className="flex flex-col">
           <span className="font-black tracking-[0.2em] text-[15px] md:text-[17px] text-white uppercase font-sans leading-none flex items-center gap-1.5">
-            FLYSTAR
+            BOOKMYCHARDHAM
             <span className="w-1.5 h-1.5 rounded-full bg-[#c8102e] inline-block"></span>
           </span>
           <span className="text-[9px] font-bold tracking-[0.24em] text-neutral-400 uppercase leading-tight mt-0.5">

@@ -13,7 +13,7 @@ import {
   ChevronUp,
   AlertCircle
 } from 'lucide-react';
-import { CHARDHAM_PACKAGES, CHARDHAM_ITINERARY, CHARDHAM_GUIDELINES } from '../../data/flystarData';
+import { CHARDHAM_PACKAGES, CHARDHAM_ITINERARY, CHARDHAM_GUIDELINES } from '../../data/bookmychardhamData';
 
 export const ChardhamPage = ({
   onNavigate,

@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
 import { Phone, Calendar, Menu, X, Shield, ArrowRight } from 'lucide-react';
-import { FlyStarLogo } from './FlyStarLogo';
+import { BookMyChardhamLogo } from './FlyStarLogo';
 
 export const Navbar = ({ currentPage: propCurrentPage, onNavigate }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -44,7 +44,7 @@ export const Navbar = ({ currentPage: propCurrentPage, onNavigate }) => {
     <header className="sticky top-0 z-40 w-full bg-[#E6D5C1]/80 backdrop-blur-md border-b border-[#A67C52]/20 select-none transition-all">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-10 lg:px-12 h-20 flex items-center justify-between">
         {/* Brand Logo */}
-        <FlyStarLogo onClick={() => handleNavClick(navItems[0])} />
+        <BookMyChardhamLogo onClick={() => handleNavClick(navItems[0])} />
 
         {/* Desktop Nav Links */}
         <nav className="hidden lg:flex items-center gap-6 xl:gap-8">

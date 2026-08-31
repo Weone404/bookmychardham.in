@@ -13,7 +13,7 @@ import {
   Award,
   ChevronRight
 } from 'lucide-react';
-import { TESTIMONIALS } from '../../data/flystarData';
+import { TESTIMONIALS } from '../../data/bookmychardhamData';
 
 export const HomePage = ({
   onNavigate,
@@ -58,7 +58,7 @@ export const HomePage = ({
               </h2>
             </div>
             <p className="text-[#A67C52] text-sm max-w-md leading-relaxed">
-              From sacred Himalayan shrines to grand ceremonial flower showers and emergency medical evacuations, FlyStar delivers precision flight solutions.
+              From sacred Himalayan shrines to grand ceremonial flower showers and emergency medical evacuations, BookMyChardham delivers precision flight solutions.
             </p>
           </div>
 
@@ -222,10 +222,10 @@ export const HomePage = ({
                 UNCOMPROMISED SAFETY &amp; COMFORT
               </span>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight uppercase font-sans leading-tight">
-                WHY FLYSTAR LEADS INDIAN ROTARY AVIATION
+                WHY BOOKMYCHARDHAM LEADS INDIAN ROTARY AVIATION
               </h2>
               <p className="text-[#A67C52] text-sm leading-relaxed">
-                Operating in the high Himalayas demands exceptional aeronautical precision. FlyStar combines elite ex-defense aviators, OEM-maintained aircraft, and seamless VIP hospitality for devotees and corporate leaders alike.
+                Operating in the high Himalayas demands exceptional aeronautical precision. BookMyChardham combines elite ex-defense aviators, OEM-maintained aircraft, and seamless VIP hospitality for devotees and corporate leaders alike.
               </p>
 
               <div className="space-y-4 pt-2">

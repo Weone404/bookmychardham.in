@@ -13,7 +13,7 @@ import {
   Star,
   CheckCircle2
 } from 'lucide-react';
-import { CHARTER_SERVICES, FLEET_LIST } from '../../data/flystarData';
+import { CHARTER_SERVICES, FLEET_LIST } from '../../data/bookmychardhamData';
 
 export const CharterPage = ({
   onNavigate,

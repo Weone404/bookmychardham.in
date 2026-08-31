@@ -3,13 +3,13 @@ import { Navbar } from '../components/Navbar';
 import { Footer } from '../components/Footer';
 
 export const metadata = {
-  title: 'FlyStar Helicopter Charters | Kedarnath, Chardham & VIP Aviation',
-  description: 'FlyStar (flystar.co.in) — Premier helicopter charter service for Chardham & Kedarnath pilgrimage tours, aerial flower dropping ceremonies, and luxury VIP & emergency charter flights.',
+  title: 'BookMyChardham Helicopter Charters | Kedarnath, Chardham & VIP Aviation',
+  description: 'BookMyChardham (bookmychardham.in) — Premier helicopter charter service for Chardham & Kedarnath pilgrimage tours, aerial flower dropping ceremonies, and luxury VIP & emergency charter flights.',
   openGraph: {
-    title: 'FlyStar Helicopter Charters',
+    title: 'BookMyChardham Helicopter Charters',
     description: 'Premier helicopter charter service for Chardham & Kedarnath pilgrimage tours, aerial flower dropping ceremonies, and luxury VIP & emergency charter flights.',
-    url: 'https://flystar.co.in',
-    siteName: 'FlyStar Helicopter Charters',
+    url: 'https://bookmychardham.in',
+    siteName: 'BookMyChardham Helicopter Charters',
     images: [
       {
         url: '/airplane-sunset-bg.jpg',

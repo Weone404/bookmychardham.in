@@ -34,7 +34,7 @@ export default function Booking() {
       fallback={
         <div className="min-h-[60vh] flex items-center justify-center text-white bg-black">
           <div className="text-xs uppercase tracking-widest text-[#c8102e] animate-pulse">
-            Loading FlyStar Reservation Desk...
+            Loading BookMyChardham Reservation Desk...
           </div>
         </div>
       }

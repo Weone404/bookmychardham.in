@@ -12,7 +12,7 @@ import {
   Send,
   MessageSquare
 } from 'lucide-react';
-import { BASE_LOCATIONS } from '../../data/flystarData';
+import { BASE_LOCATIONS } from '../../data/bookmychardhamData';
 
 export const ContactPage = () => {
   const [formData, setFormData] = useState({
@@ -40,7 +40,7 @@ export const ContactPage = () => {
               24/7 FLIGHT OPERATIONS
             </span>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black uppercase text-[#6B4E3D] tracking-tight leading-none font-sans">
-              CONTACT FLYSTAR AVIATION
+              CONTACT BOOKMYCHARDHAM AVIATION
             </h1>
             <p className="text-[#6B4E3D] text-sm sm:text-base mt-4 leading-relaxed max-w-2xl font-normal">
               Direct access to our flight dispatch desk, helipad commanders, and charter coordinators across Dehradun, Delhi, Sersi, and Mumbai.
@@ -91,8 +91,8 @@ export const ContactPage = () => {
                     <span className="text-[10px] font-bold text-[#A67C52] uppercase tracking-widest block">
                       CHARTER &amp; YATRA INQUIRIES
                     </span>
-                    <a href="mailto:charters@flystar.co.in" className="text-sm font-bold text-[#6B4E3D] hover:text-[#8B6639] transition-colors block mt-0.5">
-                      charters@flystar.co.in
+                    <a href="mailto:charters@bookmychardham.in" className="text-sm font-bold text-[#6B4E3D] hover:text-[#8B6639] transition-colors block mt-0.5">
+                      charters@bookmychardham.in
                     </a>
                     <span className="text-xs text-[#A67C52]">Official inquiries &amp; quote submissions</span>
                   </div>

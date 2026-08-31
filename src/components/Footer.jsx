@@ -3,7 +3,7 @@
 import React from 'react';
 import { useRouter } from 'next/navigation';
 import { Phone, Mail, MapPin, Shield, ArrowUpRight } from 'lucide-react';
-import { FlyStarLogo } from './FlyStarLogo';
+import { BookMyChardhamLogo } from './FlyStarLogo';
 
 export const Footer = ({ onNavigate }) => {
   const router = useRouter();
@@ -26,9 +26,9 @@ export const Footer = ({ onNavigate }) => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 lg:gap-12 pb-14 border-b border-white/10">
           {/* Col 1: Brand info & Credentials */}
           <div className="lg:col-span-2 flex flex-col space-y-4">
-            <FlyStarLogo onClick={() => handleNav('home')} />
+            <BookMyChardhamLogo onClick={() => handleNav('home')} />
             <p className="text-[13px] text-[#A67C52] leading-relaxed font-normal pt-2 max-w-md">
-              FlyStar (flystar.co.in) is India’s premier helicopter aviation charter service. Specializing in high-altitude Himalayan pilgrimage tours to Chardham & Kedarnath, royal aerial flower dropping ceremonies, and rapid corporate & medical emergency charter flights.
+              BookMyChardham (bookmychardham.in) is India's premier helicopter aviation charter service. Specializing in high-altitude Himalayan pilgrimage tours to Chardham & Kedarnath, royal aerial flower dropping ceremonies, and rapid corporate & medical emergency charter flights.
             </p>
             <div className="pt-2 flex flex-wrap items-center gap-3 text-[11px] text-[#6B4E3D]">
               <span className="flex items-center gap-1.5 px-2.5 py-1 bg-[#D9C7B8]/60 border border-[#A67C52]/30 rounded-xs uppercase tracking-wider font-bold">
@@ -135,8 +135,8 @@ export const Footer = ({ onNavigate }) => {
 
             <div className="flex items-center gap-2">
               <Mail className="w-4 h-4 text-[#A67C52] shrink-0" />
-              <a href="mailto:charters@flystar.co.in" className="text-[#6B4E3D] hover:text-[#A67C52] transition-colors">
-                charters@flystar.co.in
+              <a href="mailto:charters@bookmychardham.in" className="text-[#6B4E3D] hover:text-[#A67C52] transition-colors">
+                charters@bookmychardham.in
               </a>
             </div>
 

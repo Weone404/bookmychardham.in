@@ -1,5 +1,5 @@
 /*!*****************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./src/app/globals.css ***!
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[3]!./src/app/globals.css ***!
   \*****************************************************************************************************************************************************************************************************************************************************************/
 /*! tailwindcss v4.3.3 | MIT License | https://tailwindcss.com */
 @layer properties;
@@ -913,9 +913,6 @@
   .bg-\[\#1c1c1c\] {
     background-color: #1c1c1c;
   }
-  .bg-\[\#1e1415\] {
-    background-color: #1e1415;
-  }
   .bg-\[\#8B6639\] {
     background-color: #8B6639;
   }
@@ -936,12 +933,6 @@
   }
   .bg-\[\#121212\] {
     background-color: #121212;
-  }
-  .bg-\[\#141414\] {
-    background-color: #141414;
-  }
-  .bg-\[\#151515\] {
-    background-color: #151515;
   }
   .bg-\[\#161616\] {
     background-color: #161616;
@@ -987,9 +978,6 @@
   }
   .bg-\[\#c8102e\] {
     background-color: #c8102e;
-  }
-  .bg-\[\#c8102e\]\/20 {
-    background-color: color-mix(in oklab, #c8102e 20%, transparent);
   }
   .bg-black {
     background-color: var(--color-black);
@@ -1730,14 +1718,6 @@
     }
     .hover\:border-neutral-500:hover {
       border-color: var(--color-neutral-500);
-    }
-    .hover\:border-white\/20:hover {
-      border-color: color-mix(in srgb, #fff 20%, transparent);
-    }
-    @supports (color: color-mix(in lab, red, red)) {
-      .hover\:border-white\/20:hover {
-        border-color: color-mix(in oklab, var(--color-white) 20%, transparent);
-      }
     }
     .hover\:bg-\[\#1a1a1a\]:hover {
       background-color: #1a1a1a;

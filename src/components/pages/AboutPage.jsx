@@ -12,7 +12,7 @@ import {
   Plane,
   Heart
 } from 'lucide-react';
-import { FLEET_LIST, TRUST_STATS } from '../../data/flystarData';
+import { FLEET_LIST, TRUST_STATS } from '../../data/bookmychardhamData';
 
 export const AboutPage = ({ onNavigate }) => {
   const leadership = [
@@ -59,13 +59,13 @@ export const AboutPage = ({ onNavigate }) => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-10 lg:px-12 relative z-10">
           <div className="max-w-3xl">
             <span className="text-[11px] font-bold tracking-[0.24em] text-[#A67C52] uppercase block mb-3">
-              ABOUT FLYSTAR AVIATION
+              ABOUT BOOKMYCHARDHAM AVIATION
             </span>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black uppercase text-[#6B4E3D] tracking-tight leading-none font-sans">
               15 YEARS OF HIMALAYAN ROTARY EXCELLENCE
             </h1>
             <p className="text-[#6B4E3D] text-sm sm:text-base mt-4 leading-relaxed max-w-2xl font-normal">
-              Founded with the mission to connect sacred Himalayan sanctuaries and power India&apos;s executive rotary aviation, FlyStar (flystar.co.in) is a DGCA-licensed Non-Scheduled Operator (NSOP) trusted by devotees, corporations, and governments.
+              Founded with the mission to connect sacred Himalayan sanctuaries and power India&apos;s executive rotary aviation, BookMyChardham (bookmychardham.in) is a DGCA-licensed Non-Scheduled Operator (NSOP) trusted by devotees, corporations, and governments.
             </p>
           </div>
         </div>

@@ -14,7 +14,7 @@ import {
   Check, 
   AlertCircle
 } from 'lucide-react';
-import { CHARDHAM_PACKAGES } from '../../data/flystarData';
+import { CHARDHAM_PACKAGES } from '../../data/bookmychardhamData';
 
 export const BookingPage = ({
   initialServiceType = 'kedarnath-sameday',
@@ -183,7 +183,7 @@ export const BookingPage = ({
 
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <a
-                  href={`https://wa.me/919876543210?text=Hello%20FlyStar%20Aviation,%20I%20have%20submitted%20booking%20reference%20${submittedBooking.referenceId}%20for%20${formData.serviceType}%20on%20${formData.travelDate}.%20Please%20confirm.`}
+                  href={`https://wa.me/919876543210?text=Hello%20BookMyChardham%20Aviation,%20I%20have%20submitted%20booking%20reference%20${submittedBooking.referenceId}%20for%20${formData.serviceType}%20on%20${formData.travelDate}.%20Please%20confirm.`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full sm:w-auto bg-[#A67C52] hover:bg-[#8B6639] text-white px-6 py-3.5 text-xs font-bold uppercase tracking-wider transition-all flex items-center justify-center gap-2"

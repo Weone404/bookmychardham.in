@@ -12,7 +12,7 @@ import {
   MapPin,
   Clock
 } from 'lucide-react';
-import { FLOWER_DROPPING_PACKAGES } from '../../data/flystarData';
+import { FLOWER_DROPPING_PACKAGES } from '../../data/bookmychardhamData';
 
 export const FlowerDroppingPage = ({
   onNavigate,
@@ -27,7 +27,7 @@ export const FlowerDroppingPage = ({
     {
       step: '02',
       title: 'DGCA, Police & District Administration Clearances',
-      desc: 'FlyStar manages end-to-end regulatory permissions, including District Magistrate (DM) NOC, local police clearances, and ATC flight plans.',
+      desc: 'BookMyChardham manages end-to-end regulatory permissions, including District Magistrate (DM) NOC, local police clearances, and ATC flight plans.',
     },
     {
       step: '03',

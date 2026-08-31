@@ -1,6 +1,6 @@
 import React from 'react';
 import { ShieldCheck, Award, Users, Compass } from 'lucide-react';
-import { TRUST_STATS } from '../data/flystarData';
+import { TRUST_STATS } from '../data/bookmychardhamData';
 
 export const TrustStatBar = () => {
   const icons = [Award, ShieldCheck, Users, Compass];
