@@ -33,8 +33,8 @@ export const SearchWidget = ({
   return (
     <div className="w-full max-w-[1180px] flex flex-col z-20 relative">
       {/* 1. Service Selection Tabs */}
-      <div className="flex items-center overflow-x-auto no-scrollbar mb-0 select-none">
-        <div className="flex items-center bg-black/40 backdrop-blur-md p-1 border-t border-x border-white/10">
+      <div className="flex items-center overflow-x-auto no-scrollbar mb-0 select-none w-full">
+        <div className="flex items-center bg-black/40 backdrop-blur-md p-1 border-t border-x border-white/10 w-full sm:w-auto">
           {serviceTabs.map((tab) => {
             const isActive = selectedService === tab.id;
             return (
@@ -127,10 +127,10 @@ export const SearchWidget = ({
       </div>
 
       {/* 3. Quick Action Shortcut Badges */}
-      <div className="flex flex-wrap items-center gap-3 mt-4 select-none">
+      <div className="flex flex-wrap items-center gap-2 sm:gap-3 mt-4 select-none">
         <button
           onClick={() => onNavigate('chardham')}
-          className="flex items-center gap-2.5 bg-black/60 hover:bg-black/85 backdrop-blur-md text-white px-4 py-2.5 rounded-xs transition-all cursor-pointer group border border-white/10 text-[11.5px] font-bold tracking-wider uppercase"
+          className="flex items-center gap-2.5 bg-black/60 hover:bg-black/85 backdrop-blur-md text-white px-3 sm:px-4 py-2 sm:py-2.5 rounded-xs transition-all cursor-pointer group border border-white/10 text-[10.5px] sm:text-[11.5px] font-bold tracking-wider uppercase"
         >
           <Plane className="w-3.5 h-3.5 text-[#c8102e]" />
           <span>Chardham 4 Dham Packages</span>
@@ -138,7 +138,7 @@ export const SearchWidget = ({
 
         <button
           onClick={() => onNavigate('flower-dropping')}
-          className="flex items-center gap-2.5 bg-black/60 hover:bg-black/85 backdrop-blur-md text-white px-4 py-2.5 rounded-xs transition-all cursor-pointer group border border-white/10 text-[11.5px] font-bold tracking-wider uppercase"
+          className="flex items-center gap-2.5 bg-black/60 hover:bg-black/85 backdrop-blur-md text-white px-3 sm:px-4 py-2 sm:py-2.5 rounded-xs transition-all cursor-pointer group border border-white/10 text-[10.5px] sm:text-[11.5px] font-bold tracking-wider uppercase"
         >
           <HeartHandshake className="w-3.5 h-3.5 text-[#c8102e]" />
           <span>Aerial Flower Dropping</span>
@@ -146,7 +146,7 @@ export const SearchWidget = ({
 
         <button
           onClick={() => onNavigate('charter')}
-          className="flex items-center gap-2.5 bg-black/60 hover:bg-black/85 backdrop-blur-md text-white px-4 py-2.5 rounded-xs transition-all cursor-pointer group border border-white/10 text-[11.5px] font-bold tracking-wider uppercase"
+          className="flex items-center gap-2.5 bg-black/60 hover:bg-black/85 backdrop-blur-md text-white px-3 sm:px-4 py-2 sm:py-2.5 rounded-xs transition-all cursor-pointer group border border-white/10 text-[10.5px] sm:text-[11.5px] font-bold tracking-wider uppercase"
         >
           <ShieldCheck className="w-3.5 h-3.5 text-[#c8102e]" />
           <span>Corporate & Medical Evacuation</span>

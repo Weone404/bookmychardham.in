@@ -27,7 +27,7 @@ export default function Home() {
     <div className="relative w-full">
       {/* Background Video for Hero */}
       <BackgroundVideo
-        initialVideoUrl="https://console.cloudinary.com/app/c-01761eb9eda93aa675327b3650493b/assets/media_library/asset/9667cb3da5508ae4ca18bc6cfb2c1805/video"
+        initialVideoUrl="/aircraft-videos.mp4"
         posterUrl="/airplane-sunset-bg.jpg"
       />
 

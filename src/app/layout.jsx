@@ -3,6 +3,7 @@ import { Navbar } from '../components/Navbar';
 import { Footer } from '../components/Footer';
 
 export const metadata = {
+  metadataBase: new URL('https://bookmychardham.in'),
   title: 'BookMyChardham Helicopter Charters | Kedarnath, Chardham & VIP Aviation',
   description: 'BookMyChardham (bookmychardham.in) — Premier helicopter charter service for Chardham & Kedarnath pilgrimage tours, aerial flower dropping ceremonies, and luxury VIP & emergency charter flights.',
   openGraph: {
