@@ -407,39 +407,48 @@ export const FLEET_LIST = [
   },
 ];
 
-export const BASE_LOCATIONS = [
+/**
+ * Book My CharDham has ONE registered office. Everything else below is a
+ * public airport or helipad we arrange departures from — not premises we own.
+ * Never label these as our offices, terminals or hangars: the NAP in schema
+ * and llms.txt must stay a single consistent address.
+ */
+export const REGISTERED_OFFICE = {
+  city: 'New Delhi',
+  kind: 'Registered office',
+  venue: 'Book My CharDham',
+  address: 'C-705, Sector 7, Dwarka, New Delhi 110077, Delhi',
+  coordinates: '28.6149\u00b0 N, 77.0218\u00b0 E',
+};
+
+export const DEPARTURE_POINTS = [
   {
-    city: 'Dehradun (HQ)',
-    title: 'Primary Chardham Base & Terminal',
-    helipadName: 'BookMyChardham Terminal 2, Sahastradhara Helidrome',
+    city: 'Dehradun',
+    kind: 'Char Dham departures',
+    venue: 'Sahastradhara Helipad',
     address: 'Sahastradhara Road, Kulhan, Dehradun, Uttarakhand 248013',
-    coordinates: '30.3872° N, 78.1189° E',
-    phone: '+91 93556 11996',
-    isPrimary: true,
+    coordinates: '30.3872\u00b0 N, 78.1189\u00b0 E',
   },
   {
-    city: 'Kedarnath Base (Sersi / Phata)',
-    title: 'Kedarnath Shuttle Operations Hub',
-    helipadName: 'BookMyChardham Helidrome Sersi',
-    address: 'Kedarnath Highway, Guptkashi - Sersi, Rudraprayag, Uttarakhand 246471',
-    coordinates: '30.5721° N, 79.0345° E',
-    phone: '+91 93556 11996',
+    city: 'Kedarnath sector',
+    kind: 'Kedarnath shuttle',
+    venue: 'Phata, Sersi and Guptkashi helipads',
+    address: 'Kedarnath Highway, Guptkashi\u2013Sersi, Rudraprayag, Uttarakhand 246471',
+    coordinates: '30.5721\u00b0 N, 79.0345\u00b0 E',
   },
   {
-    city: 'New Delhi NCR',
-    title: 'Corporate & VIP Dispatch Hangar',
-    helipadName: 'IGI Airport Terminal 1D GA Hangar / Rohini Heliport',
-    address: 'General Aviation Terminal, IGI Airport, New Delhi 110037',
-    coordinates: '28.5562° N, 77.1000° E',
-    phone: '+91 93556 11996',
+    city: 'New Delhi',
+    kind: 'Charter departures',
+    venue: 'IGI Airport, general aviation terminal',
+    address: 'Indira Gandhi International Airport, New Delhi 110037',
+    coordinates: '28.5562\u00b0 N, 77.1000\u00b0 E',
   },
   {
     city: 'Mumbai',
-    title: 'Western India Charter Base',
-    helipadName: 'Juhu Aerodrome, Hangar No. 4',
+    kind: 'Charter departures',
+    venue: 'Juhu Aerodrome',
     address: 'SV Road, Juhu, Mumbai, Maharashtra 400054',
-    coordinates: '19.0975° N, 72.8328° E',
-    phone: '+91 93556 11996',
+    coordinates: '19.0975\u00b0 N, 72.8328\u00b0 E',
   },
 ];
 

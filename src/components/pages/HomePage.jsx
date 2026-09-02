@@ -133,7 +133,7 @@ export const HomePage = ({
                     <motion.button
                       whileHover={safeVariants(hoverScale).whileHover || {}}
                       whileTap={safeVariants(hoverScale).whileTap || {}}
-                      onClick={() => onNavigate?.('chardham')}
+                      onClick={() => onNavigate?.('char-dham-yatra-by-helicopter')}
                       className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#6B4E3D] bg-[#A67C52]/10 hover:bg-[#A67C52] px-4 py-2.5 transition-all cursor-pointer"
                     >
                       <span>View All Packages</span>
@@ -179,7 +179,7 @@ export const HomePage = ({
                     <motion.button
                       whileHover={safeVariants(hoverScale).whileHover || {}}
                       whileTap={safeVariants(hoverScale).whileTap || {}}
-                      onClick={() => onNavigate?.('flower-dropping')}
+                      onClick={() => onNavigate?.('helicopter-flower-dropping')}
                       className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#6B4E3D] bg-[#A67C52]/10 hover:bg-[#A67C52] px-4 py-2.5 transition-all cursor-pointer"
                     >
                       <span>Ceremony Details</span>
@@ -212,7 +212,7 @@ export const HomePage = ({
                   <motion.button
                     whileHover={safeVariants(hoverScale).whileHover || {}}
                     whileTap={safeVariants(hoverScale).whileTap || {}}
-                    onClick={() => onNavigate?.('charter')}
+                    onClick={() => onNavigate?.('private-helicopter-charter')}
                     className="text-xs font-bold uppercase tracking-wider text-[#6B4E3D] hover:text-[#8B6639] transition-colors flex items-center gap-1.5 cursor-pointer"
                   >
                     <span>Explore Charters</span>
@@ -250,7 +250,7 @@ export const HomePage = ({
                   <motion.button
                     whileHover={safeVariants(hoverScale).whileHover || {}}
                     whileTap={safeVariants(hoverScale).whileTap || {}}
-                    onClick={() => onNavigate?.('charter')}
+                    onClick={() => onNavigate?.('private-helicopter-charter')}
                     className="text-xs font-bold uppercase tracking-wider text-[#6B4E3D] hover:text-[#8B6639] transition-colors cursor-pointer"
                   >
                     Details →

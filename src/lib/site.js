@@ -79,9 +79,10 @@ export function whatsappLink(message) {
 /** Real per-page last-modified dates. Update when you edit a page. */
 export const LAST_MODIFIED = {
   '/': '2026-09-02',
-  '/chardham': '2026-09-02',
-  '/charter': '2026-09-02',
-  '/flower-dropping': '2026-09-02',
+  '/kedarnath-helicopter-yatra': '2026-09-02',
+  '/char-dham-yatra-by-helicopter': '2026-09-02',
+  '/private-helicopter-charter': '2026-09-02',
+  '/helicopter-flower-dropping': '2026-09-02',
   '/about': '2026-09-02',
   '/contact': '2026-09-02',
   '/booking': '2026-09-02',

@@ -7,7 +7,7 @@ import {
   graph, organizationSchema, webPageSchema, breadcrumbSchema, serviceSchema, faqSchema,
 } from '../../lib/schema';
 
-const PATH = '/chardham';
+const PATH = '/char-dham-yatra-by-helicopter';
 const TITLE = 'Char Dham Yatra by Helicopter | Packages & Price';
 const DESC =
   'Char Dham yatra by helicopter from Dehradun covering Yamunotri, Gangotri, Kedarnath and Badrinath. 5 days / 4 nights. Call +91 93556 11996.';

@@ -129,7 +129,7 @@ export const SearchWidget = ({
       {/* 3. Quick Action Shortcut Badges */}
       <div className="flex flex-wrap items-center gap-2 sm:gap-3 mt-4 select-none">
         <button
-          onClick={() => onNavigate('chardham')}
+          onClick={() => onNavigate('char-dham-yatra-by-helicopter')}
           className="flex items-center gap-2.5 bg-black/60 hover:bg-black/85 backdrop-blur-md text-white px-3 sm:px-4 py-2 sm:py-2.5 rounded-xs transition-all cursor-pointer group border border-white/10 text-[10.5px] sm:text-[11.5px] font-bold tracking-wider uppercase"
         >
           <Plane className="w-3.5 h-3.5 text-[#c8102e]" />
@@ -137,7 +137,7 @@ export const SearchWidget = ({
         </button>
 
         <button
-          onClick={() => onNavigate('flower-dropping')}
+          onClick={() => onNavigate('helicopter-flower-dropping')}
           className="flex items-center gap-2.5 bg-black/60 hover:bg-black/85 backdrop-blur-md text-white px-3 sm:px-4 py-2 sm:py-2.5 rounded-xs transition-all cursor-pointer group border border-white/10 text-[10.5px] sm:text-[11.5px] font-bold tracking-wider uppercase"
         >
           <HeartHandshake className="w-3.5 h-3.5 text-[#c8102e]" />
@@ -145,7 +145,7 @@ export const SearchWidget = ({
         </button>
 
         <button
-          onClick={() => onNavigate('charter')}
+          onClick={() => onNavigate('private-helicopter-charter')}
           className="flex items-center gap-2.5 bg-black/60 hover:bg-black/85 backdrop-blur-md text-white px-3 sm:px-4 py-2 sm:py-2.5 rounded-xs transition-all cursor-pointer group border border-white/10 text-[10.5px] sm:text-[11.5px] font-bold tracking-wider uppercase"
         >
           <ShieldCheck className="w-3.5 h-3.5 text-[#c8102e]" />

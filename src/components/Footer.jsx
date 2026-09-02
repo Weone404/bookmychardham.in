@@ -50,31 +50,31 @@ export const Footer = ({ onNavigate }) => {
               SACRED PILGRIMAGE
             </span>
             <button
-              onClick={() => handleNav('chardham')}
+              onClick={() => handleNav('char-dham-yatra-by-helicopter')}
               className="text-left text-[#A67C52] hover:text-[#6B4E3D] transition-colors cursor-pointer py-0.5"
             >
               Chardham 4 Dham (5D/4N)
             </button>
             <button
-              onClick={() => handleNav('chardham')}
+              onClick={() => handleNav('char-dham-yatra-by-helicopter')}
               className="text-left text-[#A67C52] hover:text-[#6B4E3D] transition-colors cursor-pointer py-0.5"
             >
               Kedarnath Same Day Tour
             </button>
             <button
-              onClick={() => handleNav('chardham')}
+              onClick={() => handleNav('char-dham-yatra-by-helicopter')}
               className="text-left text-[#A67C52] hover:text-[#6B4E3D] transition-colors cursor-pointer py-0.5"
             >
               Do Dham (Kedarnath & Badrinath)
             </button>
             <button
-              onClick={() => handleNav('chardham')}
+              onClick={() => handleNav('char-dham-yatra-by-helicopter')}
               className="text-left text-neutral-400 hover:text-white transition-colors cursor-pointer py-0.5"
             >
               Badrinath VIP Darshan
             </button>
             <button
-              onClick={() => handleNav('flower-dropping')}
+              onClick={() => handleNav('helicopter-flower-dropping')}
               className="text-left text-[#A67C52] hover:text-[#6B4E3D] transition-colors cursor-pointer py-0.5 font-semibold"
             >
               Aerial Flower Dropping →
@@ -87,19 +87,19 @@ export const Footer = ({ onNavigate }) => {
               CHARTER & FLEET
             </span>
             <button
-              onClick={() => handleNav('charter')}
+              onClick={() => handleNav('private-helicopter-charter')}
               className="text-left text-[#A67C52] hover:text-[#6B4E3D] transition-colors cursor-pointer py-0.5"
             >
               Corporate Jet & Heli Charter
             </button>
             <button
-              onClick={() => handleNav('charter')}
+              onClick={() => handleNav('private-helicopter-charter')}
               className="text-left text-[#A67C52] hover:text-[#6B4E3D] transition-colors cursor-pointer py-0.5"
             >
               VIP & Dignitary Travel
             </button>
             <button
-              onClick={() => handleNav('charter')}
+              onClick={() => handleNav('private-helicopter-charter')}
               className="text-left text-[#A67C52] hover:text-[#6B4E3D] transition-colors cursor-pointer py-0.5"
             >
               Air Ambulance (HEMS ICU)

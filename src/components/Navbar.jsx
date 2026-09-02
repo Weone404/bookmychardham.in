@@ -23,9 +23,9 @@ export const Navbar = ({ currentPage: propCurrentPage, onNavigate }) => {
 
   const navItems = [
     { id: 'home', label: 'HOME', href: '/' },
-    { id: 'chardham', label: 'CHARDHAM & KEDARNATH', href: '/chardham' },
-    { id: 'flower-dropping', label: 'FLOWER DROPPING', href: '/flower-dropping' },
-    { id: 'charter', label: 'CHARTER SERVICES', href: '/charter' },
+    { id: 'chardham', label: 'CHARDHAM & KEDARNATH', href: '/char-dham-yatra-by-helicopter' },
+    { id: 'flower-dropping', label: 'FLOWER DROPPING', href: '/helicopter-flower-dropping' },
+    { id: 'charter', label: 'CHARTER SERVICES', href: '/private-helicopter-charter' },
     { id: 'about', label: 'ABOUT US', href: '/about' },
     { id: 'contact', label: 'CONTACT', href: '/contact' },
   ];

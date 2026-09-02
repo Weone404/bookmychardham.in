@@ -7,7 +7,7 @@ import {
   graph, organizationSchema, webPageSchema, breadcrumbSchema, serviceSchema, faqSchema,
 } from '../../lib/schema';
 
-const PATH = '/flower-dropping';
+const PATH = '/helicopter-flower-dropping';
 const TITLE = 'Helicopter Flower Dropping for Weddings & Events';
 const DESC =
   'Aerial flower shower by helicopter for weddings, temple mahotsav and public events. Needs 15-21 days for NOC clearance. Call +91 93556 11996.';
