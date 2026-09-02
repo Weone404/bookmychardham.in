@@ -416,7 +416,7 @@ export const BASE_LOCATIONS: BaseLocation[] = [
     helipadName: 'BookMyChardham Terminal 2, Sahastradhara Helidrome',
     address: 'Sahastradhara Road, Kulhan, Dehradun, Uttarakhand 248013',
     coordinates: '30.3872° N, 78.1189° E',
-    phone: '+91 98765 43210',
+    phone: '+91 93556 11996',
     isPrimary: true,
   },
   {
@@ -425,7 +425,7 @@ export const BASE_LOCATIONS: BaseLocation[] = [
     helipadName: 'BookMyChardham Helidrome Sersi',
     address: 'Kedarnath Highway, Guptkashi - Sersi, Rudraprayag, Uttarakhand 246471',
     coordinates: '30.5721° N, 79.0345° E',
-    phone: '+91 98765 43211',
+    phone: '+91 93556 11996',
   },
   {
     city: 'New Delhi NCR',
@@ -433,7 +433,7 @@ export const BASE_LOCATIONS: BaseLocation[] = [
     helipadName: 'IGI Airport Terminal 1D GA Hangar / Rohini Heliport',
     address: 'General Aviation Terminal, IGI Airport, New Delhi 110037',
     coordinates: '28.5562° N, 77.1000° E',
-    phone: '+91 98765 43212',
+    phone: '+91 93556 11996',
   },
   {
     city: 'Mumbai',
@@ -441,7 +441,7 @@ export const BASE_LOCATIONS: BaseLocation[] = [
     helipadName: 'Juhu Aerodrome, Hangar No. 4',
     address: 'SV Road, Juhu, Mumbai, Maharashtra 400054',
     coordinates: '19.0975° N, 72.8328° E',
-    phone: '+91 98765 43213',
+    phone: '+91 93556 11996',
   },
 ];
 

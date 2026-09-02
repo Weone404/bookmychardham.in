@@ -33,9 +33,11 @@ export const CharterPage = ({
             muted
             loop
             playsInline
+            preload="metadata"
+            poster="/poster-charter.jpg"
             className="absolute inset-0 w-full h-full object-cover object-center"
           >
-            <source src="/private%20helicopter.mp4" type="video/mp4" />
+            <source src="/private-helicopter.mp4" type="video/mp4" />
           </video>
           <div className="absolute inset-0 bg-[#1d120f]/55" />
         </div>
@@ -65,7 +67,7 @@ export const CharterPage = ({
               </button>
 
               <a
-                href="tel:+919876543210"
+                href="tel:+919355611996"
                 className="bg-[#A67C52]/10 hover:bg-[#A67C52]/20 text-[#6B4E3D] border border-[#A67C52]/20 px-6 py-3.5 text-xs font-bold tracking-[0.16em] uppercase transition-all cursor-pointer flex items-center gap-2"
               >
                 <Phone className="w-3.5 h-3.5 text-[#8B6639]" />
@@ -93,11 +95,11 @@ export const CharterPage = ({
 
           <div className="flex items-center gap-3">
             <a
-              href="tel:+919876543210"
+              href="tel:+919355611996"
               className="flex items-center gap-2 bg-[#A67C52] hover:bg-[#8B6639] text-white px-5 py-2.5 text-xs font-bold uppercase tracking-wider transition-all shadow-md"
             >
               <Phone className="w-4 h-4" />
-              <span>EMERGENCY SOS: +91 98765 43210</span>
+              <span>EMERGENCY SOS: +91 93556 11996</span>
             </a>
           </div>
         </div>

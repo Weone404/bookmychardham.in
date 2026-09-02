@@ -126,8 +126,8 @@ export const Footer = ({ onNavigate }) => {
             <div className="flex items-start gap-2 text-[#6B4E3D]">
               <Phone className="w-4 h-4 text-[#A67C52] shrink-0 mt-0.5" />
               <div>
-                <a href="tel:+919876543210" className="font-bold hover:text-[#A67C52] transition-colors block text-[13px]">
-                  +91 98765 43210
+                <a href="tel:+919355611996" className="font-bold hover:text-[#A67C52] transition-colors block text-[13px]">
+                  +91 93556 11996
                 </a>
                 <span className="text-[10.5px] text-[#A67C52]/70">Toll-free / WhatsApp available</span>
               </div>

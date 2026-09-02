@@ -95,7 +95,7 @@ export const FlowerDroppingPage = ({
                 </button>
 
                 <a
-                  href="tel:+919876543210"
+                  href="tel:+919355611996"
                   className="bg-[#A67C52]/10 hover:bg-[#A67C52]/20 text-[#6B4E3D] border border-[#A67C52]/20 px-6 py-3.5 text-xs font-bold tracking-[0.16em] uppercase transition-all cursor-pointer flex items-center gap-2"
                 >
                   <Phone className="w-3.5 h-3.5 text-[#8B6639]" />
@@ -295,10 +295,10 @@ export const FlowerDroppingPage = ({
               REQUEST CUSTOM FLOWER DROP QUOTE
             </button>
             <a
-              href="tel:+919876543210"
+              href="tel:+919355611996"
               className="bg-[#A67C52]/10 hover:bg-[#A67C52]/20 text-[#6B4E3D] border border-[#A67C52]/20 px-6 py-3.5 text-xs font-bold tracking-widest uppercase transition-all"
             >
-              CALL +91 98765 43210
+              CALL +91 93556 11996
             </a>
           </div>
         </div>

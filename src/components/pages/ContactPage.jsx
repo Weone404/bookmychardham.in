@@ -76,8 +76,8 @@ export const ContactPage = () => {
                     <span className="text-[10px] font-bold text-[#A67C52] uppercase tracking-widest block">
                       CENTRAL DISPATCH &amp; SOS HOTLINE
                     </span>
-                    <a href="tel:+919876543210" className="text-base sm:text-lg font-bold text-[#6B4E3D] hover:text-[#8B6639] transition-colors block mt-0.5">
-                      +91 98765 43210
+                    <a href="tel:+919355611996" className="text-base sm:text-lg font-bold text-[#6B4E3D] hover:text-[#8B6639] transition-colors block mt-0.5">
+                      +91 93556 11996
                     </a>
                     <span className="text-xs text-[#A67C52]">Available 24/7 on Call &amp; WhatsApp</span>
                   </div>
@@ -167,7 +167,7 @@ export const ContactPage = () => {
                         <input
                           type="tel"
                           required
-                          placeholder="+91 98765 43210"
+                          placeholder="+91 93556 11996"
                           value={formData.phone}
                           onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                           className="w-full bg-[#E6D5C1] border border-[#A67C52]/20 px-3.5 py-2.5 text-xs text-[#6B4E3D] focus:border-[#A67C52] focus:outline-none"

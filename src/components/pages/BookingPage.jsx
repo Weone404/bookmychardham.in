@@ -183,13 +183,13 @@ export const BookingPage = ({
 
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <a
-                  href={`https://wa.me/919876543210?text=Hello%20BookMyChardham%20Aviation,%20I%20have%20submitted%20booking%20reference%20${submittedBooking.referenceId}%20for%20${formData.serviceType}%20on%20${formData.travelDate}.%20Please%20confirm.`}
+                  href={`https://wa.me/919355611996?text=Hello%20BookMyChardham%20Aviation,%20I%20have%20submitted%20booking%20reference%20${submittedBooking.referenceId}%20for%20${formData.serviceType}%20on%20${formData.travelDate}.%20Please%20confirm.`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full sm:w-auto bg-[#A67C52] hover:bg-[#8B6639] text-white px-6 py-3.5 text-xs font-bold uppercase tracking-wider transition-all flex items-center justify-center gap-2"
                 >
                   <Phone className="w-4 h-4" />
-                  <span>CONFIRM ON WHATSAPP (+91 98765 43210)</span>
+                  <span>CONFIRM ON WHATSAPP (+91 93556 11996)</span>
                 </a>
 
                 <button
@@ -403,7 +403,7 @@ export const BookingPage = ({
                         </label>
                         <input
                           type="tel"
-                          placeholder="+91 98765 43210"
+                          placeholder="+91 93556 11996"
                           value={formData.phone}
                           onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                           className="w-full bg-[#181818] border border-white/15 px-3.5 py-2.5 text-xs text-white focus:border-[#c8102e] focus:outline-none"
@@ -547,11 +547,11 @@ export const BookingPage = ({
                       Prefer to book over the phone with a Flight Coordinator?
                     </span>
                     <a
-                      href="tel:+919876543210"
+                      href="tel:+919355611996"
                       className="inline-flex items-center gap-2 text-xs font-bold text-white hover:text-red-400 uppercase tracking-wider"
                     >
                       <Phone className="w-3.5 h-3.5 text-emerald-400" />
-                      <span>Call +91 98765 43210</span>
+                      <span>Call +91 93556 11996</span>
                     </a>
                   </div>
                 </div>

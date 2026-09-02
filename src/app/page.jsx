@@ -1,40 +1,26 @@
-'use client';
+import Client from './Client';
+import { pageMetadata } from '../lib/site';
+import { JsonLd } from '../components/JsonLd';
+import { graph, organizationSchema, websiteSchema, webPageSchema, breadcrumbSchema } from '../lib/schema';
 
-import React from 'react';
-import { useRouter } from 'next/navigation';
-import { BackgroundVideo } from '../components/BackgroundVideo';
-import { HomePage } from '../components/pages/HomePage';
+const TITLE = 'Kedarnath & Char Dham Helicopter Yatra | Book My CharDham';
+const DESC =
+  'Helicopter charter for Kedarnath, Badrinath and Char Dham yatra from Dehradun. VIP darshan, same-day return. Call +91 93556 11996.';
+
+export const metadata = pageMetadata({ title: TITLE, description: DESC, path: '/' });
 
 export default function Home() {
-  const router = useRouter();
-
-  const handleNavigate = (page) => {
-    const route = page === 'home' ? '/' : `/${page}`;
-    router.push(route);
-    if (typeof window !== 'undefined') {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-  };
-
-  const handleSelectServiceForBooking = (serviceType, packageId) => {
-    const params = new URLSearchParams();
-    if (serviceType) params.set('service', serviceType);
-    if (packageId) params.set('package', packageId);
-    router.push(`/booking?${params.toString()}`);
-  };
-
   return (
-    <div className="relative w-full">
-      {/* Background Video for Hero */}
-      <BackgroundVideo
-        initialVideoUrl="/aircraft-videos.mp4"
-        posterUrl="/airplane-sunset-bg.jpg"
+    <>
+      <JsonLd
+        data={graph([
+          organizationSchema(),
+          websiteSchema(),
+          webPageSchema({ name: TITLE, description: DESC, path: '/' }),
+          breadcrumbSchema([{ name: 'Home', path: '/' }]),
+        ])}
       />
-
-      <HomePage
-        onNavigate={handleNavigate}
-        onSelectServiceForBooking={handleSelectServiceForBooking}
-      />
-    </div>
+      <Client />
+    </>
   );
 }

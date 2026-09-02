@@ -241,11 +241,11 @@ export const HomePage = ({
                 </p>
                 <div className="pt-4 border-t border-[#8B6639]/40 flex items-center justify-between">
                   <a
-                    href="tel:+919876543210"
+                    href="tel:+919355611996"
                     className="text-xs font-bold text-[#8B6639] hover:text-[#6B4E3D] flex items-center gap-1.5"
                   >
                     <Phone className="w-3.5 h-3.5" />
-                    <span>Emergency Hotline: +91 98765 43210</span>
+                    <span>Emergency Hotline: +91 93556 11996</span>
                   </a>
                   <motion.button
                     whileHover={safeVariants(hoverScale).whileHover || {}}
@@ -464,11 +464,11 @@ export const HomePage = ({
               </button>
 
               <a
-                href="tel:+919876543210"
+                href="tel:+919355611996"
                 className="w-full sm:w-auto flex items-center justify-center gap-2 bg-transparent hover:bg-[#A67C52]/10 text-[#6B4E3D] border border-[#A67C52]/20 px-8 py-4 text-xs font-bold tracking-[0.16em] uppercase transition-all cursor-pointer"
               >
                 <Phone className="w-4 h-4 text-[#8B6639]" />
-                <span>CALL +91 98765 43210</span>
+                <span>CALL +91 93556 11996</span>
               </a>
             </div>
           </div>

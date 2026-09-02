@@ -1,31 +1,37 @@
-'use client';
+import Client from './Client';
+import { pageMetadata } from '../../lib/site';
+import { JsonLd } from '../../components/JsonLd';
+import {
+  graph, organizationSchema, webPageSchema, breadcrumbSchema, serviceSchema,
+} from '../../lib/schema';
 
-import React from 'react';
-import { useRouter } from 'next/navigation';
-import { CharterPage } from '../../components/pages/CharterPage';
+const PATH = '/charter';
+const TITLE = 'Private Helicopter Charter India | VIP & Emergency';
+const DESC =
+  'Private helicopter charter across India for VIP travel, corporate movement and emergency medical transfer. Enquire on +91 93556 11996.';
+
+export const metadata = pageMetadata({ title: TITLE, description: DESC, path: PATH });
 
 export default function Charter() {
-  const router = useRouter();
-
-  const handleNavigate = (page) => {
-    const route = page === 'home' ? '/' : `/${page}`;
-    router.push(route);
-    if (typeof window !== 'undefined') {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-  };
-
-  const handleSelectServiceForBooking = (serviceType, packageId) => {
-    const params = new URLSearchParams();
-    if (serviceType) params.set('service', serviceType);
-    if (packageId) params.set('package', packageId);
-    router.push(`/booking?${params.toString()}`);
-  };
-
   return (
-    <CharterPage
-      onNavigate={handleNavigate}
-      onSelectServiceForBooking={handleSelectServiceForBooking}
-    />
+    <>
+      <JsonLd
+        data={graph([
+          organizationSchema(),
+          webPageSchema({ name: TITLE, description: DESC, path: PATH }),
+          breadcrumbSchema([
+            { name: 'Home', path: '/' },
+            { name: 'Private Helicopter Charter', path: PATH },
+          ]),
+          serviceSchema({
+            name: 'Private Helicopter Charter',
+            description: DESC,
+            path: PATH,
+            price: null,
+          }),
+        ])}
+      />
+      <Client />
+    </>
   );
 }
