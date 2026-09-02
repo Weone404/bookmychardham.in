@@ -3,7 +3,7 @@
 import React from 'react';
 import { useRouter } from 'next/navigation';
 import { Phone, Mail, MapPin, Shield, ArrowUpRight } from 'lucide-react';
-import { BookMyChardhamLogo } from './FlyStarLogo';
+import { BookMyChardhamLogo } from './BookMyChardhamLogo';
 
 export const Footer = ({ onNavigate }) => {
   const router = useRouter();
@@ -160,7 +160,7 @@ export const Footer = ({ onNavigate }) => {
         {/* Bottom Bar */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-[11px] text-[#A67C52]/70 gap-4">
           <div className="tracking-wider uppercase">
-            © {new Date().getFullYear()} FlyStar Aviation (flystar.co.in) — All Rights Reserved.
+            © {new Date().getFullYear()} Book My CharDham (bookmychardham.in) — All Rights Reserved.
           </div>
           <div className="flex items-center gap-6 tracking-wider uppercase font-medium">
             <button onClick={() => handleNav('about')} className="text-[#A67C52] hover:text-[#6B4E3D] transition-colors cursor-pointer">

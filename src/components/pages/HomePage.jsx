@@ -103,7 +103,7 @@ export const HomePage = ({
               <HoverLiftCard className="bg-[#D9C7B8] border border-[#A67C52]/20 hover:border-[#A67C52]/30 transition-all duration-300 group flex flex-col justify-between relative overflow-hidden">
                 <div className="relative h-64 sm:h-80 w-full overflow-hidden">
                   <img
-                    src="/images/flystar_kedarnath_helicopter_1788161902244.jpg"
+                    src="/images/kedarnath-helicopter-yatra.jpg"
                     alt="Kedarnath Helicopter Tour"
                     className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 filter brightness-90 group-hover:brightness-100"
                   />
@@ -149,7 +149,7 @@ export const HomePage = ({
               <HoverLiftCard className="bg-[#D9C7B8] border border-[#A67C52]/20 hover:border-[#A67C52]/30 transition-all duration-300 group flex flex-col justify-between relative overflow-hidden">
                 <div className="relative h-64 sm:h-80 w-full overflow-hidden">
                   <img
-                    src="/images/flystar_flower_dropping_1788161916372.jpg"
+                    src="/images/helicopter-flower-dropping.jpg"
                     alt="Aerial Flower Dropping"
                     className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 filter brightness-90 group-hover:brightness-100"
                   />
@@ -327,7 +327,7 @@ export const HomePage = ({
             <FadeInOnScroll delay={0.2} className="lg:col-span-6 flex flex-col space-y-6">
               <HoverLiftCard className="relative border border-[#A67C52]/20 bg-[#D9C7B8] p-2">
                 <img
-                  src="/images/flystar_vip_charter_1788161931733.jpg"
+                  src="/images/private-helicopter-charter.jpg"
                   alt="BookMyChardham Executive Helicopter"
                   className="w-full h-80 sm:h-96 object-cover object-center filter brightness-95"
                 />

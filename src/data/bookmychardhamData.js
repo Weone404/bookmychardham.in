@@ -32,7 +32,7 @@ export const CHARDHAM_PACKAGES = [
     startingPrice: '₹95,000 / seat',
     pricePerPerson: 95000,
     charterPrice: 480000,
-    image: '/images/flystar_kedarnath_helicopter_1788161902244.jpg',
+    image: '/images/kedarnath-helicopter-yatra.jpg',
     badge: 'MOST POPULAR',
     serviceType: 'kedarnath-sameday',
     highlights: [
@@ -86,7 +86,7 @@ export const CHARDHAM_PACKAGES = [
     startingPrice: '₹2,10,000 / person',
     pricePerPerson: 210000,
     charterPrice: 1250000,
-    image: '/images/flystar_himalayan_fleet_1788161946820.jpg',
+    image: '/images/himalayan-helicopter-fleet.jpg',
     badge: 'SIGNATURE PILGRIMAGE',
     serviceType: 'chardham-4dham',
     highlights: [
@@ -148,7 +148,7 @@ export const CHARDHAM_PACKAGES = [
     startingPrice: '₹1,35,000 / person',
     pricePerPerson: 135000,
     charterPrice: 680000,
-    image: '/images/flystar_kedarnath_helicopter_1788161902244.jpg',
+    image: '/images/kedarnath-helicopter-yatra.jpg',
     badge: 'HIGH DEMAND',
     serviceType: 'dodham-kedarnath-badrinath',
     highlights: [
@@ -195,7 +195,7 @@ export const CHARDHAM_PACKAGES = [
     startingPrice: '₹85,000 / seat',
     pricePerPerson: 85000,
     charterPrice: 420000,
-    image: '/images/flystar_himalayan_fleet_1788161946820.jpg',
+    image: '/images/himalayan-helicopter-fleet.jpg',
     serviceType: 'badrinath-sameday',
     highlights: [
       'Quickest way to visit Badrinath Temple from Dehradun',
@@ -270,7 +270,7 @@ export const CHARTER_SERVICES = [
     id: 'corporate-charter',
     title: 'Corporate Helicopter Charter',
     subtitle: 'Point-to-point business aviation avoiding airport congestion and road delays',
-    image: '/images/flystar_vip_charter_1788161931733.jpg',
+    image: '/images/private-helicopter-charter.jpg',
     description: 'Empower your executive leadership with on-demand helicopter flights directly between factory sites, remote industrial plants, state capitals, and city helipads. Save valuable hours with flexible flight itineraries.',
     features: [
       'Direct helipad-to-helipad connectivity across India',
@@ -284,7 +284,7 @@ export const CHARTER_SERVICES = [
     id: 'vip-transport',
     title: 'VIP & Dignitary Transport',
     subtitle: 'Discreet, ultra-secure helicopter charters for HNIs, celebrities & statesmen',
-    image: '/images/flystar_himalayan_fleet_1788161946820.jpg',
+    image: '/images/himalayan-helicopter-fleet.jpg',
     description: 'Complete privacy and highest security protocol with dedicated aviation marshals, direct aircraft boarding, and VIP lounge hospitality across major private airports and bespoke landing grounds.',
     features: [
       'Absolute privacy and non-disclosure discretion',
@@ -298,7 +298,7 @@ export const CHARTER_SERVICES = [
     id: 'aerial-filming',
     title: 'Aerial Cinematography & Photography',
     subtitle: 'Gyro-stabilized aerial platforms for blockbuster films, documentaries & surveys',
-    image: '/images/flystar_flower_dropping_1788161916372.jpg',
+    image: '/images/helicopter-flower-dropping.jpg',
     description: 'Specialized helicopters equipped with approved nose and side gimbal mounts (Shotover / Cineflex), door-off configuration for photographers, and precision-flight pilots trained in high-speed tracking.',
     features: [
       'Doors-off flight clearance for 360° unobstructed views',
@@ -312,7 +312,7 @@ export const CHARTER_SERVICES = [
     id: 'emergency-air-ambulance',
     title: 'Emergency Medical Evacuation (HEMS)',
     subtitle: '24/7 ICU-equipped air ambulance with rapid dispatch in under 45 minutes',
-    image: '/images/flystar_kedarnath_helicopter_1788161902244.jpg',
+    image: '/images/kedarnath-helicopter-yatra.jpg',
     description: 'Life-saving critical care transport from remote Himalayan areas, highway accidents, and tier-2 cities directly to premier quaternary hospitals in Dehradun, Delhi NCR, and Chandigarh.',
     features: [
       'Full onboard ICU with ventilator, defibrillator & multipara monitors',
@@ -336,7 +336,7 @@ export const FLEET_LIST = [
     altitudeCeiling: '23,000 ft (World Record Holder)',
     engine: 'Safran Arriel 2D with Dual FADEC',
     description: 'The undisputed king of Himalayan flying. Holds the world altitude landing record on Mount Everest. Exceptional hot-and-high performance makes it our primary choice for Kedarnath & Chardham.',
-    image: '/images/flystar_kedarnath_helicopter_1788161902244.jpg',
+    image: '/images/kedarnath-helicopter-yatra.jpg',
     bestFor: ['Kedarnath Shuttles', 'Chardham 4 Dham', 'High-Altitude Rescue'],
     features: [
       'Unmatched power-to-weight ratio in thin mountain air',
@@ -356,7 +356,7 @@ export const FLEET_LIST = [
     altitudeCeiling: '20,000 ft',
     engine: 'Rolls-Royce 250-C47B Turbine',
     description: 'The standard of luxury in executive rotary-wing travel. Features a spacious 5-place club-seating aft cabin with rich leather, whisper-quiet cabin acoustics, and Garmin G1000H glass cockpit.',
-    image: '/images/flystar_vip_charter_1788161931733.jpg',
+    image: '/images/private-helicopter-charter.jpg',
     bestFor: ['Corporate Charters', 'VIP Dignitaries', 'Executive Travel'],
     features: [
       'Garmin G1000H integrated glass avionics suite',
@@ -376,7 +376,7 @@ export const FLEET_LIST = [
     altitudeCeiling: '19,000 ft',
     engine: 'Safran Arriel 2D Turbine',
     description: 'Built specifically for scenic aerial tourism and aerial ceremonies. Its enclosed Fenestron tail rotor delivers the quietest acoustic footprint in its class and unparalleled safety.',
-    image: '/images/flystar_flower_dropping_1788161916372.jpg',
+    image: '/images/helicopter-flower-dropping.jpg',
     bestFor: ['Aerial Flower Dropping', 'Sightseeing Tours', 'Wedding Celebrations'],
     features: [
       'Extra-wide cabin with theater-style passenger seating',
@@ -396,7 +396,7 @@ export const FLEET_LIST = [
     altitudeCeiling: '20,000 ft',
     engine: 'Twin Safran Arriel 2E Turbines',
     description: 'Twin-engine redundancy for high-security VIP movements and round-the-clock emergency medical evacuation. Equipped with full night-flying capabilities and certified instrument flight rules (IFR).',
-    image: '/images/flystar_himalayan_fleet_1788161946820.jpg',
+    image: '/images/himalayan-helicopter-fleet.jpg',
     bestFor: ['Air Ambulance (ICU)', 'Twin-Engine VIP Charter', 'Long-Distance Routes'],
     features: [
       'Twin-engine reliability with Category A performance',

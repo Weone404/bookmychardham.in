@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
 import { Phone, Calendar, Menu, X, Shield, ArrowRight, LogIn } from 'lucide-react';
-import { BookMyChardhamLogo } from './FlyStarLogo';
+import { BookMyChardhamLogo } from './BookMyChardhamLogo';
 import { LoginModal } from './modals/LoginModal';
 
 export const Navbar = ({ currentPage: propCurrentPage, onNavigate }) => {

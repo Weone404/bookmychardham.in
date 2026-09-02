@@ -108,7 +108,7 @@ export const FlowerDroppingPage = ({
             <div className="lg:col-span-5">
               <div className="border border-[#A67C52]/20 bg-[#D9C7B8] p-2 relative">
                 <img
-                  src="/images/flystar_flower_dropping_1788161916372.jpg"
+                  src="/images/helicopter-flower-dropping.jpg"
                   alt="Helicopter Aerial Flower Dropping at Royal Wedding"
                   className="w-full h-80 sm:h-96 object-cover filter brightness-95"
                 />
@@ -169,7 +169,7 @@ export const FlowerDroppingPage = ({
               EXECUTION BLUEPRINT
             </span>
             <h2 className="text-3xl sm:text-4xl font-black uppercase text-[#6B4E3D] tracking-tight">
-              HOW FLYSTAR DELIVERS FLAWLESS CEREMONIES
+              HOW BOOK MY CHARDHAM DELIVERS FLAWLESS CEREMONIES
             </h2>
             <p className="text-[#A67C52] text-xs sm:text-sm mt-3 leading-relaxed">
               We handle every regulatory, safety, and logistical detail so you can focus entirely on enjoying your monumental day.

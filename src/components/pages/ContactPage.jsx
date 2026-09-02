@@ -127,7 +127,7 @@ export const ContactPage = () => {
                       MESSAGE TRANSMITTED
                     </h3>
                     <p className="text-xs text-[#A67C52] max-w-md mx-auto mb-6">
-                      Thank you for contacting FlyStar Aviation. A dedicated Flight Coordinator will reach out to you within 15 minutes at {formData.phone || 'your phone number'}.
+                      Thank you for contacting Book My CharDham. A dedicated Flight Coordinator will reach out to you within 15 minutes at {formData.phone || 'your phone number'}.
                     </p>
                     <button
                       onClick={() => setSubmitted(false)}

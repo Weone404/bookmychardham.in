@@ -84,7 +84,7 @@ export const AboutPage = ({ onNavigate }) => {
                 PIONEERING HIGH-ALTITUDE AVIATION IN INDIA
               </h2>
               <p className="text-[#A67C52] text-sm leading-relaxed">
-                FlyStar commenced flight operations over a decade and a half ago with a singular objective: to master high-altitude mountain flight in one of the most demanding aeronautical environments on Earth — the Indian Himalayas.
+                Book My CharDham commenced flight operations over a decade and a half ago with a singular objective: to master high-altitude mountain flight in one of the most demanding aeronautical environments on Earth — the Indian Himalayas.
               </p>
               <p className="text-[#A67C52] text-sm leading-relaxed">
                 Over the years, we have flown more than 45,000 pilgrims safely to Kedarnath, Badrinath, and the Chardham circuit, orchestrated hundreds of royal wedding aerial flower showers, and provided rapid emergency airlift across north and western India.
@@ -128,8 +128,8 @@ export const AboutPage = ({ onNavigate }) => {
             <div className="lg:col-span-5">
               <div className="border border-[#A67C52]/20 bg-[#D9C7B8] p-2 relative">
                 <img
-                  src="/images/flystar_himalayan_fleet_1788161946820.jpg"
-                  alt="FlyStar Helicopter in Himalayas"
+                  src="/images/himalayan-helicopter-fleet.jpg"
+                  alt="Book My CharDham helicopter on a Himalayan sector"
                   className="w-full h-80 sm:h-96 object-cover filter brightness-95"
                 />
                 <div className="absolute bottom-4 left-4 right-4 bg-[#F3E9D0]/85 backdrop-blur-md p-4 border border-[#A67C52]/20 text-xs">
@@ -151,7 +151,7 @@ export const AboutPage = ({ onNavigate }) => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-10 lg:px-12">
           <div className="mb-12">
             <span className="text-[11px] font-bold tracking-[0.24em] text-[#A67C52] uppercase block mb-2">
-              THE FLYSTAR FLEET
+              THE BOOK MY CHARDHAM FLEET
             </span>
             <h2 className="text-3xl sm:text-4xl font-black uppercase text-[#6B4E3D] tracking-tight">
               PRECISION AIRCRAFT MAINTAINED TO OEM STANDARDS
