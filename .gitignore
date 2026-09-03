@@ -12,3 +12,5 @@ coverage/
 _to_delete/
 .next/
 _bmc*.tgz
+tsconfig.tsbuildinfo
+_quarantine/media/

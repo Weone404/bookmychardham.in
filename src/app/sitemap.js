@@ -7,6 +7,7 @@ const PAGES = [
   { path: '/char-dham-yatra-by-helicopter', priority: 0.9, changeFrequency: 'weekly' },
   { path: '/helicopter-flower-dropping', priority: 0.8, changeFrequency: 'monthly' },
   { path: '/private-helicopter-charter', priority: 0.8, changeFrequency: 'monthly' },
+  { path: '/fleet', priority: 0.7, changeFrequency: 'monthly' },
   { path: '/about', priority: 0.5, changeFrequency: 'yearly' },
   { path: '/contact', priority: 0.6, changeFrequency: 'yearly' },
 ];

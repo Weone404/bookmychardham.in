@@ -83,6 +83,7 @@ export const LAST_MODIFIED = {
   '/char-dham-yatra-by-helicopter': '2026-09-02',
   '/private-helicopter-charter': '2026-09-02',
   '/helicopter-flower-dropping': '2026-09-02',
+  '/fleet': '2026-09-03',
   '/about': '2026-09-02',
   '/contact': '2026-09-02',
   '/booking': '2026-09-02',

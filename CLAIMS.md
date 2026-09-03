@@ -87,6 +87,27 @@ sector", which is true of a booking operator. `FLEET_LIST` remains in the data
 file but is rendered nowhere. Restore model names as partner framing once TRUE-02
 establishes what is owned versus booked.
 
+## F. Merged from main, Sep 3 2026 — the /fleet catalogue
+
+Another branch added `/fleet` and `/fleet/[slug]`: a charter aircraft catalogue
+(Avanti 180, Citation CJ3, Learjet 60, Challenger 300, Falcon 50, G650). The
+catalogue itself is **on-model and honest** — these are aircraft TYPES offered
+for charter, described generically, not claimed as owned. Kept.
+
+Fixed on merge:
+| Issue | Action |
+|---|---|
+| Five of six entries used the quarantined VT-HSX helicopter image — wrong aircraft class, invented registration, and a dead path | All images set to `null`; `FleetCard` now renders a typographic panel (category, name, seats) when there is no photo |
+| `Avanti_180.webp` is Piaggio press material — real aircraft **I-PDVO**, photographer's signature bottom-right | Quarantined. Add **I-PDVO** to the never-reuse list. |
+| Two third-party YouTube embeds of unknown provenance (page hero and per-card hover) | Removed |
+| `/fleet/[slug]` answered on ANY slug — unbounded thin pages | `generateStaticParams()` from the shared list; six real slugs only; `notFound()` otherwise |
+| Neither fleet route had metadata — both inherited the default title | `pageMetadata()` on both; detail pages `noindex, follow` until they carry real content |
+| The branch predated the phone fix and would have reintroduced `+91 98765 43210` | Ours kept |
+| It also re-added `public/logo.webp` (the same CHARTER BOOKING mark, re-compressed) and a `public/favicon.ico` | Both dropped; our wordmark and `src/app/favicon.ico` stand |
+
+**Needed to restore fleet imagery:** licensed stock, OEM permission in writing, or
+our own photographs of aircraft we actually charter. Same bar as everything else.
+
 ## E. Media provenance — open
 
 The three hero videos and four AI aircraft images are quarantined, not deleted.
@@ -96,8 +117,8 @@ would then have a legitimate home on a future Hemkund Sahib page), or unknown
 (never returns in any form). The Airbus H160 clip is an OEM's marketing material
 and must not be served from this domain at a public URL under any circumstance.
 
-**Never reuse the registrations VT-HEL, VT-HSX or N707BH anywhere, including
-mockups** — invented registrations can collide with real aircraft on a live
+**Never reuse the registrations VT-HEL, VT-HSX, N707BH or I-PDVO anywhere,
+including mockups** — invented registrations can collide with real aircraft on a live
 registry.
 
 ---
