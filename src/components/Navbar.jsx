@@ -25,6 +25,7 @@ export const Navbar = ({ currentPage: propCurrentPage, onNavigate }) => {
     { id: 'home', label: 'HOME', href: '/' },
     { id: 'chardham', label: 'CHARDHAM & KEDARNATH', href: '/chardham' },
     { id: 'flower-dropping', label: 'FLOWER DROPPING', href: '/flower-dropping' },
+    { id: 'fleet', label: 'FLEET', href: '/fleet' },
     { id: 'charter', label: 'CHARTER SERVICES', href: '/charter' },
     { id: 'about', label: 'ABOUT US', href: '/about' },
     { id: 'contact', label: 'CONTACT', href: '/contact' },
@@ -43,15 +44,15 @@ export const Navbar = ({ currentPage: propCurrentPage, onNavigate }) => {
   };
 
   return (
-    <header className="sticky top-0 z-40 w-full bg-[#E6D5C1]/80 backdrop-blur-md border-b border-[#A67C52]/20 select-none transition-all">
-      <div className="max-w-7xl mx-auto px-3 sm:px-6 md:px-10 lg:px-12 h-16 sm:h-20 flex items-center justify-between gap-2 sm:gap-4">
+    <header className="sticky top-0 z-40 w-full border-b border-[#A67C52]/20 bg-[#E6D5C1]/85 backdrop-blur-md shadow-[0_2px_10px_rgba(40,24,18,0.08)] select-none transition-all">
+      <div className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-2 px-3 sm:h-20 sm:gap-4 sm:px-6 md:px-10 lg:px-12">
         {/* Brand Logo */}
         <div className="min-w-0 flex-shrink-0">
           <BookMyChardhamLogo onClick={() => handleNavClick(navItems[0])} />
         </div>
 
         {/* Desktop Nav Links */}
-        <nav className="hidden lg:flex items-center gap-6 xl:gap-8">
+        <nav className="hidden items-center gap-5 lg:flex xl:gap-7">
           {navItems.map((item) => {
             const isActive = activePage === item.id;
             return (
@@ -59,16 +60,18 @@ export const Navbar = ({ currentPage: propCurrentPage, onNavigate }) => {
                 key={item.id}
                 id={`nav-link-${item.id}`}
                 onClick={() => handleNavClick(item)}
-                className={`text-[11.5px] xl:text-[12.5px] font-bold tracking-[0.14em] uppercase transition-colors cursor-pointer relative py-1 ${
+                className={`relative cursor-pointer py-1 text-[11.5px] font-bold uppercase tracking-[0.14em] transition-all duration-200 xl:text-[12.5px] ${
                   isActive
                     ? 'text-[#6B4E3D]'
                     : 'text-[#A67C52] hover:text-[#6B4E3D]'
                 }`}
               >
                 {item.label}
-                {isActive && (
-                  <span className="absolute bottom-0 left-0 right-0 h-[2px] bg-[#A67C52]" />
-                )}
+                <span
+                  className={`absolute -bottom-1 left-0 h-[2px] bg-[#A67C52] transition-all duration-200 ${
+                    isActive ? 'right-0 opacity-100' : 'right-full opacity-0 group-hover:right-0 group-hover:opacity-100'
+                  }`}
+                />
               </button>
             );
           })}
@@ -79,21 +82,19 @@ export const Navbar = ({ currentPage: propCurrentPage, onNavigate }) => {
           {/* Phone Dispatch Link (Desktop) */}
           <a
             href="tel:+919876543210"
-            className="hidden xl:flex items-center gap-2 px-3 py-1.5 rounded-xs bg-[#A67C52]/10 hover:bg-[#A67C52]/20 border border-[#A67C52]/30 transition-colors text-[#A67C52] hover:text-[#6B4E3D]"
+            className="hidden items-center gap-2 rounded-xs border border-[#A67C52]/30 bg-[#A67C52]/10 px-3 py-1.5 text-[#A67C52] transition-colors hover:bg-[#A67C52]/20 hover:text-[#6B4E3D] xl:flex"
           >
-            <div className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-            <Phone className="w-3.5 h-3.5 text-neutral-400" />
-            <span className="text-[12px] font-bold tracking-wider">
-              +91 98765 43210
-            </span>
+            <div className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse" />
+            <Phone className="h-3.5 w-3.5 text-neutral-400" />
+            <span className="text-[12px] font-bold tracking-wider">+91 98765 43210</span>
           </a>
 
           {/* Login Button (Desktop) */}
           <button
             onClick={() => setLoginModalOpen(true)}
-            className="hidden sm:flex items-center gap-2 px-4 py-2 text-[#A67C52] hover:text-[#6B4E3D] border border-[#A67C52]/30 hover:border-[#A67C52]/50 rounded-xs text-[11.5px] font-bold tracking-[0.14em] uppercase transition-all cursor-pointer"
+            className="hidden items-center gap-2 rounded-xs border border-[#A67C52]/30 px-4 py-2 text-[11.5px] font-bold uppercase tracking-[0.14em] text-[#A67C52] transition-all hover:border-[#A67C52]/50 hover:text-[#6B4E3D] sm:flex"
           >
-            <LogIn className="w-3.5 h-3.5" />
+            <LogIn className="h-3.5 w-3.5" />
             <span>LOGIN</span>
           </button>
 
@@ -101,9 +102,9 @@ export const Navbar = ({ currentPage: propCurrentPage, onNavigate }) => {
           <button
             id="header-book-now-btn"
             onClick={() => handleNavClick({ id: 'booking', href: '/booking' })}
-            className="flex items-center gap-2 bg-[#c8102e] hover:bg-red-700 active:scale-95 text-white px-3 sm:px-5 py-2 rounded-xs text-[10px] sm:text-[11.5px] font-bold tracking-[0.12em] uppercase transition-all shadow-md cursor-pointer border border-red-500/30"
+            className="flex items-center gap-2 rounded-xs border border-red-500/30 bg-[#c8102e] px-3 py-2 text-[10px] font-bold uppercase tracking-[0.12em] text-white shadow-md transition-all hover:bg-red-700 active:scale-95 sm:px-5 sm:text-[11.5px]"
           >
-            <Calendar className="w-3.5 h-3.5" />
+            <Calendar className="h-3.5 w-3.5" />
             <span>BOOK NOW</span>
           </button>
 
@@ -112,9 +113,9 @@ export const Navbar = ({ currentPage: propCurrentPage, onNavigate }) => {
             id="mobile-menu-toggle"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label="Toggle menu"
-            className="lg:hidden p-2 rounded-xs bg-[#A67C52]/10 hover:bg-[#A67C52]/20 border border-[#A67C52]/20 text-[#6B4E3D] transition-colors cursor-pointer"
+            className="cursor-pointer rounded-xs border border-[#A67C52]/20 bg-[#A67C52]/10 p-2 text-[#6B4E3D] transition-colors hover:bg-[#A67C52]/20 lg:hidden"
           >
-            {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+            {mobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
           </button>
         </div>
       </div>
