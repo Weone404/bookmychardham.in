@@ -13,54 +13,54 @@ const aircraftList = [
     videoUrl: 'https://www.youtube.com/embed/Bw1ldiDqAIk',
   },
   {
-    name: 'Cessna Citation CJ3',
-    image: '/images/flystar_himalayan_fleet_1788161946820.jpg',
+    name: 'Cessna Caravan 208B',
+    image: '/fleets/Cessna_Caravan_208B.webp',
     seatCount: 7,
     category: 'Light Jet',
     description:
       'Fast, efficient, and comfortable for executive travel, delivering premium cabin space and quick access to regional destinations.',
-    slug: 'cessna-citation-cj3',
-    videoUrl: 'https://www.youtube.com/embed/Bw1ldiDqAIk',
+    slug: 'cessna-caravan-208b',
+    videoUrl: 'https://www.youtube.com/embed/VtlEOlhMJMg',
   },
   {
-    name: 'Learjet 60',
-    image: '/images/flystar_himalayan_fleet_1788161946820.jpg',
+    name: 'Cessna Citation Mustang',
+    image: '/fleets/Cessna_Citation_Mustang.webp',
     seatCount: 8,
     category: 'Light Jet',
     description:
       'An agile aircraft engineered for time-sensitive schedules, combining speed, range, and refined cabin comfort for business travelers.',
-    slug: 'learjet-60',
-    videoUrl: 'https://www.youtube.com/embed/Bw1ldiDqAIk',
+    slug: 'cessna-citation-mustang',
+    videoUrl: 'https://www.youtube.com/embed/s5MqoLwnGrY',
   },
   {
-    name: 'Challenger 300',
-    image: '/images/flystar_himalayan_fleet_1788161946820.jpg',
+    name: 'Challenger 604',
+    image: '/fleets/Challenger_604.webp',
     seatCount: 9,
     category: 'Medium Jet',
     description:
       'Balanced for comfort and range, perfect for transcontinental routes and high-end corporate charter requirements.',
-    slug: 'challenger-300',
-    videoUrl: 'https://www.youtube.com/embed/Bw1ldiDqAIk',
+    slug: 'challenger-604',
+    videoUrl: 'https://www.youtube.com/embed/NiDwxkQ4ZHc',
   },
   {
-    name: 'Falcon 50',
-    image: '/images/flystar_himalayan_fleet_1788161946820.jpg',
+    name: 'Challenger 605',
+    image: '/fleets/Challenger_605.webp',
     seatCount: 10,
     category: 'Medium Jet',
     description:
       'A proven long-range business jet with a spacious cabin and exceptional flexibility for demanding charter itineraries.',
-    slug: 'falcon-50',
-    videoUrl: 'https://www.youtube.com/embed/Bw1ldiDqAIk',
+    slug: 'challenger-605',
+    videoUrl: 'https://www.youtube.com/embed/s_p4qLSUC2E',
   },
   {
-    name: 'Gulfstream G650',
-    image: '/images/flystar_himalayan_fleet_1788161946820.jpg',
+    name: 'Citation 525 A',
+    image: '/fleets/Citation_525_A.webp',
     seatCount: 16,
     category: 'Heavy Jet',
     description:
       'Flagship intercontinental charter capability with an ultra-premium cabin profile designed for executive and VIP travel excellence.',
-    slug: 'gulfstream-g650',
-    videoUrl: 'https://www.youtube.com/embed/Bw1ldiDqAIk',
+    slug: 'citation-525-a',
+    videoUrl: 'https://www.youtube.com/embed/_uALZI5qKsc',
   },
 ];
 
@@ -116,7 +116,7 @@ export default function FleetPage() {
             </p>
           </div>
 
-          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {aircraftList.map((aircraft) => (
               <FleetCard key={aircraft.slug} {...aircraft} />
             ))}
