@@ -2,7 +2,6 @@
 
 import React from 'react';
 import { useRouter } from 'next/navigation';
-import { BackgroundVideo } from '../components/BackgroundVideo';
 import { HomePage } from '../components/pages/HomePage';
 
 export default function Client() {
@@ -22,7 +21,6 @@ export default function Client() {
 
   return (
     <div className="relative w-full">
-      <BackgroundVideo initialVideoUrl="/aircraft-videos.mp4" posterUrl="/airplane-sunset-bg.jpg" />
       <HomePage
         onNavigate={handleNavigate}
         onSelectServiceForBooking={handleSelectServiceForBooking}

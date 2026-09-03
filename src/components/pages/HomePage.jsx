@@ -103,7 +103,7 @@ export const HomePage = ({
               <HoverLiftCard className="bg-[#D9C7B8] border border-[#A67C52]/20 hover:border-[#A67C52]/30 transition-all duration-300 group flex flex-col justify-between relative overflow-hidden">
                 <div className="relative h-64 sm:h-80 w-full overflow-hidden">
                   <img
-                    src="/images/kedarnath-helicopter-yatra.jpg"
+                    src="/images/kedarnath-temple-helipad.jpg"
                     alt="Kedarnath Helicopter Tour"
                     className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 filter brightness-90 group-hover:brightness-100"
                   />

@@ -33,7 +33,7 @@ export const Footer = ({ onNavigate }) => {
             <div className="pt-2 flex flex-wrap items-center gap-3 text-[11px] text-[#6B4E3D]">
               <span className="flex items-center gap-1.5 px-2.5 py-1 bg-[#D9C7B8]/60 border border-[#A67C52]/30 rounded-xs uppercase tracking-wider font-bold">
                 <Shield className="w-3.5 h-3.5 text-[#A67C52]" />
-                DGCA NSOP Certified
+                Flown by DGCA NSOP-certified operators
               </span>
               <span className="px-2.5 py-1 bg-[#D9C7B8]/60 border border-[#A67C52]/30 rounded-xs uppercase tracking-wider font-bold text-[#6B4E3D]">
                 UCADA Empanelled

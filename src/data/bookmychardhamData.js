@@ -32,7 +32,7 @@ export const CHARDHAM_PACKAGES = [
     startingPrice: '₹95,000 / seat',
     pricePerPerson: 95000,
     charterPrice: 480000,
-    image: '/images/kedarnath-helicopter-yatra.jpg',
+    image: '/images/kedarnath-temple-helipad.jpg',
     badge: 'MOST POPULAR',
     serviceType: 'kedarnath-sameday',
     highlights: [
@@ -86,7 +86,7 @@ export const CHARDHAM_PACKAGES = [
     startingPrice: '₹2,10,000 / person',
     pricePerPerson: 210000,
     charterPrice: 1250000,
-    image: '/images/himalayan-helicopter-fleet.jpg',
+    image: '/images/himalaya-peaks.jpg',
     badge: 'SIGNATURE PILGRIMAGE',
     serviceType: 'chardham-4dham',
     highlights: [
@@ -148,7 +148,7 @@ export const CHARDHAM_PACKAGES = [
     startingPrice: '₹1,35,000 / person',
     pricePerPerson: 135000,
     charterPrice: 680000,
-    image: '/images/kedarnath-helicopter-yatra.jpg',
+    image: '/images/kedarnath-temple-helipad.jpg',
     badge: 'HIGH DEMAND',
     serviceType: 'dodham-kedarnath-badrinath',
     highlights: [
@@ -195,7 +195,7 @@ export const CHARDHAM_PACKAGES = [
     startingPrice: '₹85,000 / seat',
     pricePerPerson: 85000,
     charterPrice: 420000,
-    image: '/images/himalayan-helicopter-fleet.jpg',
+    image: '/images/himalaya-peaks.jpg',
     serviceType: 'badrinath-sameday',
     highlights: [
       'Quickest way to visit Badrinath Temple from Dehradun',
@@ -284,7 +284,7 @@ export const CHARTER_SERVICES = [
     id: 'vip-transport',
     title: 'VIP & Dignitary Transport',
     subtitle: 'Discreet, ultra-secure helicopter charters for HNIs, celebrities & statesmen',
-    image: '/images/himalayan-helicopter-fleet.jpg',
+    image: '/images/himalaya-peaks.jpg',
     description: 'Complete privacy and highest security protocol with dedicated aviation marshals, direct aircraft boarding, and VIP lounge hospitality across major private airports and bespoke landing grounds.',
     features: [
       'Absolute privacy and non-disclosure discretion',
@@ -312,7 +312,7 @@ export const CHARTER_SERVICES = [
     id: 'emergency-air-ambulance',
     title: 'Emergency Medical Evacuation (HEMS)',
     subtitle: '24/7 ICU-equipped air ambulance with rapid dispatch in under 45 minutes',
-    image: '/images/kedarnath-helicopter-yatra.jpg',
+    image: '/images/kedarnath-temple-helipad.jpg',
     description: 'Life-saving critical care transport from remote Himalayan areas, highway accidents, and tier-2 cities directly to premier quaternary hospitals in Dehradun, Delhi NCR, and Chandigarh.',
     features: [
       'Full onboard ICU with ventilator, defibrillator & multipara monitors',
@@ -336,7 +336,7 @@ export const FLEET_LIST = [
     altitudeCeiling: '23,000 ft (World Record Holder)',
     engine: 'Safran Arriel 2D with Dual FADEC',
     description: 'The undisputed king of Himalayan flying. Holds the world altitude landing record on Mount Everest. Exceptional hot-and-high performance makes it our primary choice for Kedarnath & Chardham.',
-    image: '/images/kedarnath-helicopter-yatra.jpg',
+    image: '/images/kedarnath-temple-helipad.jpg',
     bestFor: ['Kedarnath Shuttles', 'Chardham 4 Dham', 'High-Altitude Rescue'],
     features: [
       'Unmatched power-to-weight ratio in thin mountain air',
@@ -396,7 +396,7 @@ export const FLEET_LIST = [
     altitudeCeiling: '20,000 ft',
     engine: 'Twin Safran Arriel 2E Turbines',
     description: 'Twin-engine redundancy for high-security VIP movements and round-the-clock emergency medical evacuation. Equipped with full night-flying capabilities and certified instrument flight rules (IFR).',
-    image: '/images/himalayan-helicopter-fleet.jpg',
+    image: '/images/himalaya-peaks.jpg',
     bestFor: ['Air Ambulance (ICU)', 'Twin-Engine VIP Charter', 'Long-Distance Routes'],
     features: [
       'Twin-engine reliability with Category A performance',

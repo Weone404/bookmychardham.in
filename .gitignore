@@ -7,3 +7,8 @@ coverage/
 .env*
 !.env.example
 .next/
+
+# scratch: safe to delete
+_to_delete/
+.next/
+_bmc*.tgz

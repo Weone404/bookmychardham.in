@@ -48,7 +48,7 @@ export const LoginModal = ({ isOpen, onClose }) => {
         <div className="flex items-center justify-between p-6 border-b border-[#A67C52]/20">
           <div className="flex items-center gap-3">
             <img
-              src="/logo.webp"
+              src="/logo-wordmark.jpg"
               alt="BookMyChardham Logo"
               className="w-8 h-8 object-contain"
             />

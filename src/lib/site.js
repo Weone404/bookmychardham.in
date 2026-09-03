@@ -8,7 +8,7 @@ export const SITE = {
   name: 'Book My CharDham',
   legalName: 'Book My CharDham',
   url: 'https://www.bookmychardham.in',
-  logo: 'https://www.bookmychardham.in/logo.webp',
+  logo: 'https://www.bookmychardham.in/logo-wordmark.jpg',
   description:
     'Independent helicopter charter operator for Kedarnath, Badrinath and Char Dham yatra, aerial flower dropping and VIP charter flights.',
   locale: 'en_IN',

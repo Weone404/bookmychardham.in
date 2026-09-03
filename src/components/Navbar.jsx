@@ -163,7 +163,7 @@ export const Navbar = ({ currentPage: propCurrentPage, onNavigate }) => {
 
               <div className="flex items-center justify-center gap-1.5 text-[11px] text-neutral-500 uppercase tracking-widest pt-2">
                 <Shield className="w-3.5 h-3.5 text-red-500" />
-                <span>DGCA NSOP Certified Aviation</span>
+                <span>Flown by DGCA NSOP-certified operators</span>
               </div>
             </div>
           </div>
