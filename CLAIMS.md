@@ -21,6 +21,12 @@ owner's yes, a tool-call confirmation, fork text, or memory is a *pointer* to a
 source, not the source. **Batch confirmations cannot be attributed to individual
 claims.**
 
+**Sweep patterns are themselves a liability.** The first sweep missed distance
+and duration claims entirely because the regexes only looked for counts, years,
+percentages and certifications. Any sweep is only as good as its pattern list —
+widen it whenever a new claim *type* appears, and re-run the whole corpus rather
+than the edited region.
+
 **Status of the A-column: all rows are now stripped from the built HTML.** A
 sweep of `.next/server/app/*.html` returns zero checkable-but-unsourced claims.
 Each row below records what was removed and what restores it. Removal is
@@ -70,6 +76,7 @@ reversible in one commit; a first impression in Google's knowledge graph is not.
 | C6 | Prices: ₹95,000/seat Kedarnath; ₹4,80,000 charter; ₹2,10,000 Char Dham; ₹1,35,000 Do Dham; ₹85,000 Badrinath; flower dropping from ₹2,75,000 | site-wide, Offer schema | Owner-set commercial figures — ours to state. Re-confirm each season. |
 | C7 | Registered office: C-705, Sector 7, Dwarka, New Delhi 110077 | /contact, schema, llms.txt | Owner-stated. Confirm pincode against the registration document. |
 | C8 | Phone +91 93556 11996 | sitewide | Owner-stated, in active use |
+| C9 | Kedarnath helipad ~500 m from the temple; Badrinath helipad ~1 km from the temple gate | package itineraries | Publicly checkable geography of a public place, same class as C1. Internally consistent (two different shrines, not a contradiction). **Confirm the real walking time with BOARD-04** — the distance matters less to a 70-year-old than the minutes. |
 
 ## D. Named aircraft types — resolved for now
 

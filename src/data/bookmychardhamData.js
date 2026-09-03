@@ -77,7 +77,7 @@ export const CHARDHAM_PACKAGES = [
       {
         dayOrTime: '12:30 PM',
         title: 'Return Flight to Dehradun',
-        description: 'Board return flight with breathtaking Himalayan aerial vistas, landing at Sahastradhara by 01:30 PM.',
+        description: 'Board the return flight down the Mandakini valley, landing at Sahastradhara by 01:30 PM.',
       },
     ],
   },
@@ -246,7 +246,7 @@ export const FLOWER_DROPPING_PACKAGES = [
     sorties: '1 - 3 Aerial Passes',
     price: 'Starting from ₹2,75,000',
     occasions: ['Grand Weddings', 'Baraat Procession', 'Varmala Celebration', 'Ring Ceremony'],
-    description: 'Transform your special moment into an unforgettable fairy tale as our helicopter hovers gently, showering fragrant fresh rose and marigold petals precisely over the celebration stage.',
+    description: 'The aircraft holds a steady hover over the stage while fresh rose and marigold petals are released, timed to the moment you choose.',
   },
   {
     id: 'flower-temple-inauguration',
@@ -514,7 +514,7 @@ export const CHARDHAM_ITINERARY = [
     shrine: 'Kedarnath Dham',
     altitude: '11,755 FT',
     title: 'Harsil to Sersi & Shri Kedarnath Ji Jyotirlinga Darshan',
-    details: 'Fly to Sersi helipad base, then board the high-frequency mountain shuttle directly to Kedarnath top helipad (just 500m from temple). Our ground coordinator escorts you through the VIP entry for the divine Jalabhishek of Lord Shiva. Enjoy breathtaking views of the Kedarnath peak.',
+    details: 'Fly to Sersi helipad base, then board the high-frequency mountain shuttle directly to Kedarnath top helipad (just 500m from temple). Our ground coordinator escorts you through the VIP entry for the Jalabhishek.',
     stay: 'Premium Himalayan Retreat, Sersi / Guptkashi',
     darshan: 'Special VIP Rudrabhishek Darshan Pass',
   },

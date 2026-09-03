@@ -104,7 +104,7 @@ export const HomePage = ({
                 <div className="relative h-64 sm:h-80 w-full overflow-hidden">
                   <img
                     src="/images/kedarnath-temple-helipad.jpg"
-                    alt="Kedarnath Helicopter Tour"
+                    alt="Kedarnath temple and the helipad area, Rudraprayag district"
                     className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 filter brightness-90 group-hover:brightness-100"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#D9C7B8] via-transparent to-[#F3E9D0]/30" />
@@ -328,7 +328,7 @@ export const HomePage = ({
               <HoverLiftCard className="relative border border-[#A67C52]/20 bg-[#D9C7B8] p-2">
                 <img
                   src="/images/himalaya-peaks.jpg"
-                  alt="BookMyChardham Executive Helicopter"
+                  alt="Himalayan peaks above the Kedarnath sector"
                   className="w-full h-80 sm:h-96 object-cover object-center filter brightness-95"
                 />
                 <div className="absolute bottom-6 left-6 right-6 bg-[#F3E9D0]/85 backdrop-blur-md p-5 border border-[#A67C52]/20">

@@ -45,7 +45,7 @@ export const FlowerDroppingPage = ({
     {
       title: 'Royal Indian Weddings',
       tag: 'MOST POPULAR',
-      desc: 'Make the Varmala, Baraat entry, or Pheras unforgettable as fresh rose petals shower from the sky over the bride, groom, and wedding guests.',
+      desc: 'Petals released over the Varmala, the Baraat entry or the Pheras — you pick the moment, and we brief the pilot on the cue.',
     },
     {
       title: 'Temple Pran Pratishtha & Mahotsavs',
