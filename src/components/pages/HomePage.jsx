@@ -205,10 +205,10 @@ export const HomePage = ({
                   Corporate &amp; VIP Charter
                 </h3>
                 <p className="text-[#A67C52] text-xs sm:text-sm leading-relaxed mb-6">
-                  Direct point-to-point rotary wing transportation for executives, site audits, and dignitaries. Skip congested terminals with seamless tarmac boarding across India.
+                  Point-to-point rotary transport for executives, site visits and dignitaries. Board at the apron instead of queueing through a terminal, from airports across India.
                 </p>
                 <div className="pt-4 border-t border-[#A67C52]/20 flex items-center justify-between">
-                  <span className="text-xs text-[#A67C52]">Bell 407 GX &amp; Airbus Fleet</span>
+                  <span className="text-xs text-[#A67C52]">Single-engine &amp; twin types</span>
                   <motion.button
                     whileHover={safeVariants(hoverScale).whileHover || {}}
                     whileTap={safeVariants(hoverScale).whileTap || {}}
@@ -275,7 +275,7 @@ export const HomePage = ({
                 WHY BOOKMYCHARDHAM LEADS INDIAN ROTARY AVIATION
               </h2>
               <p className="text-[#A67C52] text-sm leading-relaxed">
-                Operating in the high Himalayas demands exceptional aeronautical precision. BookMyChardham combines elite ex-defense aviators, OEM-maintained aircraft, and seamless VIP hospitality for devotees and corporate leaders alike.
+                Flying the high Himalayas is unforgiving work. Book My CharDham books sectors with operators certified for it, plans around the weather rather than against it, and keeps one accountable desk between you and the aircraft.
               </p>
 
               <div className="space-y-4 pt-2">
@@ -285,7 +285,7 @@ export const HomePage = ({
                   </div>
                   <div>
                     <h4 className="text-sm font-bold uppercase text-[#6B4E3D] tracking-wider">
-                      Ex-Defense High-Altitude Captains
+                      High-Altitude Rated Captains
                     </h4>
                     <p className="text-xs text-[#A67C52] mt-1 leading-relaxed">
                       Our command pilots average 4,000+ flying hours in extreme Himalayan terrain, mountain microclimates, and alpine helipad landings.
@@ -327,7 +327,7 @@ export const HomePage = ({
             <FadeInOnScroll delay={0.2} className="lg:col-span-6 flex flex-col space-y-6">
               <HoverLiftCard className="relative border border-[#A67C52]/20 bg-[#D9C7B8] p-2">
                 <img
-                  src="/images/private-helicopter-charter.jpg"
+                  src="/images/himalaya-peaks.jpg"
                   alt="BookMyChardham Executive Helicopter"
                   className="w-full h-80 sm:h-96 object-cover object-center filter brightness-95"
                 />
@@ -338,7 +338,7 @@ export const HomePage = ({
                         FLAGSHIP FLEET
                       </span>
                       <span className="text-lg font-bold text-[#6B4E3D] uppercase">
-                        Airbus H125 &amp; Bell 407 GX
+                        Aircraft type confirmed per sector
                       </span>
                     </div>
                     <motion.button
@@ -444,7 +444,7 @@ export const HomePage = ({
           <div className="bg-[#E6D5C1] border border-[#A67C52]/20 p-8 sm:p-12 lg:p-16 flex flex-col lg:flex-row items-center justify-between gap-8 relative overflow-hidden">
             <div className="max-w-2xl text-center lg:text-left">
               <span className="text-[11px] font-bold tracking-[0.24em] text-[#A67C52] uppercase block mb-2">
-                ELEVATE YOUR JOURNEY
+                PLAN THE YATRA
               </span>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black uppercase text-[#6B4E3D] tracking-tight leading-tight">
                 READY TO TAKE FLIGHT?

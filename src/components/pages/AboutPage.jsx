@@ -15,24 +15,6 @@ import {
 import { TRUST_STATS } from '../../data/bookmychardhamData';
 
 export const AboutPage = ({ onNavigate }) => {
-  const leadership = [
-    {
-      name: 'Capt. R.K. Bhardwaj (Retd.)',
-      role: 'Chief of Flight Operations & High-Altitude Specialist',
-      credentials: 'Ex-Indian Air Force Wing Commander • 6,500+ mountain rotary hours in Siachen & Garhwal Himalayas.',
-    },
-    {
-      name: 'Er. S. Murthy',
-      role: 'Head of Aircraft Maintenance Engineering (AME)',
-      credentials: 'DGCA Certified Master Engineer • 20+ years maintaining Safran & Rolls-Royce turbine engines.',
-    },
-    {
-      name: 'Vikramaditya Rawat',
-      role: 'Director of Pilgrimage & Helipad Operations',
-      credentials: '14+ years pioneering Chardham helipad infrastructure and BKTC coordination across Uttarakhand.',
-    },
-  ];
-
   const values = [
     {
       title: 'Safety as a Sacred Mandate',
@@ -62,7 +44,7 @@ export const AboutPage = ({ onNavigate }) => {
               ABOUT BOOKMYCHARDHAM AVIATION
             </span>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black uppercase text-[#6B4E3D] tracking-tight leading-none font-sans">
-              15 YEARS OF HIMALAYAN ROTARY EXCELLENCE
+              FLYING THE CHAR DHAM CIRCUIT
             </h1>
             <p className="text-[#6B4E3D] text-sm sm:text-base mt-4 leading-relaxed max-w-2xl font-normal">
               Book My CharDham arranges chartered flights for the Char Dham and Kedarnath yatra, and private charter across India. Every sector we sell is flown by operators holding a DGCA Non-Scheduled Operator Permit &mdash; the licence Indian law requires of anyone carrying you commercially.
@@ -84,10 +66,10 @@ export const AboutPage = ({ onNavigate }) => {
                 PIONEERING HIGH-ALTITUDE AVIATION IN INDIA
               </h2>
               <p className="text-[#A67C52] text-sm leading-relaxed">
-                Book My CharDham commenced flight operations over a decade and a half ago with a singular objective: to master high-altitude mountain flight in one of the most demanding aeronautical environments on Earth — the Indian Himalayas.
+                Book My CharDham arranges chartered flights into some of the most demanding flying country in the world: the Garhwal Himalaya, where thin air limits payload, valleys close without warning, and the margin for a casual decision is nil.
               </p>
               <p className="text-[#A67C52] text-sm leading-relaxed">
-                Over the years, we have flown more than 45,000 pilgrims safely to Kedarnath, Badrinath, and the Chardham circuit, orchestrated hundreds of royal wedding aerial flower showers, and provided rapid emergency airlift across north and western India.
+                We book three kinds of flying: Char Dham and Kedarnath yatra by helicopter, aerial flower dropping for weddings and temple events, and private charter from Indian airports. Every sector is flown by an operator holding a DGCA Non-Scheduled Operator Permit.
               </p>
 
               {/* Certifications Badges */}
@@ -105,20 +87,20 @@ export const AboutPage = ({ onNavigate }) => {
                 <div className="p-4 bg-[#D9C7B8] border border-[#A67C52]/20">
                   <Award className="w-5 h-5 text-[#A67C52] mb-2" />
                   <span className="text-xs font-bold uppercase text-[#6B4E3D] block">
-                    UCADA Empanelled
+                    One Accountable Desk
                   </span>
                   <span className="text-[11px] text-[#A67C52] mt-0.5 block">
-                    Official Uttarakhand Civil Aviation operational authorization
+                    One specialist between you and the operator &mdash; no agent chains
                   </span>
                 </div>
 
                 <div className="p-4 bg-[#D9C7B8] border border-[#A67C52]/20">
                   <CheckCircle2 className="w-5 h-5 text-[#A67C52] mb-2" />
                   <span className="text-xs font-bold uppercase text-[#6B4E3D] block">
-                    ISO 9001:2015
+                    Weather Comes First
                   </span>
                   <span className="text-[11px] text-[#A67C52] mt-0.5 block">
-                    Certified aviation quality and safety management systems
+                    The pilot&apos;s call on safety is final, and we plan around it
                   </span>
                 </div>
               </div>
@@ -151,40 +133,11 @@ export const AboutPage = ({ onNavigate }) => {
           Restore only with real photographs of aircraft we operate or charter,
           and wording that matches CLAIMS.md. */}
 
-      {/* 4. PILOT CREDENTIALS & FLIGHT TEAM */}
-      <section className="py-20 bg-[#E6D5C1] border-b border-[#A67C52]/20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-10 lg:px-12">
-          <div className="mb-12">
-            <span className="text-[11px] font-bold tracking-[0.24em] text-[#A67C52] uppercase block mb-2">
-              COMMAND &amp; LEADERSHIP
-            </span>
-            <h2 className="text-3xl sm:text-4xl font-black uppercase text-[#6B4E3D] tracking-tight">
-              PILOT CREDENTIALS &amp; FLIGHT OPS DESK
-            </h2>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
-            {leadership.map((leader) => (
-              <div
-                key={leader.name}
-                className="bg-[#D9C7B8] border border-[#A67C52]/20 p-6 sm:p-8 flex flex-col justify-between"
-              >
-                <div>
-                  <h3 className="text-lg font-bold uppercase text-[#6B4E3D]">
-                    {leader.name}
-                  </h3>
-                  <span className="text-xs font-semibold text-[#A67C52] uppercase tracking-wider block mt-1 mb-4">
-                    {leader.role}
-                  </span>
-                  <p className="text-xs text-[#A67C52] leading-relaxed border-t border-[#A67C52]/20 pt-4">
-                    {leader.credentials}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* Leadership section removed Sep 2026 (CLAIMS.md A1-A3). It named three
+          individuals with military rank, licence class and flight-hour figures.
+          Restore only with employment records AND each person’s written consent
+          to publish their service history. Real, this is the strongest E-E-A-T
+          asset on the site; unverified, it is the most serious claim on it. */}
 
       {/* 5. MISSION & VALUES */}
       <section className="py-20 bg-[#F3E9D0]">

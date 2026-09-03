@@ -13,7 +13,7 @@ import {
   Star,
   CheckCircle2
 } from 'lucide-react';
-import { CHARTER_SERVICES, FLEET_LIST } from '../../data/bookmychardhamData';
+import { CHARTER_SERVICES } from '../../data/bookmychardhamData';
 
 export const CharterPage = ({
   onNavigate,
@@ -188,64 +188,10 @@ export const CharterPage = ({
         </div>
       </section>
 
-      {/* 4. FLEET OVERVIEW FOR CHARTERS */}
-      <section className="py-20 bg-[#F3E9D0] border-b border-[#A67C52]/20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-10 lg:px-12">
-          <div className="mb-12">
-            <span className="text-[11px] font-bold tracking-[0.24em] text-[#A67C52] uppercase block mb-2">
-              ROTORCRAFT ENGINEERING
-            </span>
-            <h2 className="text-3xl sm:text-4xl font-black uppercase text-[#6B4E3D] tracking-tight">
-              AIRCRAFT DEPLOYED FOR CHARTER MISSIONS
-            </h2>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {FLEET_LIST.map((craft) => (
-              <div
-                key={craft.id}
-                className="bg-[#D9C7B8] border border-[#A67C52]/20 p-6 flex flex-col justify-between"
-              >
-                <div>
-                  <span className="text-[10px] font-bold text-[#A67C52] uppercase tracking-widest block mb-1">
-                    {craft.manufacturer}
-                  </span>
-                  <h3 className="text-base font-bold uppercase text-[#6B4E3D] mb-2">
-                    {craft.name}
-                  </h3>
-                  <div className="space-y-1.5 text-xs text-[#A67C52] border-t border-[#A67C52]/20 pt-3">
-                    <div className="flex justify-between">
-                      <span>Capacity:</span>
-                      <span className="text-[#6B4E3D] font-semibold">{craft.capacity}</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span>Cruise Speed:</span>
-                      <span className="text-[#6B4E3D] font-semibold">{craft.speed}</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span>Ceiling:</span>
-                      <span className="text-[#6B4E3D] font-semibold">{craft.altitudeCeiling}</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="pt-4 mt-4 border-t border-[#A67C52]/20">
-                  <span className="text-[10px] text-[#A67C52] uppercase tracking-widest block mb-1">
-                    BEST FOR:
-                  </span>
-                  <div className="flex flex-wrap gap-1">
-                    {craft.bestFor.map((b, i) => (
-                      <span key={i} className="text-[10px] bg-[#A67C52]/10 px-2 py-0.5 text-[#6B4E3D]">
-                        {b}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* Fleet section removed Sep 2026 (CLAIMS.md A6, §D). It presented named
+          aircraft types as our own deployed fleet. Restore as partner framing
+          once TRUE-02 establishes what we own versus what we book, and only
+          with photographs of aircraft we actually fly. */}
     </div>
   );
 };

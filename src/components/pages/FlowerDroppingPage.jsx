@@ -79,7 +79,7 @@ export const FlowerDroppingPage = ({
                 AERIAL FLOWER DROPPING CEREMONIES
               </h1>
               <p className="text-[#6B4E3D] text-sm sm:text-base mt-4 leading-relaxed max-w-2xl font-normal">
-                Elevate your wedding, temple Pran Pratishtha, or monumental celebration into an unforgettable spectacle with thousands of fresh rose petals showered gently from our Airbus and Bell helicopters.
+                Thousands of fresh rose petals, released over your wedding, Pran Pratishtha or public celebration from a helicopter holding a steady hover. Booked 15 to 21 days ahead, because the NOCs take that long.
               </p>
 
               <div className="flex flex-wrap items-center gap-4 mt-8">

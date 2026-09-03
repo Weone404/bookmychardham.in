@@ -1,23 +1,28 @@
+/**
+ * Every figure here must be true and checkable. The previous four stats
+ * (15+ years, 100% safety record, 45,000+ pilgrims, 12 helicopters) are
+ * CLAIMS.md rows A6-A9 and are not published until sourced.
+ */
 export const TRUST_STATS = [
   {
-    value: '15+ Years',
-    label: 'Aviation Heritage',
-    detail: 'Over 15 years of uninterrupted high-altitude mountain operations in the Himalayas.',
+    value: '11,755 ft',
+    label: 'Kedarnath Altitude',
+    detail: 'Thin air caps payload, so every passenger is weighed and luggage is limited to 5 kg.',
   },
   {
-    value: '100%',
-    label: 'Safety Record',
-    detail: 'DGCA-certified NSOP standards with ex-defense aviators and strict dual-engine protocols.',
+    value: 'DGCA NSOP',
+    label: 'Who Flies You',
+    detail: 'Every sector is flown by an operator holding a Non-Scheduled Operator Permit.',
   },
   {
-    value: '45,000+',
-    label: 'Pilgrims Flown',
-    detail: 'Blessed devotees assisted with priority VIP Darshan at Kedarnath & Badrinath.',
+    value: 'May–Jun · Sep–Oct',
+    label: 'When It Flies',
+    detail: 'Kapat closes November to April. Nothing flies in winter, whatever anyone sells you.',
   },
   {
-    value: '12 Helicopters',
-    label: 'Specialized Fleet',
-    detail: 'Airbus H125, Bell 407 GX, and Airbus H130/H145 maintained to OEM standards.',
+    value: 'Pilot Decides',
+    label: 'Weather Policy',
+    detail: 'A booked seat is not a guaranteed departure. Plan a spare day into the trip.',
   },
 ];
 
@@ -152,7 +157,7 @@ export const CHARDHAM_PACKAGES = [
     badge: 'HIGH DEMAND',
     serviceType: 'dodham-kedarnath-badrinath',
     highlights: [
-      'Cover both Kedarnath & Badrinath in a single seamless day',
+      'Cover both Kedarnath and Badrinath in a single day',
       'VIP Priority Darshan at both shrines with dedicated marshals',
       'All local vehicular transfers & helipad shuttles included',
       'Ideal for senior citizens and busy professionals',
@@ -251,7 +256,7 @@ export const FLOWER_DROPPING_PACKAGES = [
     sorties: '2 - 5 Aerial Passes',
     price: 'Starting from ₹3,50,000',
     occasions: ['Pran Pratishtha', 'Temple Inaugurations', 'Shobha Yatras', 'Kumbh & Mahasatsang'],
-    description: 'Elevate religious sanctity with grand aerial pushp varsha over temple spires and holy processions, conducted with strict adherence to DGCA safety altitudes.',
+    description: 'Aerial pushp varsha over temple spires and processions, flown at the DGCA-mandated safety altitude for the venue.',
   },
   {
     id: 'flower-vip-rally-event',
@@ -270,7 +275,7 @@ export const CHARTER_SERVICES = [
     id: 'corporate-charter',
     title: 'Corporate Helicopter Charter',
     subtitle: 'Point-to-point business aviation avoiding airport congestion and road delays',
-    image: '/images/private-helicopter-charter.jpg',
+    image: '/images/himalaya-peaks.jpg',
     description: 'Empower your executive leadership with on-demand helicopter flights directly between factory sites, remote industrial plants, state capitals, and city helipads. Save valuable hours with flexible flight itineraries.',
     features: [
       'Direct helipad-to-helipad connectivity across India',
@@ -356,7 +361,7 @@ export const FLEET_LIST = [
     altitudeCeiling: '20,000 ft',
     engine: 'Rolls-Royce 250-C47B Turbine',
     description: 'The standard of luxury in executive rotary-wing travel. Features a spacious 5-place club-seating aft cabin with rich leather, whisper-quiet cabin acoustics, and Garmin G1000H glass cockpit.',
-    image: '/images/private-helicopter-charter.jpg',
+    image: '/images/himalaya-peaks.jpg',
     bestFor: ['Corporate Charters', 'VIP Dignitaries', 'Executive Travel'],
     features: [
       'Garmin G1000H integrated glass avionics suite',

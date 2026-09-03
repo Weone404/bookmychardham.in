@@ -366,7 +366,7 @@ export const BookingPage = ({
                       </div>
                       <div className="text-[11px] text-neutral-400 mt-2 flex items-center justify-between">
                         <span>Total Passenger Payload: <strong className="text-white font-mono">{totalPassengerWeight} kg</strong></span>
-                        <span className="text-[10px] text-emerald-400">✓ Within Airbus H125 Certified Threshold</span>
+                        <span className="text-[10px] text-emerald-400">✓ Within the sector payload limit</span>
                       </div>
                     </div>
                   </div>
@@ -499,7 +499,7 @@ export const BookingPage = ({
                     </div>
 
                     <div className="flex justify-between">
-                      <span>Airbus H125 Fuel &amp; ATC:</span>
+                      <span>Fuel &amp; ATC:</span>
                       <span className="text-emerald-400 font-semibold">Included</span>
                     </div>
 
@@ -533,7 +533,7 @@ export const BookingPage = ({
                   <div className="bg-[#181818] p-4 border border-white/10 space-y-2 text-[11px] text-neutral-300">
                     <div className="flex items-center gap-2">
                       <ShieldCheck className="w-4 h-4 text-[#c8102e] shrink-0" />
-                      <span>100% DGCA Compliant Safety Operations</span>
+                      <span>Flown by DGCA NSOP-certified operators</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <Clock className="w-4 h-4 text-emerald-400 shrink-0" />

@@ -35,12 +35,6 @@ export const Footer = ({ onNavigate }) => {
                 <Shield className="w-3.5 h-3.5 text-[#A67C52]" />
                 Flown by DGCA NSOP-certified operators
               </span>
-              <span className="px-2.5 py-1 bg-[#D9C7B8]/60 border border-[#A67C52]/30 rounded-xs uppercase tracking-wider font-bold text-[#6B4E3D]">
-                UCADA Empanelled
-              </span>
-              <span className="px-2.5 py-1 bg-[#D9C7B8]/60 border border-[#A67C52]/30 rounded-xs uppercase tracking-wider font-bold text-[#6B4E3D]">
-                ISO 9001:2015
-              </span>
             </div>
           </div>
 
@@ -108,7 +102,7 @@ export const Footer = ({ onNavigate }) => {
               onClick={() => handleNav('about')}
               className="text-left text-[#A67C52] hover:text-[#6B4E3D] transition-colors cursor-pointer py-0.5"
             >
-              Airbus H125 / Bell 407 Fleet
+              Single-engine and twin types, per sector
             </button>
             <button
               onClick={() => handleNav('about')}

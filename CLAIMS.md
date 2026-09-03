@@ -11,25 +11,38 @@ fork is presumed unverified even where a figure was separately asserted.
 **Status:** `unverified` · `verified` · `false`
 **Action:** `keep` · `reword` · `remove` · `blocked`
 
-Last swept: 2026-09-02 · Interview IDs refer to the ops interview sheet.
+Last swept: 2026-09-02 (post-execution) · Interview IDs refer to the ops interview sheet.
+
+**Sources are asymmetric by claim type.** Owner-stated facts the owner uniquely
+knows (prices, NAP, phone, business model) are sourced by owner assertion.
+Externally checkable claims (certifications, empanelments, fleet counts, service
+records of named persons, client/event counts) require dated documents — an
+owner's yes, a tool-call confirmation, fork text, or memory is a *pointer* to a
+source, not the source. **Batch confirmations cannot be attributed to individual
+claims.**
+
+**Status of the A-column: all rows are now stripped from the built HTML.** A
+sweep of `.next/server/app/*.html` returns zero checkable-but-unsourced claims.
+Each row below records what was removed and what restores it. Removal is
+reversible in one commit; a first impression in Google's knowledge graph is not.
 
 ---
 
-## A. Blockers — must not ship as written
+## A. Blockers — stripped from the build, restore only on evidence
 
 | # | Claim | Where | Status | Action | Source needed | Q |
 |---|---|---|---|---|---|---|
-| A1 | **"Capt. R.K. Bhardwaj (Retd.)" — Ex-IAF Wing Commander, 6,500+ mountain rotary hours in Siachen & Garhwal** | /about | unverified | blocked | Employment record + service record. A named officer with a rank and an hours figure is the most serious claim on the site: real, it is the strongest E-E-A-T asset here; invented, it fabricates a person and misstates military service. | TRUE-04 |
-| A2 | **"Er. S. Murthy" — DGCA Certified Master Engineer, 20+ years on Safran & Rolls-Royce turbines** | /about | unverified | blocked | Employment record + AME licence number | TRUE-04 |
-| A3 | **"Vikramaditya Rawat" — 14+ years Chardham helipad infrastructure, BKTC coordination** | /about | unverified | blocked | Employment record | TRUE-04 |
-| A4 | **"UCADA Empanelled"** | Footer (sitewide), /about | unverified | blocked | UCADA empanelment letter or listing. A government empanelment claim is one phone call to falsify. | TRUE-03 |
-| A5 | **"ISO 9001:2015"** | Footer (sitewide), /about | unverified | blocked | Certificate number + issuing body + expiry | TRUE-03 |
-| A6 | **"12 Helicopters" / "Specialized Fleet"** | / | unverified | reword or remove | Registration certificates, or a countable partner-operator list. Owning and booking are different claims. | TRUE-02 |
-| A7 | **"100% Safety Record" / "Zero Incident Record"** | / | unverified | reword | An absolute safety claim needs an auditable incident log. Safer framing: flights operated under DGCA-mandated safety oversight. | TRUE-02 |
-| A8 | **"45,000+ Pilgrims Flown" / "more than 45,000 pilgrims"** | /, /about | unverified | reword or remove | Booking logs or manifests. Asserted once in conversation as part of a five-claim batch; that is not a source. | TRUE-01 |
-| A9 | **"15+ Years" / "over a decade and a half" / "15 Years of Himalayan Rotary Excellence"** | /, /about | unverified | reword | Company registration date. **This phrasing is verbatim FlyStar fork text** — the company name was swapped, the claim was not re-sourced. | TRUE-01 |
-| A10 | **"ex-defense aviators"** | / | unverified | reword | Pilot roster. Ties to A1. | TRUE-04 |
-| A11 | **"hundreds of royal wedding aerial flower showers"** | /about | unverified | reword | Event log. "Hundreds" is countable and therefore checkable. | TRUE-01 |
+| A1 | **"Capt. R.K. Bhardwaj (Retd.)" — Ex-IAF Wing Commander, 6,500+ mountain rotary hours in Siachen & Garhwal** | /about | unverified | **DONE** — removed from /about | Employment record + service record. A named officer with a rank and an hours figure is the most serious claim on the site: real, it is the strongest E-E-A-T asset here; invented, it fabricates a person and misstates military service. | TRUE-04 |
+| A2 | **"Er. S. Murthy" — DGCA Certified Master Engineer, 20+ years on Safran & Rolls-Royce turbines** | /about | unverified | **DONE** — removed from /about | Employment record + AME licence number | TRUE-04 |
+| A3 | **"Vikramaditya Rawat" — 14+ years Chardham helipad infrastructure, BKTC coordination** | /about | unverified | **DONE** — removed from /about | Employment record | TRUE-04 |
+| A4 | **"UCADA Empanelled"** | Footer (sitewide), /about | unverified | **DONE** — badge removed, footer + /about | UCADA empanelment letter or listing. A government empanelment claim is one phone call to falsify. | TRUE-03 |
+| A5 | **"ISO 9001:2015"** | Footer (sitewide), /about | unverified | **DONE** — badge removed, footer + /about | Certificate number + issuing body + expiry | TRUE-03 |
+| A6 | **"12 Helicopters" / "Specialized Fleet"** | / | unverified | **DONE** — fleet sections removed from /about AND /private-helicopter-charter; model names reworded | Registration certificates, or a countable partner-operator list. Owning and booking are different claims. | TRUE-02 |
+| A7 | **"100% Safety Record" / "Zero Incident Record"** | / | unverified | **DONE** — trust bar rebuilt; "100% DGCA Compliant" on /booking reworded | An absolute safety claim needs an auditable incident log. Safer framing: flights operated under DGCA-mandated safety oversight. | TRUE-02 |
+| A8 | **"45,000+ Pilgrims Flown" / "more than 45,000 pilgrims"** | /, /about | unverified | **DONE** — removed from trust bar and /about copy | Booking logs or manifests. Asserted once in conversation as part of a five-claim batch; that is not a source. | TRUE-01 |
+| A9 | **"15+ Years" / "over a decade and a half" / "15 Years of Himalayan Rotary Excellence"** | /, /about | unverified | **DONE** — removed; heading and origin paragraph rewritten | Company registration date. **This phrasing is verbatim FlyStar fork text** — the company name was swapped, the claim was not re-sourced. | TRUE-01 |
+| A10 | **"ex-defense aviators"** | / | unverified | **DONE** — "ex-defense aviators" and "Ex-Defense Captains" reworded | Pilot roster. Ties to A1. | TRUE-04 |
+| A11 | **"hundreds of royal wedding aerial flower showers"** | /about | unverified | **DONE** — removed from /about copy | Event log. "Hundreds" is countable and therefore checkable. | TRUE-01 |
 
 ## B. Resolved this pass
 
@@ -42,6 +55,8 @@ Last swept: 2026-09-02 · Interview IDs refer to the ops interview sheet.
 | B5 | Hero videos | /, /char-dham…, /private-helicopter-charter | A320-class airliner; Airbus H160 demo footage (F-WWOO, Airbus livery, third-party marketing material); a shrine that is not a Char Dham site | All three removed; sections keep their gradient |
 | B6 | "CHARTER BOOKING" logo | Favicons, `Organization.logo`, login modal | Fourth fictional entity | Interim BMC wordmark in the site palette |
 | B7 | OG image | og:image, all routes | AEROWINGS airliner + white-boxed logo | Typographic card |
+| B8 | **`public/` served everything** | all unreferenced media | "Off display" is not "off the site" — every file in `public/` is fetchable at its URL after deploy. The Airbus H160 OEM footage would have been redistributed from this domain. | 10 files `git mv`'d out of `public/` into `_quarantine/media/`. public/ is now 1.5MB and serves three images plus text files. |
+| B9 | `private-helicopter-charter.jpg` | homepage, charter cards | A Bell 407 registered **N707BH** — a US registration — at what appears to be a US FBO, sold as India charter | Dereferenced and quarantined |
 
 ## C. Verified — safe as written
 
@@ -56,14 +71,27 @@ Last swept: 2026-09-02 · Interview IDs refer to the ops interview sheet.
 | C7 | Registered office: C-705, Sector 7, Dwarka, New Delhi 110077 | /contact, schema, llms.txt | Owner-stated. Confirm pincode against the registration document. |
 | C8 | Phone +91 93556 11996 | sitewide | Owner-stated, in active use |
 
-## D. Named aircraft types — conditional
+## D. Named aircraft types — resolved for now
 
-"Airbus H125", "Bell 407 GX", "Airbus H130/H145" appear across the site. These are
-real aircraft types, so naming them is only a problem in context: acceptable as
-*"aircraft types we charter"* if the partner operators genuinely fly them
-(TRUE-02); not acceptable framed as our own fleet. Currently reads as ours in
-places. **Action: reword to partner framing, or drop the model names, until
-TRUE-02 answers.**
+"Airbus H125", "Bell 407 GX", "Airbus H130/H145" read as our own deployed fleet in
+several places. **All model names are now out of the rendered HTML**; the copy
+says "single-engine and twin types, per sector" and "aircraft type confirmed per
+sector", which is true of a booking operator. `FLEET_LIST` remains in the data
+file but is rendered nowhere. Restore model names as partner framing once TRUE-02
+establishes what is owned versus booked.
+
+## E. Media provenance — open
+
+The three hero videos and four AI aircraft images are quarantined, not deleted.
+Before any of them returns, answer: **where did each come from?** Purchased stock
+(keep the licence with this file), shot by the team (ideal — the Hemkund footage
+would then have a legitimate home on a future Hemkund Sahib page), or unknown
+(never returns in any form). The Airbus H160 clip is an OEM's marketing material
+and must not be served from this domain at a public URL under any circumstance.
+
+**Never reuse the registrations VT-HEL, VT-HSX or N707BH anywhere, including
+mockups** — invented registrations can collide with real aircraft on a live
+registry.
 
 ---
 
