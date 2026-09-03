@@ -1,19 +1,29 @@
-'use client';
+import Client from './Client';
+import { pageMetadata } from '../../lib/site';
+import { JsonLd } from '../../components/JsonLd';
+import { graph, organizationSchema, webPageSchema, breadcrumbSchema } from '../../lib/schema';
 
-import React from 'react';
-import { useRouter } from 'next/navigation';
-import { AboutPage } from '../../components/pages/AboutPage';
+const PATH = '/about';
+const TITLE = 'About Book My CharDham | Helicopter Charter Operator';
+const DESC =
+  'Book My CharDham is an independent helicopter charter operator for Char Dham and Kedarnath yatra, based in Dwarka, New Delhi. Call +91 93556 11996.';
+
+export const metadata = pageMetadata({ title: TITLE, description: DESC, path: PATH });
 
 export default function About() {
-  const router = useRouter();
-
-  const handleNavigate = (page) => {
-    const route = page === 'home' ? '/' : `/${page}`;
-    router.push(route);
-    if (typeof window !== 'undefined') {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-  };
-
-  return <AboutPage onNavigate={handleNavigate} />;
+  return (
+    <>
+      <JsonLd
+        data={graph([
+          organizationSchema(),
+          webPageSchema({ name: TITLE, description: DESC, path: PATH }),
+          breadcrumbSchema([
+            { name: 'Home', path: '/' },
+            { name: 'About', path: PATH },
+          ]),
+        ])}
+      />
+      <Client />
+    </>
+  );
 }

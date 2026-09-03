@@ -25,11 +25,21 @@ export const FleetCard = ({
     >
       <article className="group relative flex h-full flex-col overflow-hidden rounded-xl border border-[#A67C52]/20 bg-[#F3E9D0] shadow-[0_4px_14px_rgba(50,33,22,0.09)] transition-all duration-250 ease-out hover:-translate-y-1 hover:border-[#A67C52]/30 hover:shadow-[0_12px_24px_rgba(50,33,22,0.14)] focus-within:-translate-y-1 focus-within:border-[#A67C52]/30 focus-within:shadow-[0_12px_24px_rgba(50,33,22,0.14)]">
         <div className="relative overflow-hidden rounded-t-xl">
-          <img
-            src={image}
-            alt={name}
-            className="h-56 w-full object-cover transition-transform duration-500 group-hover:scale-[1.02] group-focus-within:scale-[1.02]"
-          />
+          {image ? (
+            <img
+              src={image}
+              alt={name}
+              className="h-56 w-full object-cover transition-transform duration-500 group-hover:scale-[1.02] group-focus-within:scale-[1.02]"
+            />
+          ) : (
+            <div className="flex h-56 w-full flex-col items-center justify-center gap-2 bg-gradient-to-b from-[#D9C7B8] to-[#E6D5C1] px-4 text-center">
+              <span className="text-[11px] font-bold uppercase tracking-[0.2em] text-[#A67C52]">
+                {category}
+              </span>
+              <span className="text-xl font-bold text-[#6B4E3D]">{name}</span>
+              <span className="text-[11px] text-[#A67C52]">{seatCount} seats</span>
+            </div>
+          )}
           {isHovered && videoUrl && (
             <iframe
               className="pointer-events-none absolute inset-0 h-full w-full scale-[1.35] object-cover"

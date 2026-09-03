@@ -28,18 +28,10 @@ export const ChardhamPage = ({
     <div className="w-full text-[#6B4E3D] bg-[#F3E9D0]">
       {/* 1. HERO SECTION */}
       <section className="relative pt-24 pb-16 lg:pt-32 lg:pb-24 border-b border-[#A67C52]/20 overflow-hidden bg-gradient-to-b from-[#D9C7B8] to-[#F3E9D0]">
-        <div className="absolute inset-0 w-full h-full overflow-hidden z-0">
-          <video
-            autoPlay
-            muted
-            loop
-            playsInline
-            className="absolute inset-0 w-full h-full object-cover object-center"
-          >
-            <source src="/chardham%20%26%20kedarnath%20heli-yatra.mp4" type="video/mp4" />
-          </video>
-          <div className="absolute inset-0 bg-[#1d120f]/55" />
-        </div>
+        {/* Hero video removed Sep 2026. The footage was not ours to show:
+            an A320-class airliner on the homepage, Airbus H160 demo footage
+            (F-WWOO, Airbus livery) on the charter page, and a shrine that is
+            not a Char Dham site on this one. Restore with our own footage. */}
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-10 lg:px-12 relative z-10">
           <div className="max-w-3xl">
@@ -67,7 +59,7 @@ export const ChardhamPage = ({
               </button>
 
               <a
-                href="tel:+919876543210"
+                href="tel:+919355611996"
                 className="bg-[#A67C52]/10 hover:bg-[#A67C52]/20 text-[#6B4E3D] border border-[#A67C52]/20 px-6 py-3.5 text-xs font-bold tracking-[0.16em] uppercase transition-all cursor-pointer flex items-center gap-2"
               >
                 <Phone className="w-3.5 h-3.5 text-[#8B6639]" />

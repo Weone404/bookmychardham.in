@@ -13,7 +13,7 @@ import {
   Star,
   CheckCircle2
 } from 'lucide-react';
-import { CHARTER_SERVICES, FLEET_LIST } from '../../data/bookmychardhamData';
+import { CHARTER_SERVICES } from '../../data/bookmychardhamData';
 
 export const CharterPage = ({
   onNavigate,
@@ -27,18 +27,10 @@ export const CharterPage = ({
     <div className="w-full text-[#6B4E3D] bg-[#F3E9D0]">
       {/* 1. HERO SECTION */}
       <section className="relative pt-24 pb-16 lg:pt-32 lg:pb-24 border-b border-[#A67C52]/20 overflow-hidden bg-gradient-to-b from-[#D9C7B8] to-[#F3E9D0]">
-        <div className="absolute inset-0 w-full h-full overflow-hidden z-0">
-          <video
-            autoPlay
-            muted
-            loop
-            playsInline
-            className="absolute inset-0 w-full h-full object-cover object-center"
-          >
-            <source src="/private%20helicopter.mp4" type="video/mp4" />
-          </video>
-          <div className="absolute inset-0 bg-[#1d120f]/55" />
-        </div>
+        {/* Hero video removed Sep 2026. The footage was not ours to show:
+            an A320-class airliner on the homepage, Airbus H160 demo footage
+            (F-WWOO, Airbus livery) on the charter page, and a shrine that is
+            not a Char Dham site on this one. Restore with our own footage. */}
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-10 lg:px-12 relative z-10">
           <div className="max-w-3xl">
@@ -65,7 +57,7 @@ export const CharterPage = ({
               </button>
 
               <a
-                href="tel:+919876543210"
+                href="tel:+919355611996"
                 className="bg-[#A67C52]/10 hover:bg-[#A67C52]/20 text-[#6B4E3D] border border-[#A67C52]/20 px-6 py-3.5 text-xs font-bold tracking-[0.16em] uppercase transition-all cursor-pointer flex items-center gap-2"
               >
                 <Phone className="w-3.5 h-3.5 text-[#8B6639]" />
@@ -93,11 +85,11 @@ export const CharterPage = ({
 
           <div className="flex items-center gap-3">
             <a
-              href="tel:+919876543210"
+              href="tel:+919355611996"
               className="flex items-center gap-2 bg-[#A67C52] hover:bg-[#8B6639] text-white px-5 py-2.5 text-xs font-bold uppercase tracking-wider transition-all shadow-md"
             >
               <Phone className="w-4 h-4" />
-              <span>EMERGENCY SOS: +91 98765 43210</span>
+              <span>EMERGENCY SOS: +91 93556 11996</span>
             </a>
           </div>
         </div>
@@ -196,64 +188,10 @@ export const CharterPage = ({
         </div>
       </section>
 
-      {/* 4. FLEET OVERVIEW FOR CHARTERS */}
-      <section className="py-20 bg-[#F3E9D0] border-b border-[#A67C52]/20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-10 lg:px-12">
-          <div className="mb-12">
-            <span className="text-[11px] font-bold tracking-[0.24em] text-[#A67C52] uppercase block mb-2">
-              ROTORCRAFT ENGINEERING
-            </span>
-            <h2 className="text-3xl sm:text-4xl font-black uppercase text-[#6B4E3D] tracking-tight">
-              AIRCRAFT DEPLOYED FOR CHARTER MISSIONS
-            </h2>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {FLEET_LIST.map((craft) => (
-              <div
-                key={craft.id}
-                className="bg-[#D9C7B8] border border-[#A67C52]/20 p-6 flex flex-col justify-between"
-              >
-                <div>
-                  <span className="text-[10px] font-bold text-[#A67C52] uppercase tracking-widest block mb-1">
-                    {craft.manufacturer}
-                  </span>
-                  <h3 className="text-base font-bold uppercase text-[#6B4E3D] mb-2">
-                    {craft.name}
-                  </h3>
-                  <div className="space-y-1.5 text-xs text-[#A67C52] border-t border-[#A67C52]/20 pt-3">
-                    <div className="flex justify-between">
-                      <span>Capacity:</span>
-                      <span className="text-[#6B4E3D] font-semibold">{craft.capacity}</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span>Cruise Speed:</span>
-                      <span className="text-[#6B4E3D] font-semibold">{craft.speed}</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span>Ceiling:</span>
-                      <span className="text-[#6B4E3D] font-semibold">{craft.altitudeCeiling}</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="pt-4 mt-4 border-t border-[#A67C52]/20">
-                  <span className="text-[10px] text-[#A67C52] uppercase tracking-widest block mb-1">
-                    BEST FOR:
-                  </span>
-                  <div className="flex flex-wrap gap-1">
-                    {craft.bestFor.map((b, i) => (
-                      <span key={i} className="text-[10px] bg-[#A67C52]/10 px-2 py-0.5 text-[#6B4E3D]">
-                        {b}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* Fleet section removed Sep 2026 (CLAIMS.md A6, §D). It presented named
+          aircraft types as our own deployed fleet. Restore as partner framing
+          once TRUE-02 establishes what we own versus what we book, and only
+          with photographs of aircraft we actually fly. */}
     </div>
   );
 };

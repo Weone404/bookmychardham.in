@@ -45,7 +45,7 @@ export const FlowerDroppingPage = ({
     {
       title: 'Royal Indian Weddings',
       tag: 'MOST POPULAR',
-      desc: 'Make the Varmala, Baraat entry, or Pheras unforgettable as fresh rose petals shower from the sky over the bride, groom, and wedding guests.',
+      desc: 'Petals released over the Varmala, the Baraat entry or the Pheras — you pick the moment, and we brief the pilot on the cue.',
     },
     {
       title: 'Temple Pran Pratishtha & Mahotsavs',
@@ -79,7 +79,7 @@ export const FlowerDroppingPage = ({
                 AERIAL FLOWER DROPPING CEREMONIES
               </h1>
               <p className="text-[#6B4E3D] text-sm sm:text-base mt-4 leading-relaxed max-w-2xl font-normal">
-                Elevate your wedding, temple Pran Pratishtha, or monumental celebration into an unforgettable spectacle with thousands of fresh rose petals showered gently from our Airbus and Bell helicopters.
+                Thousands of fresh rose petals, released over your wedding, Pran Pratishtha or public celebration from a helicopter holding a steady hover. Booked 15 to 21 days ahead, because the NOCs take that long.
               </p>
 
               <div className="flex flex-wrap items-center gap-4 mt-8">
@@ -95,7 +95,7 @@ export const FlowerDroppingPage = ({
                 </button>
 
                 <a
-                  href="tel:+919876543210"
+                  href="tel:+919355611996"
                   className="bg-[#A67C52]/10 hover:bg-[#A67C52]/20 text-[#6B4E3D] border border-[#A67C52]/20 px-6 py-3.5 text-xs font-bold tracking-[0.16em] uppercase transition-all cursor-pointer flex items-center gap-2"
                 >
                   <Phone className="w-3.5 h-3.5 text-[#8B6639]" />
@@ -108,7 +108,7 @@ export const FlowerDroppingPage = ({
             <div className="lg:col-span-5">
               <div className="border border-[#A67C52]/20 bg-[#D9C7B8] p-2 relative">
                 <img
-                  src="/images/flystar_flower_dropping_1788161916372.jpg"
+                  src="/images/helicopter-flower-dropping.jpg"
                   alt="Helicopter Aerial Flower Dropping at Royal Wedding"
                   className="w-full h-80 sm:h-96 object-cover filter brightness-95"
                 />
@@ -169,7 +169,7 @@ export const FlowerDroppingPage = ({
               EXECUTION BLUEPRINT
             </span>
             <h2 className="text-3xl sm:text-4xl font-black uppercase text-[#6B4E3D] tracking-tight">
-              HOW FLYSTAR DELIVERS FLAWLESS CEREMONIES
+              HOW BOOK MY CHARDHAM DELIVERS FLAWLESS CEREMONIES
             </h2>
             <p className="text-[#A67C52] text-xs sm:text-sm mt-3 leading-relaxed">
               We handle every regulatory, safety, and logistical detail so you can focus entirely on enjoying your monumental day.
@@ -295,10 +295,10 @@ export const FlowerDroppingPage = ({
               REQUEST CUSTOM FLOWER DROP QUOTE
             </button>
             <a
-              href="tel:+919876543210"
+              href="tel:+919355611996"
               className="bg-[#A67C52]/10 hover:bg-[#A67C52]/20 text-[#6B4E3D] border border-[#A67C52]/20 px-6 py-3.5 text-xs font-bold tracking-widest uppercase transition-all"
             >
-              CALL +91 98765 43210
+              CALL +91 93556 11996
             </a>
           </div>
         </div>

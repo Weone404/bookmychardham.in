@@ -1,45 +1,29 @@
-'use client';
+import Client from './Client';
+import { pageMetadata } from '../../lib/site';
+import { JsonLd } from '../../components/JsonLd';
+import { graph, organizationSchema, webPageSchema, breadcrumbSchema } from '../../lib/schema';
 
-import React, { Suspense } from 'react';
-import { useRouter, useSearchParams } from 'next/navigation';
-import { BookingPage } from '../../components/pages/BookingPage';
+const PATH = '/booking';
+const TITLE = 'Book Kedarnath & Char Dham Helicopter Tickets';
+const DESC =
+  'Send a booking request for Kedarnath, Badrinath or Char Dham helicopter yatra. Seats are confirmed on WhatsApp +91 93556 11996.';
 
-function BookingContent() {
-  const router = useRouter();
-  const searchParams = useSearchParams();
-
-  const service = searchParams.get('service') || 'kedarnath-sameday';
-  const pkg = searchParams.get('package') || undefined;
-
-  const handleNavigate = (page) => {
-    const route = page === 'home' ? '/' : `/${page}`;
-    router.push(route);
-    if (typeof window !== 'undefined') {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-  };
-
-  return (
-    <BookingPage
-      initialServiceType={service}
-      initialPackageId={pkg}
-      onNavigate={handleNavigate}
-    />
-  );
-}
+export const metadata = pageMetadata({ title: TITLE, description: DESC, path: PATH, index: false });
 
 export default function Booking() {
   return (
-    <Suspense
-      fallback={
-        <div className="min-h-[60vh] flex items-center justify-center text-white bg-black">
-          <div className="text-xs uppercase tracking-widest text-[#c8102e] animate-pulse">
-            Loading BookMyChardham Reservation Desk...
-          </div>
-        </div>
-      }
-    >
-      <BookingContent />
-    </Suspense>
+    <>
+      <JsonLd
+        data={graph([
+          organizationSchema(),
+          webPageSchema({ name: TITLE, description: DESC, path: PATH }),
+          breadcrumbSchema([
+            { name: 'Home', path: '/' },
+            { name: 'Booking', path: PATH },
+          ]),
+        ])}
+      />
+      <Client />
+    </>
   );
 }

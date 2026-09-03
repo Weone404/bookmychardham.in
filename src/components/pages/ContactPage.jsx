@@ -12,7 +12,7 @@ import {
   Send,
   MessageSquare
 } from 'lucide-react';
-import { BASE_LOCATIONS } from '../../data/bookmychardhamData';
+import { REGISTERED_OFFICE, DEPARTURE_POINTS } from '../../data/bookmychardhamData';
 
 export const ContactPage = () => {
   const [formData, setFormData] = useState({
@@ -76,8 +76,8 @@ export const ContactPage = () => {
                     <span className="text-[10px] font-bold text-[#A67C52] uppercase tracking-widest block">
                       CENTRAL DISPATCH &amp; SOS HOTLINE
                     </span>
-                    <a href="tel:+919876543210" className="text-base sm:text-lg font-bold text-[#6B4E3D] hover:text-[#8B6639] transition-colors block mt-0.5">
-                      +91 98765 43210
+                    <a href="tel:+919355611996" className="text-base sm:text-lg font-bold text-[#6B4E3D] hover:text-[#8B6639] transition-colors block mt-0.5">
+                      +91 93556 11996
                     </a>
                     <span className="text-xs text-[#A67C52]">Available 24/7 on Call &amp; WhatsApp</span>
                   </div>
@@ -127,7 +127,7 @@ export const ContactPage = () => {
                       MESSAGE TRANSMITTED
                     </h3>
                     <p className="text-xs text-[#A67C52] max-w-md mx-auto mb-6">
-                      Thank you for contacting FlyStar Aviation. A dedicated Flight Coordinator will reach out to you within 15 minutes at {formData.phone || 'your phone number'}.
+                      Thank you for contacting Book My CharDham. A dedicated Flight Coordinator will reach out to you within 15 minutes at {formData.phone || 'your phone number'}.
                     </p>
                     <button
                       onClick={() => setSubmitted(false)}
@@ -167,7 +167,7 @@ export const ContactPage = () => {
                         <input
                           type="tel"
                           required
-                          placeholder="+91 98765 43210"
+                          placeholder="+91 93556 11996"
                           value={formData.phone}
                           onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                           className="w-full bg-[#E6D5C1] border border-[#A67C52]/20 px-3.5 py-2.5 text-xs text-[#6B4E3D] focus:border-[#A67C52] focus:outline-none"
@@ -235,20 +235,26 @@ export const ContactPage = () => {
         </div>
       </section>
 
-      {/* 3. BASE HELIPAD LOCATIONS GRID */}
+      {/* 3. REGISTERED OFFICE + DEPARTURE POINTS */}
       <section className="py-20 bg-[#F3E9D0]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-10 lg:px-12">
           <div className="mb-12">
             <span className="text-[11px] font-bold tracking-[0.24em] text-[#A67C52] uppercase block mb-2">
-              HELIPAD HUBS &amp; HANGARS
+              OFFICE &amp; DEPARTURE POINTS
             </span>
             <h2 className="text-3xl sm:text-4xl font-black uppercase text-[#6B4E3D] tracking-tight">
-              OUR 4 OPERATIONAL BASES
+              WHERE WE ARE, AND WHERE YOU FLY FROM
             </h2>
+            <p className="mt-4 max-w-2xl text-sm text-[#A67C52] leading-relaxed">
+              We work from one office in Dwarka. The airports and helipads below are
+              public facilities we arrange departures from &mdash; we don&apos;t run
+              terminals or hangars of our own. Charters can be arranged from other
+              Indian and international airports on request.
+            </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {BASE_LOCATIONS.map((base) => (
+            {[REGISTERED_OFFICE, ...DEPARTURE_POINTS].map((base) => (
               <div
                 key={base.city}
                 className="bg-[#D9C7B8] border border-[#A67C52]/20 p-6 flex flex-col justify-between"
@@ -256,7 +262,7 @@ export const ContactPage = () => {
                 <div>
                   <div className="flex items-center justify-between mb-2">
                     <span className="text-[10px] font-bold uppercase tracking-widest text-[#A67C52]">
-                      {base.isPrimary ? 'CENTRAL HQ' : 'OPERATIONS HUB'}
+                      {base.kind}
                     </span>
                     <MapPin className="w-3.5 h-3.5 text-[#A67C52]" />
                   </div>
@@ -265,7 +271,7 @@ export const ContactPage = () => {
                     {base.city}
                   </h3>
                   <span className="text-xs text-[#6B4E3D] font-semibold block mb-3">
-                    {base.helipadName}
+                    {base.venue}
                   </span>
 
                   <p className="text-xs text-[#A67C52] leading-relaxed mb-4">
@@ -279,11 +285,11 @@ export const ContactPage = () => {
 
                 <div className="pt-4 mt-4 border-t border-[#A67C52]/20">
                   <a
-                    href={`tel:${base.phone.replace(/\s+/g, '')}`}
+                    href="tel:+919355611996"
                     className="text-xs font-bold text-[#6B4E3D] hover:text-[#8B6639] transition-colors flex items-center gap-1.5"
                   >
                     <Phone className="w-3 h-3 text-[#A67C52]" />
-                    <span>{base.phone}</span>
+                    <span>+91 93556 11996</span>
                   </a>
                 </div>
               </div>

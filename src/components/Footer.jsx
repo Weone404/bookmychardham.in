@@ -3,7 +3,7 @@
 import React from 'react';
 import { useRouter } from 'next/navigation';
 import { Phone, Mail, MapPin, Shield, ArrowUpRight } from 'lucide-react';
-import { BookMyChardhamLogo } from './FlyStarLogo';
+import { BookMyChardhamLogo } from './BookMyChardhamLogo';
 
 export const Footer = ({ onNavigate }) => {
   const router = useRouter();
@@ -33,13 +33,7 @@ export const Footer = ({ onNavigate }) => {
             <div className="pt-2 flex flex-wrap items-center gap-3 text-[11px] text-[#6B4E3D]">
               <span className="flex items-center gap-1.5 px-2.5 py-1 bg-[#D9C7B8]/60 border border-[#A67C52]/30 rounded-xs uppercase tracking-wider font-bold">
                 <Shield className="w-3.5 h-3.5 text-[#A67C52]" />
-                DGCA NSOP Certified
-              </span>
-              <span className="px-2.5 py-1 bg-[#D9C7B8]/60 border border-[#A67C52]/30 rounded-xs uppercase tracking-wider font-bold text-[#6B4E3D]">
-                UCADA Empanelled
-              </span>
-              <span className="px-2.5 py-1 bg-[#D9C7B8]/60 border border-[#A67C52]/30 rounded-xs uppercase tracking-wider font-bold text-[#6B4E3D]">
-                ISO 9001:2015
+                Flown by DGCA NSOP-certified operators
               </span>
             </div>
           </div>
@@ -50,31 +44,31 @@ export const Footer = ({ onNavigate }) => {
               SACRED PILGRIMAGE
             </span>
             <button
-              onClick={() => handleNav('chardham')}
+              onClick={() => handleNav('char-dham-yatra-by-helicopter')}
               className="text-left text-[#A67C52] hover:text-[#6B4E3D] transition-colors cursor-pointer py-0.5"
             >
               Chardham 4 Dham (5D/4N)
             </button>
             <button
-              onClick={() => handleNav('chardham')}
+              onClick={() => handleNav('char-dham-yatra-by-helicopter')}
               className="text-left text-[#A67C52] hover:text-[#6B4E3D] transition-colors cursor-pointer py-0.5"
             >
               Kedarnath Same Day Tour
             </button>
             <button
-              onClick={() => handleNav('chardham')}
+              onClick={() => handleNav('char-dham-yatra-by-helicopter')}
               className="text-left text-[#A67C52] hover:text-[#6B4E3D] transition-colors cursor-pointer py-0.5"
             >
               Do Dham (Kedarnath & Badrinath)
             </button>
             <button
-              onClick={() => handleNav('chardham')}
+              onClick={() => handleNav('char-dham-yatra-by-helicopter')}
               className="text-left text-neutral-400 hover:text-white transition-colors cursor-pointer py-0.5"
             >
               Badrinath VIP Darshan
             </button>
             <button
-              onClick={() => handleNav('flower-dropping')}
+              onClick={() => handleNav('helicopter-flower-dropping')}
               className="text-left text-[#A67C52] hover:text-[#6B4E3D] transition-colors cursor-pointer py-0.5 font-semibold"
             >
               Aerial Flower Dropping →
@@ -87,19 +81,19 @@ export const Footer = ({ onNavigate }) => {
               CHARTER & FLEET
             </span>
             <button
-              onClick={() => handleNav('charter')}
+              onClick={() => handleNav('private-helicopter-charter')}
               className="text-left text-[#A67C52] hover:text-[#6B4E3D] transition-colors cursor-pointer py-0.5"
             >
               Corporate Jet & Heli Charter
             </button>
             <button
-              onClick={() => handleNav('charter')}
+              onClick={() => handleNav('private-helicopter-charter')}
               className="text-left text-[#A67C52] hover:text-[#6B4E3D] transition-colors cursor-pointer py-0.5"
             >
               VIP & Dignitary Travel
             </button>
             <button
-              onClick={() => handleNav('charter')}
+              onClick={() => handleNav('private-helicopter-charter')}
               className="text-left text-[#A67C52] hover:text-[#6B4E3D] transition-colors cursor-pointer py-0.5"
             >
               Air Ambulance (HEMS ICU)
@@ -108,7 +102,7 @@ export const Footer = ({ onNavigate }) => {
               onClick={() => handleNav('about')}
               className="text-left text-[#A67C52] hover:text-[#6B4E3D] transition-colors cursor-pointer py-0.5"
             >
-              Airbus H125 / Bell 407 Fleet
+              Single-engine and twin types, per sector
             </button>
             <button
               onClick={() => handleNav('about')}
@@ -126,8 +120,8 @@ export const Footer = ({ onNavigate }) => {
             <div className="flex items-start gap-2 text-[#6B4E3D]">
               <Phone className="w-4 h-4 text-[#A67C52] shrink-0 mt-0.5" />
               <div>
-                <a href="tel:+919876543210" className="font-bold hover:text-[#A67C52] transition-colors block text-[13px]">
-                  +91 98765 43210
+                <a href="tel:+919355611996" className="font-bold hover:text-[#A67C52] transition-colors block text-[13px]">
+                  +91 93556 11996
                 </a>
                 <span className="text-[10.5px] text-[#A67C52]/70">Toll-free / WhatsApp available</span>
               </div>
@@ -160,7 +154,7 @@ export const Footer = ({ onNavigate }) => {
         {/* Bottom Bar */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-[11px] text-[#A67C52]/70 gap-4">
           <div className="tracking-wider uppercase">
-            © {new Date().getFullYear()} FlyStar Aviation (flystar.co.in) — All Rights Reserved.
+            © {new Date().getFullYear()} Book My CharDham (bookmychardham.in) — All Rights Reserved.
           </div>
           <div className="flex items-center gap-6 tracking-wider uppercase font-medium">
             <button onClick={() => handleNav('about')} className="text-[#A67C52] hover:text-[#6B4E3D] transition-colors cursor-pointer">

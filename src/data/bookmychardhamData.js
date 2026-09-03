@@ -1,23 +1,28 @@
+/**
+ * Every figure here must be true and checkable. The previous four stats
+ * (15+ years, 100% safety record, 45,000+ pilgrims, 12 helicopters) are
+ * CLAIMS.md rows A6-A9 and are not published until sourced.
+ */
 export const TRUST_STATS = [
   {
-    value: '15+ Years',
-    label: 'Aviation Heritage',
-    detail: 'Over 15 years of uninterrupted high-altitude mountain operations in the Himalayas.',
+    value: '11,755 ft',
+    label: 'Kedarnath Altitude',
+    detail: 'Thin air caps payload, so every passenger is weighed and luggage is limited to 5 kg.',
   },
   {
-    value: '100%',
-    label: 'Safety Record',
-    detail: 'DGCA-certified NSOP standards with ex-defense aviators and strict dual-engine protocols.',
+    value: 'DGCA NSOP',
+    label: 'Who Flies You',
+    detail: 'Every sector is flown by an operator holding a Non-Scheduled Operator Permit.',
   },
   {
-    value: '45,000+',
-    label: 'Pilgrims Flown',
-    detail: 'Blessed devotees assisted with priority VIP Darshan at Kedarnath & Badrinath.',
+    value: 'May–Jun · Sep–Oct',
+    label: 'When It Flies',
+    detail: 'Kapat closes November to April. Nothing flies in winter, whatever anyone sells you.',
   },
   {
-    value: '12 Helicopters',
-    label: 'Specialized Fleet',
-    detail: 'Airbus H125, Bell 407 GX, and Airbus H130/H145 maintained to OEM standards.',
+    value: 'Pilot Decides',
+    label: 'Weather Policy',
+    detail: 'A booked seat is not a guaranteed departure. Plan a spare day into the trip.',
   },
 ];
 
@@ -32,7 +37,7 @@ export const CHARDHAM_PACKAGES = [
     startingPrice: '₹95,000 / seat',
     pricePerPerson: 95000,
     charterPrice: 480000,
-    image: '/images/flystar_kedarnath_helicopter_1788161902244.jpg',
+    image: '/images/kedarnath-temple-helipad.jpg',
     badge: 'MOST POPULAR',
     serviceType: 'kedarnath-sameday',
     highlights: [
@@ -72,7 +77,7 @@ export const CHARDHAM_PACKAGES = [
       {
         dayOrTime: '12:30 PM',
         title: 'Return Flight to Dehradun',
-        description: 'Board return flight with breathtaking Himalayan aerial vistas, landing at Sahastradhara by 01:30 PM.',
+        description: 'Board the return flight down the Mandakini valley, landing at Sahastradhara by 01:30 PM.',
       },
     ],
   },
@@ -86,7 +91,7 @@ export const CHARDHAM_PACKAGES = [
     startingPrice: '₹2,10,000 / person',
     pricePerPerson: 210000,
     charterPrice: 1250000,
-    image: '/images/flystar_himalayan_fleet_1788161946820.jpg',
+    image: '/images/himalaya-peaks.jpg',
     badge: 'SIGNATURE PILGRIMAGE',
     serviceType: 'chardham-4dham',
     highlights: [
@@ -148,11 +153,11 @@ export const CHARDHAM_PACKAGES = [
     startingPrice: '₹1,35,000 / person',
     pricePerPerson: 135000,
     charterPrice: 680000,
-    image: '/images/flystar_kedarnath_helicopter_1788161902244.jpg',
+    image: '/images/kedarnath-temple-helipad.jpg',
     badge: 'HIGH DEMAND',
     serviceType: 'dodham-kedarnath-badrinath',
     highlights: [
-      'Cover both Kedarnath & Badrinath in a single seamless day',
+      'Cover both Kedarnath and Badrinath in a single day',
       'VIP Priority Darshan at both shrines with dedicated marshals',
       'All local vehicular transfers & helipad shuttles included',
       'Ideal for senior citizens and busy professionals',
@@ -195,7 +200,7 @@ export const CHARDHAM_PACKAGES = [
     startingPrice: '₹85,000 / seat',
     pricePerPerson: 85000,
     charterPrice: 420000,
-    image: '/images/flystar_himalayan_fleet_1788161946820.jpg',
+    image: '/images/himalaya-peaks.jpg',
     serviceType: 'badrinath-sameday',
     highlights: [
       'Quickest way to visit Badrinath Temple from Dehradun',
@@ -241,7 +246,7 @@ export const FLOWER_DROPPING_PACKAGES = [
     sorties: '1 - 3 Aerial Passes',
     price: 'Starting from ₹2,75,000',
     occasions: ['Grand Weddings', 'Baraat Procession', 'Varmala Celebration', 'Ring Ceremony'],
-    description: 'Transform your special moment into an unforgettable fairy tale as our helicopter hovers gently, showering fragrant fresh rose and marigold petals precisely over the celebration stage.',
+    description: 'The aircraft holds a steady hover over the stage while fresh rose and marigold petals are released, timed to the moment you choose.',
   },
   {
     id: 'flower-temple-inauguration',
@@ -251,7 +256,7 @@ export const FLOWER_DROPPING_PACKAGES = [
     sorties: '2 - 5 Aerial Passes',
     price: 'Starting from ₹3,50,000',
     occasions: ['Pran Pratishtha', 'Temple Inaugurations', 'Shobha Yatras', 'Kumbh & Mahasatsang'],
-    description: 'Elevate religious sanctity with grand aerial pushp varsha over temple spires and holy processions, conducted with strict adherence to DGCA safety altitudes.',
+    description: 'Aerial pushp varsha over temple spires and processions, flown at the DGCA-mandated safety altitude for the venue.',
   },
   {
     id: 'flower-vip-rally-event',
@@ -270,7 +275,7 @@ export const CHARTER_SERVICES = [
     id: 'corporate-charter',
     title: 'Corporate Helicopter Charter',
     subtitle: 'Point-to-point business aviation avoiding airport congestion and road delays',
-    image: '/images/flystar_vip_charter_1788161931733.jpg',
+    image: '/images/himalaya-peaks.jpg',
     description: 'Empower your executive leadership with on-demand helicopter flights directly between factory sites, remote industrial plants, state capitals, and city helipads. Save valuable hours with flexible flight itineraries.',
     features: [
       'Direct helipad-to-helipad connectivity across India',
@@ -284,7 +289,7 @@ export const CHARTER_SERVICES = [
     id: 'vip-transport',
     title: 'VIP & Dignitary Transport',
     subtitle: 'Discreet, ultra-secure helicopter charters for HNIs, celebrities & statesmen',
-    image: '/images/flystar_himalayan_fleet_1788161946820.jpg',
+    image: '/images/himalaya-peaks.jpg',
     description: 'Complete privacy and highest security protocol with dedicated aviation marshals, direct aircraft boarding, and VIP lounge hospitality across major private airports and bespoke landing grounds.',
     features: [
       'Absolute privacy and non-disclosure discretion',
@@ -298,7 +303,7 @@ export const CHARTER_SERVICES = [
     id: 'aerial-filming',
     title: 'Aerial Cinematography & Photography',
     subtitle: 'Gyro-stabilized aerial platforms for blockbuster films, documentaries & surveys',
-    image: '/images/flystar_flower_dropping_1788161916372.jpg',
+    image: '/images/helicopter-flower-dropping.jpg',
     description: 'Specialized helicopters equipped with approved nose and side gimbal mounts (Shotover / Cineflex), door-off configuration for photographers, and precision-flight pilots trained in high-speed tracking.',
     features: [
       'Doors-off flight clearance for 360° unobstructed views',
@@ -312,7 +317,7 @@ export const CHARTER_SERVICES = [
     id: 'emergency-air-ambulance',
     title: 'Emergency Medical Evacuation (HEMS)',
     subtitle: '24/7 ICU-equipped air ambulance with rapid dispatch in under 45 minutes',
-    image: '/images/flystar_kedarnath_helicopter_1788161902244.jpg',
+    image: '/images/kedarnath-temple-helipad.jpg',
     description: 'Life-saving critical care transport from remote Himalayan areas, highway accidents, and tier-2 cities directly to premier quaternary hospitals in Dehradun, Delhi NCR, and Chandigarh.',
     features: [
       'Full onboard ICU with ventilator, defibrillator & multipara monitors',
@@ -336,7 +341,7 @@ export const FLEET_LIST = [
     altitudeCeiling: '23,000 ft (World Record Holder)',
     engine: 'Safran Arriel 2D with Dual FADEC',
     description: 'The undisputed king of Himalayan flying. Holds the world altitude landing record on Mount Everest. Exceptional hot-and-high performance makes it our primary choice for Kedarnath & Chardham.',
-    image: '/images/flystar_kedarnath_helicopter_1788161902244.jpg',
+    image: '/images/kedarnath-temple-helipad.jpg',
     bestFor: ['Kedarnath Shuttles', 'Chardham 4 Dham', 'High-Altitude Rescue'],
     features: [
       'Unmatched power-to-weight ratio in thin mountain air',
@@ -356,7 +361,7 @@ export const FLEET_LIST = [
     altitudeCeiling: '20,000 ft',
     engine: 'Rolls-Royce 250-C47B Turbine',
     description: 'The standard of luxury in executive rotary-wing travel. Features a spacious 5-place club-seating aft cabin with rich leather, whisper-quiet cabin acoustics, and Garmin G1000H glass cockpit.',
-    image: '/images/flystar_vip_charter_1788161931733.jpg',
+    image: '/images/himalaya-peaks.jpg',
     bestFor: ['Corporate Charters', 'VIP Dignitaries', 'Executive Travel'],
     features: [
       'Garmin G1000H integrated glass avionics suite',
@@ -376,7 +381,7 @@ export const FLEET_LIST = [
     altitudeCeiling: '19,000 ft',
     engine: 'Safran Arriel 2D Turbine',
     description: 'Built specifically for scenic aerial tourism and aerial ceremonies. Its enclosed Fenestron tail rotor delivers the quietest acoustic footprint in its class and unparalleled safety.',
-    image: '/images/flystar_flower_dropping_1788161916372.jpg',
+    image: '/images/helicopter-flower-dropping.jpg',
     bestFor: ['Aerial Flower Dropping', 'Sightseeing Tours', 'Wedding Celebrations'],
     features: [
       'Extra-wide cabin with theater-style passenger seating',
@@ -396,7 +401,7 @@ export const FLEET_LIST = [
     altitudeCeiling: '20,000 ft',
     engine: 'Twin Safran Arriel 2E Turbines',
     description: 'Twin-engine redundancy for high-security VIP movements and round-the-clock emergency medical evacuation. Equipped with full night-flying capabilities and certified instrument flight rules (IFR).',
-    image: '/images/flystar_himalayan_fleet_1788161946820.jpg',
+    image: '/images/himalaya-peaks.jpg',
     bestFor: ['Air Ambulance (ICU)', 'Twin-Engine VIP Charter', 'Long-Distance Routes'],
     features: [
       'Twin-engine reliability with Category A performance',
@@ -407,39 +412,48 @@ export const FLEET_LIST = [
   },
 ];
 
-export const BASE_LOCATIONS = [
+/**
+ * Book My CharDham has ONE registered office. Everything else below is a
+ * public airport or helipad we arrange departures from — not premises we own.
+ * Never label these as our offices, terminals or hangars: the NAP in schema
+ * and llms.txt must stay a single consistent address.
+ */
+export const REGISTERED_OFFICE = {
+  city: 'New Delhi',
+  kind: 'Registered office',
+  venue: 'Book My CharDham',
+  address: 'C-705, Sector 7, Dwarka, New Delhi 110077, Delhi',
+  coordinates: '28.6149\u00b0 N, 77.0218\u00b0 E',
+};
+
+export const DEPARTURE_POINTS = [
   {
-    city: 'Dehradun (HQ)',
-    title: 'Primary Chardham Base & Terminal',
-    helipadName: 'BookMyChardham Terminal 2, Sahastradhara Helidrome',
+    city: 'Dehradun',
+    kind: 'Char Dham departures',
+    venue: 'Sahastradhara Helipad',
     address: 'Sahastradhara Road, Kulhan, Dehradun, Uttarakhand 248013',
-    coordinates: '30.3872° N, 78.1189° E',
-    phone: '+91 98765 43210',
-    isPrimary: true,
+    coordinates: '30.3872\u00b0 N, 78.1189\u00b0 E',
   },
   {
-    city: 'Kedarnath Base (Sersi / Phata)',
-    title: 'Kedarnath Shuttle Operations Hub',
-    helipadName: 'BookMyChardham Helidrome Sersi',
-    address: 'Kedarnath Highway, Guptkashi - Sersi, Rudraprayag, Uttarakhand 246471',
-    coordinates: '30.5721° N, 79.0345° E',
-    phone: '+91 98765 43211',
+    city: 'Kedarnath sector',
+    kind: 'Kedarnath shuttle',
+    venue: 'Phata, Sersi and Guptkashi helipads',
+    address: 'Kedarnath Highway, Guptkashi\u2013Sersi, Rudraprayag, Uttarakhand 246471',
+    coordinates: '30.5721\u00b0 N, 79.0345\u00b0 E',
   },
   {
-    city: 'New Delhi NCR',
-    title: 'Corporate & VIP Dispatch Hangar',
-    helipadName: 'IGI Airport Terminal 1D GA Hangar / Rohini Heliport',
-    address: 'General Aviation Terminal, IGI Airport, New Delhi 110037',
-    coordinates: '28.5562° N, 77.1000° E',
-    phone: '+91 98765 43212',
+    city: 'New Delhi',
+    kind: 'Charter departures',
+    venue: 'IGI Airport, general aviation terminal',
+    address: 'Indira Gandhi International Airport, New Delhi 110037',
+    coordinates: '28.5562\u00b0 N, 77.1000\u00b0 E',
   },
   {
     city: 'Mumbai',
-    title: 'Western India Charter Base',
-    helipadName: 'Juhu Aerodrome, Hangar No. 4',
+    kind: 'Charter departures',
+    venue: 'Juhu Aerodrome',
     address: 'SV Road, Juhu, Mumbai, Maharashtra 400054',
-    coordinates: '19.0975° N, 72.8328° E',
-    phone: '+91 98765 43213',
+    coordinates: '19.0975\u00b0 N, 72.8328\u00b0 E',
   },
 ];
 
@@ -500,7 +514,7 @@ export const CHARDHAM_ITINERARY = [
     shrine: 'Kedarnath Dham',
     altitude: '11,755 FT',
     title: 'Harsil to Sersi & Shri Kedarnath Ji Jyotirlinga Darshan',
-    details: 'Fly to Sersi helipad base, then board the high-frequency mountain shuttle directly to Kedarnath top helipad (just 500m from temple). Our ground coordinator escorts you through the VIP entry for the divine Jalabhishek of Lord Shiva. Enjoy breathtaking views of the Kedarnath peak.',
+    details: 'Fly to Sersi helipad base, then board the high-frequency mountain shuttle directly to Kedarnath top helipad (just 500m from temple). Our ground coordinator escorts you through the VIP entry for the Jalabhishek.',
     stay: 'Premium Himalayan Retreat, Sersi / Guptkashi',
     darshan: 'Special VIP Rudrabhishek Darshan Pass',
   },
