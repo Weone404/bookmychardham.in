@@ -1,5 +1,15 @@
 import Link from 'next/link';
 import { FleetCard } from '../../components/FleetCard';
+import { pageMetadata } from '../../lib/site';
+import { JsonLd } from '../../components/JsonLd';
+import { graph, organizationSchema, webPageSchema, breadcrumbSchema } from '../../lib/schema';
+
+const PATH = '/fleet';
+const TITLE = 'Private Aircraft Fleet | Book My CharDham';
+const DESC =
+  'Explore private charter aircraft options for executive, VIP and regional travel across India. Enquire on +91 93556 11996.';
+
+export const metadata = pageMetadata({ title: TITLE, description: DESC, path: PATH });
 
 const aircraftList = [
   {
@@ -16,49 +26,49 @@ const aircraftList = [
     name: 'Cessna Caravan 208B',
     image: '/fleets/Cessna_Caravan_208B.webp',
     seatCount: 7,
-    category: 'Light Jet',
+    category: 'Turbo Prop',
     description:
-      'Fast, efficient, and comfortable for executive travel, delivering premium cabin space and quick access to regional destinations.',
+      'A practical turboprop aircraft suited to regional routes, remote destinations, and comfortable private charter travel.',
     slug: 'cessna-caravan-208b',
     videoUrl: 'https://www.youtube.com/embed/VtlEOlhMJMg',
   },
   {
     name: 'Cessna Citation Mustang',
     image: '/fleets/Cessna_Citation_Mustang.webp',
-    seatCount: 8,
+    seatCount: 5,
     category: 'Light Jet',
     description:
-      'An agile aircraft engineered for time-sensitive schedules, combining speed, range, and refined cabin comfort for business travelers.',
+      'A compact executive jet offering efficient point-to-point travel for small groups and time-sensitive business journeys.',
     slug: 'cessna-citation-mustang',
     videoUrl: 'https://www.youtube.com/embed/s5MqoLwnGrY',
   },
   {
     name: 'Challenger 604',
     image: '/fleets/Challenger_604.webp',
-    seatCount: 9,
+    seatCount: 10,
     category: 'Medium Jet',
     description:
-      'Balanced for comfort and range, perfect for transcontinental routes and high-end corporate charter requirements.',
+      'A spacious long-range business jet designed for comfortable executive travel and premium charter itineraries.',
     slug: 'challenger-604',
     videoUrl: 'https://www.youtube.com/embed/NiDwxkQ4ZHc',
   },
   {
     name: 'Challenger 605',
     image: '/fleets/Challenger_605.webp',
-    seatCount: 10,
+    seatCount: 12,
     category: 'Medium Jet',
     description:
-      'A proven long-range business jet with a spacious cabin and exceptional flexibility for demanding charter itineraries.',
+      'An upgraded long-range charter aircraft combining a refined cabin, strong performance, and executive comfort.',
     slug: 'challenger-605',
     videoUrl: 'https://www.youtube.com/embed/s_p4qLSUC2E',
   },
   {
     name: 'Citation 525 A',
     image: '/fleets/Citation_525_A.webp',
-    seatCount: 16,
-    category: 'Heavy Jet',
+    seatCount: 7,
+    category: 'Light Jet',
     description:
-      'Flagship intercontinental charter capability with an ultra-premium cabin profile designed for executive and VIP travel excellence.',
+      'A dependable light jet for efficient business travel, short-haul charter flights, and regional connectivity.',
     slug: 'citation-525-a',
     videoUrl: 'https://www.youtube.com/embed/_uALZI5qKsc',
   },
@@ -66,6 +76,17 @@ const aircraftList = [
 
 export default function FleetPage() {
   return (
+    <>
+      <JsonLd
+        data={graph([
+          organizationSchema(),
+          webPageSchema({ name: TITLE, description: DESC, path: PATH }),
+          breadcrumbSchema([
+            { name: 'Home', path: '/' },
+            { name: 'Charter Aircraft Fleet', path: PATH },
+          ]),
+        ])}
+      />
     <div className="w-full bg-[#F3E9D0] text-[#6B4E3D]">
       <section className="relative overflow-hidden border-b border-[#A67C52]/20 bg-[#D9C7B8]">
         {/* Background video removed Sep 2026: third-party YouTube embed of unknown provenance. Restore with our own footage. */}
@@ -113,5 +134,6 @@ export default function FleetPage() {
         </div>
       </section>
     </div>
+    </>
   );
 }
