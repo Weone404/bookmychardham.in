@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 export const BookMyChardhamLogo = ({
   className = '',
@@ -10,9 +11,12 @@ export const BookMyChardhamLogo = ({
       onClick={onClick}
       className={`flex items-center gap-3 select-none cursor-pointer group ${className}`}
     >
-      <img
+      <Image
         src="/logo.webp"
         alt="BookMyChardham logo"
+        width={80}
+        height={80}
+        sizes="(min-width: 768px) 80px, 64px"
         className="w-16 h-16 md:w-20 md:h-20 object-contain shrink-0 transition-transform duration-300 group-hover:scale-105"
       />
 

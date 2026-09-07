@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import { HeroTitle } from '../HeroTitle';
 import { SearchWidget } from '../SearchWidget';
 import { TrustStatBar } from '../TrustStatBar';
@@ -102,9 +103,12 @@ export const HomePage = ({
             <FadeInOnScroll delay={0} className="lg:col-span-7">
               <HoverLiftCard className="bg-[#D9C7B8] border border-[#A67C52]/20 hover:border-[#A67C52]/30 transition-all duration-300 group flex flex-col justify-between relative overflow-hidden">
                 <div className="relative h-64 sm:h-80 w-full overflow-hidden">
-                  <img
+                  <Image
                     src="/images/flystar_kedarnath_helicopter_1788161902244.jpg"
                     alt="Kedarnath Helicopter Tour"
+                    width={675}
+                    height={320}
+                    sizes="(min-width: 1024px) 58vw, 100vw"
                     className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 filter brightness-90 group-hover:brightness-100"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#D9C7B8] via-transparent to-[#F3E9D0]/30" />
@@ -148,9 +152,12 @@ export const HomePage = ({
             <FadeInOnScroll delay={0.1} className="lg:col-span-5">
               <HoverLiftCard className="bg-[#D9C7B8] border border-[#A67C52]/20 hover:border-[#A67C52]/30 transition-all duration-300 group flex flex-col justify-between relative overflow-hidden">
                 <div className="relative h-64 sm:h-80 w-full overflow-hidden">
-                  <img
+                  <Image
                     src="/images/flystar_flower_dropping_1788161916372.jpg"
                     alt="Aerial Flower Dropping"
+                    width={473}
+                    height={320}
+                    sizes="(min-width: 1024px) 42vw, 100vw"
                     className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 filter brightness-90 group-hover:brightness-100"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#D9C7B8] via-transparent to-[#F3E9D0]/30" />
@@ -326,9 +333,12 @@ export const HomePage = ({
             {/* Right Col: Off-set Image & Fleet Highlights */}
             <FadeInOnScroll delay={0.2} className="lg:col-span-6 flex flex-col space-y-6">
               <HoverLiftCard className="relative border border-[#A67C52]/20 bg-[#D9C7B8] p-2">
-                <img
+                <Image
                   src="/images/flystar_vip_charter_1788161931733.jpg"
                   alt="BookMyChardham Executive Helicopter"
+                  width={542}
+                  height={384}
+                  sizes="(min-width: 1024px) 50vw, 100vw"
                   className="w-full h-80 sm:h-96 object-cover object-center filter brightness-95"
                 />
                 <div className="absolute bottom-6 left-6 right-6 bg-[#F3E9D0]/85 backdrop-blur-md p-5 border border-[#A67C52]/20">
