@@ -23,9 +23,9 @@ const aircraftList = [
     videoUrl: 'https://www.youtube.com/embed/Bw1ldiDqAIk',
   },
   {
-    name: 'Cessna Caravan 208B',
+    name: 'Cessna Grand Caravan 208B',
     image: '/fleets/Cessna_Caravan_208B.webp',
-    seatCount: 7,
+    seatCount: 14,
     category: 'Turbo Prop',
     description:
       'A practical turboprop aircraft suited to regional routes, remote destinations, and comfortable private charter travel.',

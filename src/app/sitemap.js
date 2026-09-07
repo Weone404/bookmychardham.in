@@ -8,6 +8,12 @@ const PAGES = [
   { path: '/helicopter-flower-dropping', priority: 0.8, changeFrequency: 'monthly' },
   { path: '/private-helicopter-charter', priority: 0.8, changeFrequency: 'monthly' },
   { path: '/fleet', priority: 0.7, changeFrequency: 'monthly' },
+  { path: '/fleet/avanti-180', priority: 0.7, changeFrequency: 'monthly' },
+  { path: '/fleet/cessna-caravan-208b', priority: 0.7, changeFrequency: 'monthly' },
+  { path: '/fleet/cessna-citation-mustang', priority: 0.7, changeFrequency: 'monthly' },
+  { path: '/fleet/challenger-604', priority: 0.7, changeFrequency: 'monthly' },
+  { path: '/fleet/challenger-605', priority: 0.7, changeFrequency: 'monthly' },
+  { path: '/fleet/citation-525-a', priority: 0.7, changeFrequency: 'monthly' },
   { path: '/about', priority: 0.5, changeFrequency: 'yearly' },
   { path: '/contact', priority: 0.6, changeFrequency: 'yearly' },
 ];
