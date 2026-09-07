@@ -88,7 +88,7 @@ export const HomePage = ({
                 EXCELLENCE IN ROTARY AVIATION
               </span>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight uppercase font-sans">
-                OUR SERVICES
+                Our Helicopter Charter Services
               </h2>
             </div>
             <p className="text-[#A67C52] text-sm max-w-md leading-relaxed">

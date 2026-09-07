@@ -17,7 +17,7 @@ export const HeroTitle = () => {
           DO YOU WANT TO
         </span>
         <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-[88px] xl:text-[96px] font-black tracking-tight text-white leading-none mt-2 uppercase font-sans">
-          EXPLORE
+          Explore Kedarnath &amp; Char Dham by Helicopter Charter
         </h1>
       </motion.div>
     </div>
