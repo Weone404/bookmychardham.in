@@ -11,7 +11,7 @@ export const BookMyChardhamLogo = ({
       className={`flex items-center gap-3 select-none cursor-pointer group ${className}`}
     >
       <img
-        src="/logo-wordmark.jpg"
+        src="/logo.webp"
         alt="BookMyChardham logo"
         className="w-16 h-16 md:w-20 md:h-20 object-contain shrink-0 transition-transform duration-300 group-hover:scale-105"
       />

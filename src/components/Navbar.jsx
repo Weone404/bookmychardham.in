@@ -23,10 +23,10 @@ export const Navbar = ({ currentPage: propCurrentPage, onNavigate }) => {
 
   const navItems = [
     { id: 'home', label: 'HOME', href: '/' },
-    { id: 'chardham', label: 'CHARDHAM & KEDARNATH', href: '/char-dham-yatra-by-helicopter' },
-    { id: 'flower-dropping', label: 'FLOWER DROPPING', href: '/helicopter-flower-dropping' },
+    { id: 'chardham', label: 'CHARDHAM & KEDARNATH', href: '/chardham' },
+    { id: 'flower-dropping', label: 'FLOWER DROPPING', href: '/flower-dropping' },
     { id: 'fleet', label: 'FLEET', href: '/fleet' },
-    { id: 'charter', label: 'CHARTER SERVICES', href: '/private-helicopter-charter' },
+    { id: 'charter', label: 'CHARTER SERVICES', href: '/charter' },
     { id: 'about', label: 'ABOUT US', href: '/about' },
     { id: 'contact', label: 'CONTACT', href: '/contact' },
   ];
@@ -81,14 +81,12 @@ export const Navbar = ({ currentPage: propCurrentPage, onNavigate }) => {
         <div className="flex items-center gap-3 sm:gap-4">
           {/* Phone Dispatch Link (Desktop) */}
           <a
-            href="tel:+919355611996"
-            className="hidden xl:flex items-center gap-2 px-3 py-1.5 rounded-xs bg-[#A67C52]/10 hover:bg-[#A67C52]/20 border border-[#A67C52]/30 transition-colors text-[#A67C52] hover:text-[#6B4E3D]"
+            href="tel:+919876543210"
+            className="hidden items-center gap-2 rounded-xs border border-[#A67C52]/30 bg-[#A67C52]/10 px-3 py-1.5 text-[#A67C52] transition-colors hover:bg-[#A67C52]/20 hover:text-[#6B4E3D] xl:flex"
           >
-            <div className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-            <Phone className="w-3.5 h-3.5 text-neutral-400" />
-            <span className="text-[12px] font-bold tracking-wider">
-              +91 93556 11996
-            </span>
+            <div className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse" />
+            <Phone className="h-3.5 w-3.5 text-neutral-400" />
+            <span className="text-[12px] font-bold tracking-wider">+91 98765 43210</span>
           </a>
 
           {/* Login Button (Desktop) */}
@@ -157,16 +155,16 @@ export const Navbar = ({ currentPage: propCurrentPage, onNavigate }) => {
               </button>
 
               <a
-                href="tel:+919355611996"
+                href="tel:+919876543210"
                 className="flex items-center justify-center gap-2 p-3 bg-white/5 rounded-xs text-xs font-bold tracking-wider text-neutral-200"
               >
                 <Phone className="w-4 h-4 text-emerald-400" />
-                <span>Call 24/7 Operations: +91 93556 11996</span>
+                <span>Call 24/7 Operations: +91 98765 43210</span>
               </a>
 
               <div className="flex items-center justify-center gap-1.5 text-[11px] text-neutral-500 uppercase tracking-widest pt-2">
                 <Shield className="w-3.5 h-3.5 text-red-500" />
-                <span>Flown by DGCA NSOP-certified operators</span>
+                <span>DGCA NSOP Certified Aviation</span>
               </div>
             </div>
           </div>
@@ -178,4 +176,3 @@ export const Navbar = ({ currentPage: propCurrentPage, onNavigate }) => {
     </header>
   );
 };
-

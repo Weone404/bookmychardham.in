@@ -103,8 +103,8 @@ export const HomePage = ({
               <HoverLiftCard className="bg-[#D9C7B8] border border-[#A67C52]/20 hover:border-[#A67C52]/30 transition-all duration-300 group flex flex-col justify-between relative overflow-hidden">
                 <div className="relative h-64 sm:h-80 w-full overflow-hidden">
                   <img
-                    src="/images/kedarnath-temple-helipad.jpg"
-                    alt="Kedarnath temple and the helipad area, Rudraprayag district"
+                    src="/images/flystar_kedarnath_helicopter_1788161902244.jpg"
+                    alt="Kedarnath Helicopter Tour"
                     className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 filter brightness-90 group-hover:brightness-100"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#D9C7B8] via-transparent to-[#F3E9D0]/30" />
@@ -133,7 +133,7 @@ export const HomePage = ({
                     <motion.button
                       whileHover={safeVariants(hoverScale).whileHover || {}}
                       whileTap={safeVariants(hoverScale).whileTap || {}}
-                      onClick={() => onNavigate?.('char-dham-yatra-by-helicopter')}
+                      onClick={() => onNavigate?.('chardham')}
                       className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#6B4E3D] bg-[#A67C52]/10 hover:bg-[#A67C52] px-4 py-2.5 transition-all cursor-pointer"
                     >
                       <span>View All Packages</span>
@@ -149,7 +149,7 @@ export const HomePage = ({
               <HoverLiftCard className="bg-[#D9C7B8] border border-[#A67C52]/20 hover:border-[#A67C52]/30 transition-all duration-300 group flex flex-col justify-between relative overflow-hidden">
                 <div className="relative h-64 sm:h-80 w-full overflow-hidden">
                   <img
-                    src="/images/helicopter-flower-dropping.jpg"
+                    src="/images/flystar_flower_dropping_1788161916372.jpg"
                     alt="Aerial Flower Dropping"
                     className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 filter brightness-90 group-hover:brightness-100"
                   />
@@ -179,7 +179,7 @@ export const HomePage = ({
                     <motion.button
                       whileHover={safeVariants(hoverScale).whileHover || {}}
                       whileTap={safeVariants(hoverScale).whileTap || {}}
-                      onClick={() => onNavigate?.('helicopter-flower-dropping')}
+                      onClick={() => onNavigate?.('flower-dropping')}
                       className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#6B4E3D] bg-[#A67C52]/10 hover:bg-[#A67C52] px-4 py-2.5 transition-all cursor-pointer"
                     >
                       <span>Ceremony Details</span>
@@ -205,14 +205,14 @@ export const HomePage = ({
                   Corporate &amp; VIP Charter
                 </h3>
                 <p className="text-[#A67C52] text-xs sm:text-sm leading-relaxed mb-6">
-                  Point-to-point rotary transport for executives, site visits and dignitaries. Board at the apron instead of queueing through a terminal, from airports across India.
+                  Direct point-to-point rotary wing transportation for executives, site audits, and dignitaries. Skip congested terminals with seamless tarmac boarding across India.
                 </p>
                 <div className="pt-4 border-t border-[#A67C52]/20 flex items-center justify-between">
-                  <span className="text-xs text-[#A67C52]">Single-engine &amp; twin types</span>
+                  <span className="text-xs text-[#A67C52]">Bell 407 GX &amp; Airbus Fleet</span>
                   <motion.button
                     whileHover={safeVariants(hoverScale).whileHover || {}}
                     whileTap={safeVariants(hoverScale).whileTap || {}}
-                    onClick={() => onNavigate?.('private-helicopter-charter')}
+                    onClick={() => onNavigate?.('charter')}
                     className="text-xs font-bold uppercase tracking-wider text-[#6B4E3D] hover:text-[#8B6639] transition-colors flex items-center gap-1.5 cursor-pointer"
                   >
                     <span>Explore Charters</span>
@@ -241,16 +241,16 @@ export const HomePage = ({
                 </p>
                 <div className="pt-4 border-t border-[#8B6639]/40 flex items-center justify-between">
                   <a
-                    href="tel:+919355611996"
+                    href="tel:+919876543210"
                     className="text-xs font-bold text-[#8B6639] hover:text-[#6B4E3D] flex items-center gap-1.5"
                   >
                     <Phone className="w-3.5 h-3.5" />
-                    <span>Emergency Hotline: +91 93556 11996</span>
+                    <span>Emergency Hotline: +91 98765 43210</span>
                   </a>
                   <motion.button
                     whileHover={safeVariants(hoverScale).whileHover || {}}
                     whileTap={safeVariants(hoverScale).whileTap || {}}
-                    onClick={() => onNavigate?.('private-helicopter-charter')}
+                    onClick={() => onNavigate?.('charter')}
                     className="text-xs font-bold uppercase tracking-wider text-[#6B4E3D] hover:text-[#8B6639] transition-colors cursor-pointer"
                   >
                     Details →
@@ -275,7 +275,7 @@ export const HomePage = ({
                 WHY BOOKMYCHARDHAM LEADS INDIAN ROTARY AVIATION
               </h2>
               <p className="text-[#A67C52] text-sm leading-relaxed">
-                Flying the high Himalayas is unforgiving work. Book My CharDham books sectors with operators certified for it, plans around the weather rather than against it, and keeps one accountable desk between you and the aircraft.
+                Operating in the high Himalayas demands exceptional aeronautical precision. BookMyChardham combines elite ex-defense aviators, OEM-maintained aircraft, and seamless VIP hospitality for devotees and corporate leaders alike.
               </p>
 
               <div className="space-y-4 pt-2">
@@ -285,7 +285,7 @@ export const HomePage = ({
                   </div>
                   <div>
                     <h4 className="text-sm font-bold uppercase text-[#6B4E3D] tracking-wider">
-                      High-Altitude Rated Captains
+                      Ex-Defense High-Altitude Captains
                     </h4>
                     <p className="text-xs text-[#A67C52] mt-1 leading-relaxed">
                       Our command pilots average 4,000+ flying hours in extreme Himalayan terrain, mountain microclimates, and alpine helipad landings.
@@ -327,8 +327,8 @@ export const HomePage = ({
             <FadeInOnScroll delay={0.2} className="lg:col-span-6 flex flex-col space-y-6">
               <HoverLiftCard className="relative border border-[#A67C52]/20 bg-[#D9C7B8] p-2">
                 <img
-                  src="/images/himalaya-peaks.jpg"
-                  alt="Himalayan peaks above the Kedarnath sector"
+                  src="/images/flystar_vip_charter_1788161931733.jpg"
+                  alt="BookMyChardham Executive Helicopter"
                   className="w-full h-80 sm:h-96 object-cover object-center filter brightness-95"
                 />
                 <div className="absolute bottom-6 left-6 right-6 bg-[#F3E9D0]/85 backdrop-blur-md p-5 border border-[#A67C52]/20">
@@ -338,7 +338,7 @@ export const HomePage = ({
                         FLAGSHIP FLEET
                       </span>
                       <span className="text-lg font-bold text-[#6B4E3D] uppercase">
-                        Aircraft type confirmed per sector
+                        Airbus H125 &amp; Bell 407 GX
                       </span>
                     </div>
                     <motion.button
@@ -444,7 +444,7 @@ export const HomePage = ({
           <div className="bg-[#E6D5C1] border border-[#A67C52]/20 p-8 sm:p-12 lg:p-16 flex flex-col lg:flex-row items-center justify-between gap-8 relative overflow-hidden">
             <div className="max-w-2xl text-center lg:text-left">
               <span className="text-[11px] font-bold tracking-[0.24em] text-[#A67C52] uppercase block mb-2">
-                PLAN THE YATRA
+                ELEVATE YOUR JOURNEY
               </span>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black uppercase text-[#6B4E3D] tracking-tight leading-tight">
                 READY TO TAKE FLIGHT?
@@ -464,11 +464,11 @@ export const HomePage = ({
               </button>
 
               <a
-                href="tel:+919355611996"
+                href="tel:+919876543210"
                 className="w-full sm:w-auto flex items-center justify-center gap-2 bg-transparent hover:bg-[#A67C52]/10 text-[#6B4E3D] border border-[#A67C52]/20 px-8 py-4 text-xs font-bold tracking-[0.16em] uppercase transition-all cursor-pointer"
               >
                 <Phone className="w-4 h-4 text-[#8B6639]" />
-                <span>CALL +91 93556 11996</span>
+                <span>CALL +91 98765 43210</span>
               </a>
             </div>
           </div>
