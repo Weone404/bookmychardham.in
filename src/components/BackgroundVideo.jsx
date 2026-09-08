@@ -14,17 +14,46 @@ export const BackgroundVideo = ({
     const video = videoRef.current;
     if (!video) return;
 
-    video.muted = true;
-    video.play().catch(() => {
-      // Browsers may block autoplay until the user interacts with the page.
-    });
+    let idleCallbackId;
+    let timeoutId;
+
+    const playVideo = () => {
+      video.muted = true;
+      video.play().catch(() => {
+        // Browsers may block autoplay until the user interacts with the page.
+      });
+    };
+
+    const schedulePlayback = () => {
+      if ('requestIdleCallback' in window) {
+        idleCallbackId = window.requestIdleCallback(playVideo);
+      } else {
+        timeoutId = window.setTimeout(playVideo, 0);
+      }
+    };
+
+    if (document.readyState === 'complete') {
+      schedulePlayback();
+    } else {
+      window.addEventListener('load', schedulePlayback, { once: true });
+    }
+
+    return () => {
+      window.removeEventListener('load', schedulePlayback);
+      if (idleCallbackId !== undefined) {
+        window.cancelIdleCallback(idleCallbackId);
+      }
+      if (timeoutId !== undefined) {
+        window.clearTimeout(timeoutId);
+      }
+    };
   }, []);
 
   return (
     <div className="fixed inset-0 z-0 h-full w-full overflow-hidden pointer-events-none">
       <video
         ref={videoRef}
-        autoPlay
+        preload="metadata"
         loop
         muted
         playsInline

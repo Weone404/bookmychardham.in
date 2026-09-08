@@ -256,7 +256,7 @@ export const ContactPage = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[REGISTERED_OFFICE, ...DEPARTURE_POINTS].map((base) => (
               <div
-                key={base.city}
+                key={`${base.city}-${base.venue}`}
                 className="bg-[#D9C7B8] border border-[#A67C52]/20 p-6 flex flex-col justify-between"
               >
                 <div>
