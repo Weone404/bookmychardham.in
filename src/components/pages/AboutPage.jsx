@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Image from 'next/image';
 import { 
   ShieldCheck, 
   Award, 
@@ -109,9 +110,12 @@ export const AboutPage = ({ onNavigate }) => {
             {/* Right Image / Stats (5 Cols) */}
             <div className="lg:col-span-5">
               <div className="border border-[#A67C52]/20 bg-[#D9C7B8] p-2 relative">
-                <img
+                <Image
                   src="/images/himalaya-peaks.jpg"
                   alt="Himalayan peaks on the Kedarnath sector"
+                  width={800}
+                  height={384}
+                  sizes="(max-width: 1024px) 100vw, 40vw"
                   className="w-full h-80 sm:h-96 object-cover filter brightness-95"
                 />
                 <div className="absolute bottom-4 left-4 right-4 bg-[#F3E9D0]/85 backdrop-blur-md p-4 border border-[#A67C52]/20 text-xs">

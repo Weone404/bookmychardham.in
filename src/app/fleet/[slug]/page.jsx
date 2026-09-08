@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { FaqSection } from '../../../components/FaqSection';
 import { JsonLd } from '../../../components/JsonLd';
 import { FLEET_DETAILS } from '../../../data/fleet';
@@ -122,7 +123,15 @@ export default async function FleetDetailPage({ params }) {
               </Link>
             </div>
             <div className="hidden overflow-hidden rounded-xl border border-[#E6D5C1]/30 shadow-2xl lg:block">
-              <img src={detail.image} alt={detail.name} className="h-full w-full object-cover" />
+              <Image
+                src={detail.image}
+                alt={detail.name}
+                width={800}
+                height={600}
+                sizes="(max-width: 1024px) 100vw, 40vw"
+                loading="eager"
+                className="h-full w-full object-cover"
+              />
             </div>
           </div>
         </section>

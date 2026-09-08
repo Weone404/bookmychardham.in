@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { useState } from 'react';
 
 export const FleetCard = ({
@@ -26,9 +27,12 @@ export const FleetCard = ({
       <article className="group relative flex h-full flex-col overflow-hidden rounded-xl border border-[#A67C52]/20 bg-[#F3E9D0] shadow-[0_4px_14px_rgba(50,33,22,0.09)] transition-all duration-250 ease-out hover:-translate-y-1 hover:border-[#A67C52]/30 hover:shadow-[0_12px_24px_rgba(50,33,22,0.14)] focus-within:-translate-y-1 focus-within:border-[#A67C52]/30 focus-within:shadow-[0_12px_24px_rgba(50,33,22,0.14)]">
         <div className="relative overflow-hidden rounded-t-xl">
           {image ? (
-            <img
+            <Image
               src={image}
               alt={name}
+              width={800}
+              height={448}
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
               className="h-56 w-full object-cover transition-transform duration-500 group-hover:scale-[1.02] group-focus-within:scale-[1.02]"
             />
           ) : (

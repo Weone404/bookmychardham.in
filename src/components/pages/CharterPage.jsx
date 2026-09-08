@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import Image from 'next/image';
 import { 
   ShieldCheck, 
   ArrowRight, 
@@ -186,9 +187,12 @@ export const CharterPage = ({
             {/* Right Image */}
             <div className="lg:col-span-6">
               <div className="border border-[#A67C52]/20 bg-[#D9C7B8] p-2">
-                <img
+                <Image
                   src={selectedCharter.image}
                   alt={selectedCharter.title}
+                  width={800}
+                  height={384}
+                  sizes="(max-width: 1024px) 100vw, 50vw"
                   className="w-full h-80 sm:h-96 object-cover filter brightness-95"
                 />
               </div>
