@@ -3,6 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   images: {
     formats: ['image/avif', 'image/webp'],
+    deviceSizes: [320, 473, 542, 675, 800, 946, 1084, 1350, 1600],
   },
   poweredByHeader: false,
   async redirects() {
