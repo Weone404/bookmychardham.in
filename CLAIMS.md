@@ -102,7 +102,7 @@ Fixed on merge:
 | Two third-party YouTube embeds of unknown provenance (page hero and per-card hover) | Removed |
 | `/fleet/[slug]` answered on ANY slug — unbounded thin pages | `generateStaticParams()` from the shared list; six real slugs only; `notFound()` otherwise |
 | Neither fleet route had metadata — both inherited the default title | `pageMetadata()` on both; detail pages `noindex, follow` until they carry real content |
-| The branch predated the phone fix and would have reintroduced `+91 98765 43210` | Ours kept |
+| The branch predated the phone fix and would have reintroduced an outdated phone number | Ours kept |
 | It also re-added `public/logo.webp` (the same CHARTER BOOKING mark, re-compressed) and a `public/favicon.ico` | Both dropped; our wordmark and `src/app/favicon.ico` stand |
 
 **Needed to restore fleet imagery:** licensed stock, OEM permission in writing, or
