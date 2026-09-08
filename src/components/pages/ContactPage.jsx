@@ -92,7 +92,7 @@ export const ContactPage = () => {
                       CHARTER &amp; YATRA INQUIRIES
                     </span>
                     <a href="mailto:charters@bookmychardham.in" className="text-sm font-bold text-[#6B4E3D] hover:text-[#8B6639] transition-colors block mt-0.5">
-                      charters@bookmychardham.in
+                      Email us
                     </a>
                     <span className="text-xs text-[#A67C52]">Official inquiries &amp; quote submissions</span>
                   </div>

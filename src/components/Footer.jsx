@@ -130,7 +130,7 @@ export const Footer = ({ onNavigate }) => {
             <div className="flex items-center gap-2">
               <Mail className="w-4 h-4 text-[#A67C52] shrink-0" />
               <a href="mailto:charters@bookmychardham.in" className="text-[#6B4E3D] hover:text-[#A67C52] transition-colors">
-                charters@bookmychardham.in
+                Email us
               </a>
             </div>
 

@@ -218,7 +218,11 @@ export default async function FleetDetailPage({ params }) {
             {detail.ctaText || `Book the ${detail.name} for your next Char Dham Yatra.`}
           </p>
           <p className="mt-4 text-sm text-[#6B4E3D]/75">
-            Call {CONTACT.phoneDisplay} or email {CONTACT.email}.
+            Call {CONTACT.phoneDisplay} or{' '}
+            <a href={`mailto:${CONTACT.email}`} className="underline hover:text-[#A67C52]">
+              email us
+            </a>
+            .
           </p>
           <Link
             href="/contact"
