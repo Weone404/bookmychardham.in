@@ -62,9 +62,24 @@ export const viewport = {
   initialScale: 1,
 };
 
+const organizationJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: SITE.name,
+  url: SITE.url,
+  logo: `${SITE.url}/logo.png`,
+};
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en-IN" className={`dark ${jakarta.variable} ${devanagari.variable}`}>
+      <head>
+        <link rel="icon" href="/logo.png" type="image/png" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+        />
+      </head>
       <body className="bg-[#F3E9D0] text-[#6B4E3D] antialiased min-h-screen flex flex-col justify-between selection:bg-[#A67C52] selection:text-[#F3E9D0] font-sans">
         <Navbar />
         <main className="flex-1 w-full relative z-10">{children}</main>
