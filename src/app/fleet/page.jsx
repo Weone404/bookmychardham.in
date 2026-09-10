@@ -1,5 +1,6 @@
 import Link from 'next/link';
-import { FleetCard } from '../../components/FleetCard';
+import FleetOptionsSection from '../../components/FleetOptionsSection';
+import { getFleetImageCategories } from '../../lib/fleetImages';
 import { pageMetadata } from '../../lib/site';
 import { JsonLd } from '../../components/JsonLd';
 import { graph, organizationSchema, webPageSchema, breadcrumbSchema } from '../../lib/schema';
@@ -11,70 +12,8 @@ const DESC =
 
 export const metadata = pageMetadata({ title: TITLE, description: DESC, path: PATH });
 
-const aircraftList = [
-  {
-    name: 'Avanti 180',
-    image: '/fleets/Avanti_180.webp',
-    seatCount: 9,
-    category: 'Turbo Prop',
-    description:
-      'A versatile turboprop with strong short-field performance, ideal for regional business routes and remote access charter missions.',
-    slug: 'avanti-180',
-    videoUrl: 'https://www.youtube.com/embed/Bw1ldiDqAIk',
-  },
-  {
-    name: 'Cessna Grand Caravan 208B',
-    image: '/fleets/Cessna_Caravan_208B.webp',
-    seatCount: 14,
-    category: 'Turbo Prop',
-    description:
-      'A practical turboprop aircraft suited to regional routes, remote destinations, and comfortable private charter travel.',
-    slug: 'cessna-caravan-208b',
-    videoUrl: 'https://www.youtube.com/embed/VtlEOlhMJMg',
-  },
-  {
-    name: 'Cessna Citation Mustang',
-    image: '/fleets/Cessna_Citation_Mustang.webp',
-    seatCount: 5,
-    category: 'Light Jet',
-    description:
-      'A compact executive jet offering efficient point-to-point travel for small groups and time-sensitive business journeys.',
-    slug: 'cessna-citation-mustang',
-    videoUrl: 'https://www.youtube.com/embed/s5MqoLwnGrY',
-  },
-  {
-    name: 'Challenger 604',
-    image: '/fleets/Challenger_604.webp',
-    seatCount: 10,
-    category: 'Medium Jet',
-    description:
-      'A spacious long-range business jet designed for comfortable executive travel and premium charter itineraries.',
-    slug: 'challenger-604',
-    videoUrl: 'https://www.youtube.com/embed/NiDwxkQ4ZHc',
-  },
-  {
-    name: 'Challenger 605',
-    image: '/fleets/Challenger_605.webp',
-    seatCount: 12,
-    category: 'Medium Jet',
-    description:
-      'An upgraded long-range charter aircraft combining a refined cabin, strong performance, and executive comfort.',
-    slug: 'challenger-605',
-    videoUrl: 'https://www.youtube.com/embed/s_p4qLSUC2E',
-  },
-  {
-    name: 'Citation 525 A',
-    image: '/fleets/Citation_525_A.webp',
-    seatCount: 7,
-    category: 'Light Jet',
-    description:
-      'A dependable light jet for efficient business travel, short-haul charter flights, and regional connectivity.',
-    slug: 'citation-525-a',
-    videoUrl: 'https://www.youtube.com/embed/_uALZI5qKsc',
-  },
-];
-
 export default function FleetPage() {
+  const fleetCategories = getFleetImageCategories();
   return (
     <>
       <JsonLd
@@ -123,27 +62,7 @@ export default function FleetPage() {
         </div>
       </section>
 
-      <section id="fleet-options" className="py-16 sm:py-20 lg:py-24">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 md:px-10 lg:px-12">
-          <div className="mb-10 text-center sm:mb-12">
-            <span className="mb-2 block text-[11px] font-bold uppercase tracking-[0.24em] text-[#A67C52]">
-              Airline-grade comfort
-            </span>
-            <h2 className="text-3xl font-black uppercase tracking-tight text-[#6B4E3D] sm:text-4xl">
-              Our Private Jet Options
-            </h2>
-            <p className="mx-auto mt-4 max-w-2xl text-sm leading-relaxed text-[#6B4E3D]/80 sm:text-base">
-              From executive short hops to long-range corporate travel, choose the aircraft that matches your route, range, and cabin preference.
-            </p>
-          </div>
-
-          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-            {aircraftList.map((aircraft) => (
-              <FleetCard key={aircraft.slug} {...aircraft} />
-            ))}
-          </div>
-        </div>
-      </section>
+      <FleetOptionsSection categories={fleetCategories} />
     </div>
     </>
   );

@@ -4,12 +4,13 @@ import React, { Suspense } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { BookingPage } from '../../components/pages/BookingPage';
 
-function BookingContent() {
+function BookingContent({ aircraftOptions }) {
   const router = useRouter();
   const searchParams = useSearchParams();
 
   const service = searchParams.get('service') || 'kedarnath-sameday';
   const pkg = searchParams.get('package') || undefined;
+  const aircraft = searchParams.get('aircraft') || '';
 
   const handleNavigate = (page) => {
     router.push(page === 'home' ? '/' : `/${page}`);
@@ -17,11 +18,17 @@ function BookingContent() {
   };
 
   return (
-    <BookingPage initialServiceType={service} initialPackageId={pkg} onNavigate={handleNavigate} />
+    <BookingPage
+      initialServiceType={service}
+      initialPackageId={pkg}
+      initialAircraft={aircraft}
+      aircraftOptions={aircraftOptions}
+      onNavigate={handleNavigate}
+    />
   );
 }
 
-export default function Client() {
+export default function Client({ aircraftOptions }) {
   return (
     <Suspense
       fallback={
@@ -32,7 +39,7 @@ export default function Client() {
         </div>
       }
     >
-      <BookingContent />
+      <BookingContent aircraftOptions={aircraftOptions} />
     </Suspense>
   );
 }

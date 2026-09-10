@@ -122,7 +122,7 @@ export const Navbar = ({ currentPage: propCurrentPage, onNavigate }) => {
 
       {/* Mobile Drawer Navigation */}
       {mobileMenuOpen && (
-        <div className="lg:hidden fixed inset-x-0 top-20 bg-black/95 backdrop-blur-xl border-b border-white/15 p-6 shadow-2xl animate-fadeIn">
+        <div className="fixed inset-x-0 top-16 z-50 max-h-[calc(100dvh-4rem)] overflow-y-auto border-b border-white/15 bg-black/95 p-4 shadow-2xl backdrop-blur-xl animate-fadeIn sm:top-20 sm:p-6 lg:hidden">
           <div className="flex flex-col space-y-3">
             {navItems.map((item) => {
               const isActive = activePage === item.id;

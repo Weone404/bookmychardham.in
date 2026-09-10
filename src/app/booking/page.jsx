@@ -2,6 +2,7 @@ import Client from './Client';
 import { pageMetadata } from '../../lib/site';
 import { JsonLd } from '../../components/JsonLd';
 import { graph, organizationSchema, webPageSchema, breadcrumbSchema } from '../../lib/schema';
+import { getFleetImageCategories } from '../../lib/fleetImages';
 
 const PATH = '/booking';
 const TITLE = 'Book Kedarnath & Char Dham Helicopter Tickets';
@@ -11,6 +12,12 @@ const DESC =
 export const metadata = pageMetadata({ title: TITLE, description: DESC, path: PATH, index: false });
 
 export default function Booking() {
+  const aircraftOptions = getFleetImageCategories().flatMap((category) =>
+    category.aircraft.map(({ name, category: aircraftCategory }) => ({
+      name,
+      category: aircraftCategory,
+    })),
+  );
   return (
     <>
       <JsonLd
@@ -23,7 +30,7 @@ export default function Booking() {
           ]),
         ])}
       />
-      <Client />
+      <Client aircraftOptions={aircraftOptions} />
     </>
   );
 }

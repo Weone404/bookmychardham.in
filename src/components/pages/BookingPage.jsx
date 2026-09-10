@@ -19,6 +19,8 @@ import { CHARDHAM_PACKAGES } from '../../data/bookmychardhamData';
 export const BookingPage = ({
   initialServiceType = 'kedarnath-sameday',
   initialPackageId,
+  initialAircraft = '',
+  aircraftOptions = [],
   onNavigate,
 }) => {
   const [formData, setFormData] = useState({
@@ -26,6 +28,7 @@ export const BookingPage = ({
     selectedPackageId: initialPackageId || 'kedarnath-same-day',
     departureBase: 'Dehradun (Sahastradhara Helipad Terminal 2)',
     destination: 'Shri Kedarnath Ji Temple',
+    selectedAircraft: initialAircraft,
     travelDate: new Date(Date.now() + 86400000 * 14).toISOString().split('T')[0],
     returnDate: '',
     passengers: 2,
@@ -260,6 +263,29 @@ export const BookingPage = ({
                         );
                       })}
                     </div>
+                  </div>
+
+                  {/* Aircraft selection */}
+                  <div className="bg-[#121212] border border-white/10 p-6 sm:p-8 space-y-4">
+                    <span className="text-[11px] font-bold tracking-[0.2em] text-[#c8102e] uppercase block mb-1">
+                      PREFERRED AIRCRAFT
+                    </span>
+                    <label htmlFor="selected-aircraft" className="block text-[11px] font-bold uppercase text-neutral-400 mb-1.5 tracking-wider">
+                      SELECT AIRCRAFT
+                    </label>
+                    <select
+                      id="selected-aircraft"
+                      value={formData.selectedAircraft}
+                      onChange={(e) => setFormData({ ...formData, selectedAircraft: e.target.value })}
+                      className="w-full bg-[#181818] border border-white/15 px-3.5 py-3 text-xs text-white focus:border-[#c8102e] focus:outline-none"
+                    >
+                      <option value="">No preference — recommend the best aircraft</option>
+                      {aircraftOptions.map((aircraft) => (
+                        <option key={`${aircraft.category}-${aircraft.name}`} value={aircraft.name}>
+                          {aircraft.name} ({aircraft.category})
+                        </option>
+                      ))}
+                    </select>
                   </div>
 
                   {/* Step 2: Route & Date Selection */}
