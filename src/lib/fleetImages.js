@@ -28,27 +28,41 @@ function readSpecificationSheet() {
   const sheetPath = path.join(process.cwd(), 'fleet-details.md');
   const markdown = fs.readFileSync(sheetPath, 'utf8');
   const entries = new Map();
+  let current = null;
 
   markdown.split(/\r?\n/).forEach((line) => {
-    if (!line.startsWith('|') || line.includes('---') || line.toLowerCase().includes('| aircraft |')) {
+    const heading = line.match(/^###\s+\d+\.\s+(.+)$/);
+    if (heading) {
+      current = { name: heading[1].trim() };
       return;
     }
 
-    const columns = line
-      .split('|')
-      .slice(1, -1)
-      .map((column) => column.replace(/\*\*/g, '').trim());
-    if (columns.length !== 5) return;
+    const field = line.match(/^\*\*(Description|Seats|Luggage|Range|Speed|Pilots|Flight Attendant)\*\*:\s*(.+?)\s*$/);
+    if (field && current) {
+      const [, label, value] = field;
+      const key = {
+        Description: 'description',
+        Seats: 'seats',
+        Luggage: 'baggage',
+        Range: 'range',
+        Speed: 'cruiseSpeed',
+        Pilots: 'pilots',
+        'Flight Attendant': 'flightAttendant',
+      }[label];
+      current[key] = value;
+      if (label === 'Description') current.tagline = value;
+      return;
+    }
 
-    const [name, seats, range, cruiseSpeed, description] = columns;
-    entries.set(normalizeName(name), {
-      tagline: description,
-      description,
-      seats,
-      range,
-      cruiseSpeed,
-    });
+    if (line.trim() === '' && current?.description) {
+      entries.set(normalizeName(current.name), { ...current, name: undefined });
+      current = null;
+    }
   });
+
+  if (current?.description) {
+    entries.set(normalizeName(current.name), { ...current, name: undefined });
+  }
 
   return entries;
 }
@@ -59,7 +73,7 @@ function findSpecification(specificationSheet, name) {
   if (exact) return exact;
 
   if (key === 'hs135') {
-    return specificationSheet.get('eurocopterairbusec135');
+    return specificationSheet.get('hs135airbush135');
   }
 
   for (const [specificationName, details] of specificationSheet) {

@@ -3,13 +3,11 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
-import { Phone, Calendar, Menu, X, Shield, ArrowRight, LogIn } from 'lucide-react';
+import { Phone, Calendar, Menu, X, Shield, ArrowRight } from 'lucide-react';
 import { BookMyChardhamLogo } from './BookMyChardhamLogo';
-import { LoginModal } from './modals/LoginModal';
 
 export const Navbar = ({ currentPage: propCurrentPage, onNavigate }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [loginModalOpen, setLoginModalOpen] = useState(false);
   const pathname = usePathname();
   const router = useRouter();
 
@@ -23,10 +21,10 @@ export const Navbar = ({ currentPage: propCurrentPage, onNavigate }) => {
 
   const navItems = [
     { id: 'home', label: 'HOME', href: '/' },
-    { id: 'chardham', label: 'CHARDHAM & KEDARNATH', href: '/chardham' },
+    { id: 'charter', label: 'CHARTER SERVICES', href: '/charter' },
     { id: 'flower-dropping', label: 'FLOWER DROPPING', href: '/flower-dropping' },
     { id: 'fleet', label: 'FLEET', href: '/fleet' },
-    { id: 'charter', label: 'CHARTER SERVICES', href: '/charter' },
+    { id: 'chardham', label: 'CHARDHAM & KEDARNATH', href: '/chardham' },
     { id: 'about', label: 'ABOUT US', href: '/about' },
     { id: 'contact', label: 'CONTACT', href: '/contact' },
   ];
@@ -77,7 +75,7 @@ export const Navbar = ({ currentPage: propCurrentPage, onNavigate }) => {
           })}
         </nav>
 
-        {/* Right Section: Phone, Login, Book Now CTA & Mobile Hamburger */}
+        {/* Right Section: Phone, Book Now CTA & Mobile Hamburger */}
         <div className="flex items-center gap-3 sm:gap-4">
           {/* Phone Dispatch Link (Desktop) */}
           <a
@@ -88,15 +86,6 @@ export const Navbar = ({ currentPage: propCurrentPage, onNavigate }) => {
             <Phone className="h-3.5 w-3.5 text-neutral-400" />
             <span className="text-[12px] font-bold tracking-wider">+91 93556 11996</span>
           </a>
-
-          {/* Login Button (Desktop) */}
-          <button
-            onClick={() => setLoginModalOpen(true)}
-            className="hidden items-center gap-2 rounded-xs border border-[#A67C52]/30 px-4 py-2 text-[11.5px] font-bold uppercase tracking-[0.14em] text-[#A67C52] transition-all hover:border-[#A67C52]/50 hover:text-[#6B4E3D] sm:flex"
-          >
-            <LogIn className="h-3.5 w-3.5" />
-            <span>LOGIN</span>
-          </button>
 
           {/* Primary Book Now CTA Button */}
           <button
@@ -143,17 +132,6 @@ export const Navbar = ({ currentPage: propCurrentPage, onNavigate }) => {
             })}
 
             <div className="pt-4 mt-2 border-t border-white/10 flex flex-col gap-3">
-              <button
-                onClick={() => {
-                  setLoginModalOpen(true);
-                  setMobileMenuOpen(false);
-                }}
-                className="flex items-center justify-center gap-2 p-3 bg-white/5 hover:bg-white/10 rounded-xs text-xs font-bold tracking-wider text-neutral-200 transition-colors cursor-pointer"
-              >
-                <LogIn className="w-4 h-4 text-[#A67C52]" />
-                <span>LOGIN</span>
-              </button>
-
               <a
                 href="tel:+919355611996"
                 className="flex items-center justify-center gap-2 p-3 bg-white/5 rounded-xs text-xs font-bold tracking-wider text-neutral-200"
@@ -171,8 +149,6 @@ export const Navbar = ({ currentPage: propCurrentPage, onNavigate }) => {
         </div>
       )}
 
-      {/* Login Modal */}
-      <LoginModal isOpen={loginModalOpen} onClose={() => setLoginModalOpen(false)} />
     </header>
   );
 };

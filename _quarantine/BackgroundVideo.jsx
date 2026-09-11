@@ -4,7 +4,7 @@ import React, { useRef, useEffect, useState } from 'react';
 
 export const BackgroundVideo = ({
   initialVideoUrl = 'https://console.cloudinary.com/app/c-01761eb9eda93aa675327b3650493b/assets/media_library/asset/9667cb3da5508ae4ca18bc6cfb2c1805/video',
-  posterUrl = '/airplane-sunset-bg.jpg',
+  posterUrl = '/images/airplane_sunset_bg_1788159475386.webp',
   onVideoLoaded,
 }) => {
   const videoRef = useRef(null);

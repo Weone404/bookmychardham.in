@@ -111,7 +111,7 @@ export const AboutPage = ({ onNavigate }) => {
             <div className="lg:col-span-5">
               <div className="border border-[#A67C52]/20 bg-[#D9C7B8] p-2 relative">
                 <Image
-                  src="/images/himalaya-peaks.jpg"
+                  src="/images/flystar_himalayan_fleet_1788161946820.webp"
                   alt="Himalayan peaks on the Kedarnath sector"
                   width={800}
                   height={384}

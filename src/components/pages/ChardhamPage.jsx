@@ -34,7 +34,7 @@ export const ChardhamPage = ({
             muted
             loop
             playsInline
-            poster="/airplane-sunset-bg.jpg"
+            poster="/images/airplane_sunset_bg_1788159475386.webp"
             className="absolute inset-0 h-full w-full object-cover object-center"
           >
             <source src="/chardham%20%26%20kedarnath%20heli-yatra.mp4" type="video/mp4" />

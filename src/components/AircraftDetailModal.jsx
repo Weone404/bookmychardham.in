@@ -13,6 +13,8 @@ const SPEC_FIELDS = [
   ['cabinDimensions', 'Cabin dimensions'],
   ['baggage', 'Baggage'],
   ['ceiling', 'Ceiling'],
+  ['pilots', 'Pilots'],
+  ['flightAttendant', 'Flight attendant'],
 ];
 
 export default function AircraftDetailModal({ aircraft, onClose }) {
@@ -41,7 +43,7 @@ export default function AircraftDetailModal({ aircraft, onClose }) {
 
         <div className="min-h-0 overflow-y-auto overscroll-contain px-4 py-4 sm:px-7 sm:py-6">
           <div className="relative h-52 overflow-hidden rounded-lg bg-[#E6D5C1] sm:h-60">
-            <Image src={aircraft.image} alt={aircraft.name} fill sizes="(max-width: 640px) 100vw, 640px" className="object-contain p-4" />
+            <Image src={aircraft.image} alt={aircraft.name} fill sizes="(max-width: 640px) 100vw, 640px" className="object-cover" />
           </div>
 
           {!aircraft.matched ? (

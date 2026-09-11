@@ -109,7 +109,7 @@ export const FlowerDroppingPage = ({
             <div className="lg:col-span-5">
               <div className="border border-[#A67C52]/20 bg-[#D9C7B8] p-2 relative">
                 <Image
-                  src="/images/flystar_flower_dropping_1788161916372.jpg"
+                  src="/images/flystar_flower_dropping_1788161916372.webp"
                   alt="Helicopter Aerial Flower Dropping at Royal Wedding"
                   width={800}
                   height={384}

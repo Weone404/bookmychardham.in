@@ -24,7 +24,7 @@ export default function Client() {
     <div className="relative w-full">
       <BackgroundVideo
         initialVideoUrl="/aircraft-videos.mp4"
-        posterUrl="/airplane-sunset-bg.jpg"
+        posterUrl="/images/airplane_sunset_bg_1788159475386.webp"
       />
       <HomePage
         onNavigate={handleNavigate}

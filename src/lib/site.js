@@ -98,7 +98,7 @@ export const LAST_MODIFIED = {
 export const SOCIAL = [];
 
 export const OG_IMAGE = {
-  url: '/og-image.jpg',
+  url: '/images/airplane_sunset_bg_1788159475386.webp',
   width: 1200,
   height: 630,
   alt: 'Book My CharDham — helicopter charter for Kedarnath and Char Dham yatra',
