@@ -103,6 +103,7 @@ export const LAST_MODIFIED = {
   '/about': '2026-09-02',
   '/contact': '2026-09-02',
   '/booking': '2026-09-02',
+  '/blogs': '2026-09-14',
 };
 
 export const SOCIAL = [];

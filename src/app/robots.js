@@ -9,6 +9,11 @@ const AI_CRAWLERS = [
 ];
 
 const PUBLIC_ROUTES = [
+  '/',
+  '/kedarnath-helicopter-yatra',
+  '/char-dham-yatra-by-helicopter',
+  '/helicopter-flower-dropping',
+  '/private-helicopter-charter',
   '/private-jet-charter',
   '/private-jet-charter-booking',
   '/private-jet-booking-india',
@@ -19,15 +24,25 @@ const PUBLIC_ROUTES = [
   '/private-jet-charter-delhi',
   '/corporate-jet-charter',
   '/helicopter-charter-services',
+  '/fleet',
+  '/fleet/avanti-180',
+  '/fleet/cessna-caravan-208b',
+  '/fleet/cessna-citation-mustang',
+  '/fleet/challenger-604',
+  '/fleet/challenger-605',
+  '/fleet/citation-525-a',
+  '/about',
+  '/contact',
+  '/blogs',
 ];
 
 export default function robots() {
   return {
     rules: [
-      { userAgent: '*', allow: ['/', ...PUBLIC_ROUTES], disallow: ['/booking'] },
+      { userAgent: '*', allow: PUBLIC_ROUTES, disallow: ['/booking'] },
       ...AI_CRAWLERS.map((ua) => ({
         userAgent: ua,
-        allow: ['/', ...PUBLIC_ROUTES],
+        allow: PUBLIC_ROUTES,
         disallow: ['/booking'],
       })),
     ],

@@ -26,6 +26,7 @@ const PAGES = [
   { path: '/fleet/citation-525-a', priority: 0.7, changeFrequency: 'monthly' },
   { path: '/about', priority: 0.5, changeFrequency: 'yearly' },
   { path: '/contact', priority: 0.6, changeFrequency: 'yearly' },
+  { path: '/blogs', priority: 0.7, changeFrequency: 'monthly' },
 ];
 
 export default function sitemap() {

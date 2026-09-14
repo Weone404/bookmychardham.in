@@ -23,7 +23,7 @@ export const Footer = ({ onNavigate }) => {
   return (
     <footer className="w-full bg-[#E6D5C1] border-t border-[#A67C52]/30 text-[#A67C52] text-xs relative z-20 pt-16 pb-12 select-none">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-10 lg:px-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 lg:gap-12 pb-14 border-b border-white/10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-10 lg:gap-10 pb-14 border-b border-white/10">
           {/* Col 1: Brand info & Credentials */}
           <div className="lg:col-span-2 flex flex-col space-y-4">
             <BookMyChardhamLogo onClick={() => handleNav('home')} />
@@ -109,6 +109,37 @@ export const Footer = ({ onNavigate }) => {
               className="text-left text-[#A67C52] hover:text-[#6B4E3D] transition-colors cursor-pointer py-0.5"
             >
               Helicopter Charter Services
+            </button>
+          </div>
+
+          {/* Col 5: Travel Guides */}
+          <div className="flex flex-col space-y-3">
+            <span className="text-[11.5px] font-bold tracking-[0.18em] text-[#6B4E3D] uppercase mb-1">
+              TRAVEL GUIDES
+            </span>
+            <button
+              onClick={() => handleNav('blogs')}
+              className="text-left text-[#A67C52] hover:text-[#6B4E3D] transition-colors cursor-pointer py-0.5"
+            >
+              Blogs &amp; Travel Advice
+            </button>
+            <button
+              onClick={() => handleNav('blogs#kedarnath-helicopter-yatra-guide')}
+              className="text-left text-[#A67C52] hover:text-[#6B4E3D] transition-colors cursor-pointer py-0.5"
+            >
+              Kedarnath Yatra Guide
+            </button>
+            <button
+              onClick={() => handleNav('blogs#char-dham-helicopter-yatra')}
+              className="text-left text-[#A67C52] hover:text-[#6B4E3D] transition-colors cursor-pointer py-0.5"
+            >
+              Char Dham Travel Guide
+            </button>
+            <button
+              onClick={() => handleNav('blogs#private-charter-flight-planning')}
+              className="text-left text-[#A67C52] hover:text-[#6B4E3D] transition-colors cursor-pointer py-0.5"
+            >
+              Private Charter Planning
             </button>
           </div>
 
