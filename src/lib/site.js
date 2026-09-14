@@ -21,12 +21,12 @@ export const CONTACT = {
   phoneDisplay: '+91 93556 11996',
   whatsapp: '919355611996',
   whatsappUrl: 'https://wa.me/919355611996',
-  email: 'charters@bookmychardham.in',
+  email: 'info@bookmychardham.in',
 };
 
 export const ADDRESS = {
-  street: 'C-705, Sector 7, Dwarka',
-  locality: 'New Delhi',
+  street: 'C705, Sector 7, Block C',
+  locality: 'Palam Extension, Dwarka',
   region: 'Delhi',
   postalCode: '110077',
   country: 'IN',
@@ -82,6 +82,16 @@ export const LAST_MODIFIED = {
   '/kedarnath-helicopter-yatra': '2026-09-02',
   '/char-dham-yatra-by-helicopter': '2026-09-02',
   '/private-helicopter-charter': '2026-09-02',
+  '/private-jet-charter': '2026-09-14',
+  '/private-jet-charter-booking': '2026-09-14',
+  '/private-jet-booking-india': '2026-09-14',
+  '/charter-flight-booking': '2026-09-14',
+  '/aircraft-charter-services-india': '2026-09-14',
+  '/private-jet-hire': '2026-09-14',
+  '/business-jet-charter': '2026-09-14',
+  '/private-jet-charter-delhi': '2026-09-14',
+  '/corporate-jet-charter': '2026-09-14',
+  '/helicopter-charter-services': '2026-09-14',
   '/helicopter-flower-dropping': '2026-09-02',
   '/fleet': '2026-09-03',
   '/fleet/avanti-180': '2026-09-07',
@@ -98,7 +108,7 @@ export const LAST_MODIFIED = {
 export const SOCIAL = [];
 
 export const OG_IMAGE = {
-  url: '/images/airplane_sunset_bg_1788159475386.webp',
+  url: '/images/airplane_sunset_bg_1788159475386-optimized.webp',
   width: 1200,
   height: 630,
   alt: 'Book My CharDham — helicopter charter for Kedarnath and Char Dham yatra',

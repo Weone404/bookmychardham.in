@@ -4,7 +4,7 @@ import React, { useEffect, useRef, useState } from 'react';
 
 export const BackgroundVideo = ({
   initialVideoUrl = '/aircraft-videos.mp4',
-  posterUrl = '/images/airplane_sunset_bg_1788159475386.webp',
+  posterUrl = '/images/airplane_sunset_bg_1788159475386-optimized.webp',
   onVideoLoaded,
 }) => {
   const videoRef = useRef(null);

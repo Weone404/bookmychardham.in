@@ -81,34 +81,34 @@ export const Footer = ({ onNavigate }) => {
               CHARTER & FLEET
             </span>
             <button
-              onClick={() => handleNav('private-helicopter-charter')}
+              onClick={() => handleNav('private-jet-charter')}
               className="text-left text-[#A67C52] hover:text-[#6B4E3D] transition-colors cursor-pointer py-0.5"
             >
-              Corporate Jet & Heli Charter
+              Private Jet Charter
             </button>
             <button
-              onClick={() => handleNav('private-helicopter-charter')}
+              onClick={() => handleNav('private-jet-charter-booking')}
               className="text-left text-[#A67C52] hover:text-[#6B4E3D] transition-colors cursor-pointer py-0.5"
             >
-              VIP & Dignitary Travel
+              Private Jet Charter Booking
             </button>
             <button
-              onClick={() => handleNav('private-helicopter-charter')}
+              onClick={() => handleNav('corporate-jet-charter')}
               className="text-left text-[#A67C52] hover:text-[#6B4E3D] transition-colors cursor-pointer py-0.5"
             >
-              Air Ambulance (HEMS ICU)
+              Corporate Jet Charter
             </button>
             <button
-              onClick={() => handleNav('about')}
+              onClick={() => handleNav('business-jet-charter')}
               className="text-left text-[#A67C52] hover:text-[#6B4E3D] transition-colors cursor-pointer py-0.5"
             >
-              Single-engine and twin types, per sector
+              Business Jet Charter
             </button>
             <button
-              onClick={() => handleNav('about')}
+              onClick={() => handleNav('helicopter-charter-services')}
               className="text-left text-[#A67C52] hover:text-[#6B4E3D] transition-colors cursor-pointer py-0.5"
             >
-              Pilot & Safety Standards
+              Helicopter Charter Services
             </button>
           </div>
 
@@ -129,15 +129,15 @@ export const Footer = ({ onNavigate }) => {
 
             <div className="flex items-center gap-2">
               <Mail className="w-4 h-4 text-[#A67C52] shrink-0" />
-              <a href="mailto:charters@bookmychardham.in" className="text-[#6B4E3D] hover:text-[#A67C52] transition-colors">
-                Email us
+              <a href="mailto:info@bookmychardham.in" className="text-[#6B4E3D] hover:text-[#A67C52] transition-colors">
+                info@bookmychardham.in
               </a>
             </div>
 
             <div className="flex items-start gap-2 pt-1">
               <MapPin className="w-4 h-4 text-[#A67C52] shrink-0 mt-0.5" />
               <span className="text-[11.5px] text-[#A67C52]/70">
-                Helipad Terminal 2, Sahastradhara, Dehradun, UK 248013
+                C705, Sector 7, Block C, Palam Extension, Dwarka, Delhi, 110077
               </span>
             </div>
 

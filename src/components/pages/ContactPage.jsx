@@ -91,8 +91,8 @@ export const ContactPage = () => {
                     <span className="text-[10px] font-bold text-[#A67C52] uppercase tracking-widest block">
                       CHARTER &amp; YATRA INQUIRIES
                     </span>
-                    <a href="mailto:charters@bookmychardham.in" className="text-sm font-bold text-[#6B4E3D] hover:text-[#8B6639] transition-colors block mt-0.5">
-                      Email us
+                    <a href="mailto:info@bookmychardham.in" className="text-sm font-bold text-[#6B4E3D] hover:text-[#8B6639] transition-colors block mt-0.5">
+                      info@bookmychardham.in
                     </a>
                     <span className="text-xs text-[#A67C52]">Official inquiries &amp; quote submissions</span>
                   </div>

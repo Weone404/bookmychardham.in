@@ -1,73 +1,35 @@
-'use client';
-
 import React from 'react';
-import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { HeroTitle } from '../HeroTitle';
-import { SearchWidget } from '../SearchWidget';
+import { HomeHero } from '../HomeHero';
+import { NavigationButton } from '../NavigationButton';
+import { AnimatedStats } from '../AnimatedStats';
 import { TrustStatBar } from '../TrustStatBar';
 import { 
   ShieldCheck, 
   ArrowRight, 
   Phone, 
-  Sparkles, 
   CheckCircle2, 
   Award,
   ChevronRight
 } from 'lucide-react';
 import { TESTIMONIALS } from '../../data/bookmychardhamData';
 import { 
-  fadeInUp, 
-  staggerContainer, 
-  scrollFadeUp,
-  transitionDefault,
-  cardHover,
-  safeVariants,
-  safeTransition,
-  hoverScale
 } from '../../utils/animations';
 import { FadeInOnScroll, HoverLiftCard } from '../animations/AnimationComponents';
 
-export const HomePage = ({
-  onNavigate,
-  onSelectServiceForBooking,
-}) => {
+export const HomePage = () => {
   return (
     <div className="w-full text-[#6B4E3D]">
       {/* 1. HERO SECTION (Preserving the iconic visual system) */}
       <section className="min-h-[85vh] lg:min-h-[92vh] flex flex-col justify-end px-4 sm:px-6 md:px-10 lg:px-12 pb-14 lg:pb-18 relative z-10 pt-20">
         <div className="max-w-7xl mx-auto w-full">
-          <motion.div 
-            className="flex flex-col mb-4"
-            variants={staggerContainer}
-            initial="initial"
-            animate="animate"
-          >
-            <motion.div 
-              variants={fadeInUp}
-              transition={transitionDefault}
-              className="inline-flex items-center gap-2 px-3 py-1 bg-[#F3E9D0]/60 backdrop-blur-md border border-[#A67C52]/20 rounded-xs w-fit mb-3 text-[11px] font-bold tracking-[0.2em] text-[#A67C52] uppercase"
-            >
-              <Sparkles className="w-3 h-3" />
-              <span>India&apos;s Premier Helicopter Charter Service</span>
-            </motion.div>
+          <div className="flex flex-col mb-4">
+            <HomeHero variant="badge" />
             <HeroTitle />
-          </motion.div>
+          </div>
 
-          <motion.div
-            variants={fadeInUp}
-            transition={{ ...transitionDefault, delay: 0.4 }}
-            initial="initial"
-            animate="animate"
-          >
-            <SearchWidget
-              onQuickBook={(service) => {
-                onSelectServiceForBooking?.(service);
-                onNavigate?.('booking');
-              }}
-              onNavigate={onNavigate}
-            />
-          </motion.div>
+          <HomeHero variant="search" />
         </div>
       </section>
 
@@ -77,13 +39,7 @@ export const HomePage = ({
       {/* 3. OUR SERVICES OVERVIEW (Asymmetrical, High Craft Layout) */}
       <section className="py-20 lg:py-28 bg-[#E6D5C1] relative z-10 border-b border-[#A67C52]/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-10 lg:px-12">
-          <motion.div 
-            className="flex flex-col md:flex-row md:items-end justify-between mb-14 gap-6"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: '0px 0px -100px 0px' }}
-            transition={safeTransition(transitionDefault)}
-          >
+          <FadeInOnScroll className="flex flex-col md:flex-row md:items-end justify-between mb-14 gap-6">
             <div>
               <span className="text-[11px] font-bold tracking-[0.24em] text-[#A67C52] uppercase block mb-2">
                 EXCELLENCE IN ROTARY AVIATION
@@ -95,7 +51,7 @@ export const HomePage = ({
             <p className="text-[#A67C52] text-sm max-w-md leading-relaxed">
               From sacred Himalayan shrines to grand ceremonial flower showers and emergency medical evacuations, BookMyChardham delivers precision flight solutions.
             </p>
-          </motion.div>
+          </FadeInOnScroll>
 
           {/* Asymmetric Services Showcase */}
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8">
@@ -134,15 +90,13 @@ export const HomePage = ({
                     <div className="text-xs text-[#A67C52]">
                       Starting from <span className="text-[#6B4E3D] font-bold text-base">₹95,000</span> / seat
                     </div>
-                    <motion.button
-                      whileHover={safeVariants(hoverScale).whileHover || {}}
-                      whileTap={safeVariants(hoverScale).whileTap || {}}
-                      onClick={() => onNavigate?.('chardham')}
+                    <NavigationButton
+                      page="chardham"
                       className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#6B4E3D] bg-[#A67C52]/10 hover:bg-[#A67C52] px-4 py-2.5 transition-all cursor-pointer"
                     >
                       <span>View All Packages</span>
                       <ArrowRight className="w-3.5 h-3.5" />
-                    </motion.button>
+                    </NavigationButton>
                   </div>
                 </div>
               </HoverLiftCard>
@@ -183,15 +137,13 @@ export const HomePage = ({
                     <div className="text-xs text-[#A67C52]">
                       Packages from <span className="text-[#6B4E3D] font-bold text-base">50kg - 500kg</span>
                     </div>
-                    <motion.button
-                      whileHover={safeVariants(hoverScale).whileHover || {}}
-                      whileTap={safeVariants(hoverScale).whileTap || {}}
-                      onClick={() => onNavigate?.('flower-dropping')}
+                    <NavigationButton
+                      page="flower-dropping"
                       className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#6B4E3D] bg-[#A67C52]/10 hover:bg-[#A67C52] px-4 py-2.5 transition-all cursor-pointer"
                     >
                       <span>Ceremony Details</span>
                       <ArrowRight className="w-3.5 h-3.5" />
-                    </motion.button>
+                    </NavigationButton>
                   </div>
                 </div>
               </HoverLiftCard>
@@ -216,15 +168,13 @@ export const HomePage = ({
                 </p>
                 <div className="pt-4 border-t border-[#A67C52]/20 flex items-center justify-between">
                   <span className="text-xs text-[#A67C52]">Bell 407 GX &amp; Airbus Fleet</span>
-                  <motion.button
-                    whileHover={safeVariants(hoverScale).whileHover || {}}
-                    whileTap={safeVariants(hoverScale).whileTap || {}}
-                    onClick={() => onNavigate?.('charter')}
+                  <NavigationButton
+                    page="charter"
                     className="text-xs font-bold uppercase tracking-wider text-[#6B4E3D] hover:text-[#8B6639] transition-colors flex items-center gap-1.5 cursor-pointer"
                   >
                     <span>Explore Charters</span>
                     <ChevronRight className="w-4 h-4" />
-                  </motion.button>
+                  </NavigationButton>
                 </div>
               </HoverLiftCard>
             </FadeInOnScroll>
@@ -254,14 +204,12 @@ export const HomePage = ({
                     <Phone className="w-3.5 h-3.5" />
                     <span>Emergency Hotline: +91 93556 11996</span>
                   </a>
-                  <motion.button
-                    whileHover={safeVariants(hoverScale).whileHover || {}}
-                    whileTap={safeVariants(hoverScale).whileTap || {}}
-                    onClick={() => onNavigate?.('charter')}
+                  <NavigationButton
+                    page="charter"
                     className="text-xs font-bold uppercase tracking-wider text-[#6B4E3D] hover:text-[#8B6639] transition-colors cursor-pointer"
                   >
                     Details →
-                  </motion.button>
+                  </NavigationButton>
                 </div>
               </HoverLiftCard>
             </FadeInOnScroll>
@@ -351,52 +299,19 @@ export const HomePage = ({
                         Airbus H125 &amp; Bell 407 GX
                       </span>
                     </div>
-                    <motion.button
-                      whileHover={safeVariants(hoverScale).whileHover || {}}
-                      whileTap={safeVariants(hoverScale).whileTap || {}}
-                      onClick={() => onNavigate?.('about')}
+                    <NavigationButton
+                      page="about"
                       className="text-xs font-bold text-[#6B4E3D] hover:text-[#A67C52] uppercase tracking-wider flex items-center gap-1 cursor-pointer"
                     >
                       <span>Fleet Specs</span>
                       <ArrowRight className="w-3.5 h-3.5" />
-                    </motion.button>
+                    </NavigationButton>
                   </div>
                 </div>
               </HoverLiftCard>
 
               {/* Quick Fleet Quick-Stats */}
-              <motion.div 
-                className="grid grid-cols-3 gap-3 text-center"
-                variants={staggerContainer}
-                initial="initial"
-                whileInView="animate"
-                viewport={{ once: true, margin: '0px 0px -50px 0px' }}
-              >
-                <motion.div 
-                  variants={fadeInUp}
-                  transition={transitionDefault}
-                  className="p-3 bg-[#D9C7B8] border border-[#A67C52]/20 hover:border-[#A67C52]/40 transition-colors"
-                >
-                  <span className="text-lg font-black text-[#6B4E3D] block">23,000 FT</span>
-                  <span className="text-[10px] uppercase tracking-wider text-[#A67C52]">Altitude Ceiling</span>
-                </motion.div>
-                <motion.div 
-                  variants={fadeInUp}
-                  transition={transitionDefault}
-                  className="p-3 bg-[#D9C7B8] border border-[#A67C52]/20 hover:border-[#A67C52]/40 transition-colors"
-                >
-                  <span className="text-lg font-black text-[#6B4E3D] block">260 KM/H</span>
-                  <span className="text-[10px] uppercase tracking-wider text-[#A67C52]">Max Cruise Speed</span>
-                </motion.div>
-                <motion.div 
-                  variants={fadeInUp}
-                  transition={transitionDefault}
-                  className="p-3 bg-[#D9C7B8] border border-[#A67C52]/20 hover:border-[#A67C52]/40 transition-colors"
-                >
-                  <span className="text-lg font-black text-[#6B4E3D] block">45 MINS</span>
-                  <span className="text-[10px] uppercase tracking-wider text-[#A67C52]">Rapid Dispatch</span>
-                </motion.div>
-              </motion.div>
+              <AnimatedStats />
             </FadeInOnScroll>
           </div>
         </div>
@@ -465,13 +380,13 @@ export const HomePage = ({
             </div>
 
             <div className="flex flex-col sm:flex-row items-center gap-4 w-full lg:w-auto shrink-0">
-              <button
-                onClick={() => onNavigate?.('booking')}
+              <NavigationButton
+                page="booking"
                 className="w-full sm:w-auto flex items-center justify-center gap-2 bg-[#A67C52] hover:bg-[#8B6639] active:scale-95 text-white px-8 py-4 text-xs font-bold tracking-[0.16em] uppercase transition-all shadow-xl cursor-pointer"
               >
                 <span>BOOK NOW</span>
                 <ArrowRight className="w-4 h-4" />
-              </button>
+              </NavigationButton>
 
               <a
                 href="tel:+919355611996"

@@ -1,4 +1,5 @@
 import Client from './Client';
+import { HomePage } from '../components/pages/HomePage';
 import { pageMetadata } from '../lib/site';
 import { JsonLd } from '../components/JsonLd';
 import { graph, organizationSchema, websiteSchema, webPageSchema, breadcrumbSchema } from '../lib/schema';
@@ -21,6 +22,7 @@ export default function Home() {
         ])}
       />
       <Client />
+      <HomePage />
     </>
   );
 }

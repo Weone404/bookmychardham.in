@@ -15,6 +15,7 @@ import {
   AlertCircle
 } from 'lucide-react';
 import { CHARDHAM_PACKAGES } from '../../data/bookmychardhamData';
+import AirportAutocomplete from '../AirportAutocomplete';
 
 export const BookingPage = ({
   initialServiceType = 'kedarnath-sameday',
@@ -27,6 +28,7 @@ export const BookingPage = ({
     serviceType: initialServiceType,
     selectedPackageId: initialPackageId || 'kedarnath-same-day',
     departureBase: 'Dehradun (Sahastradhara Helipad Terminal 2)',
+    selectedAirport: null,
     destination: 'Shri Kedarnath Ji Temple',
     selectedAircraft: initialAircraft,
     travelDate: new Date(Date.now() + 86400000 * 14).toISOString().split('T')[0],
@@ -299,17 +301,11 @@ export const BookingPage = ({
                         <label className="block text-[11px] font-bold uppercase text-neutral-400 mb-1.5 tracking-wider">
                           DEPARTURE BASE / HELIPAD
                         </label>
-                        <select
+                        <AirportAutocomplete
                           value={formData.departureBase}
-                          onChange={(e) => setFormData({ ...formData, departureBase: e.target.value })}
-                          className="w-full bg-[#181818] border border-white/15 px-3.5 py-3 text-xs text-white focus:border-[#c8102e] focus:outline-none"
-                        >
-                          <option value="Dehradun (Sahastradhara Helipad Terminal 2)">Dehradun (Sahastradhara Helipad Terminal 2)</option>
-                          <option value="Guptkashi / Sersi / Phata Helipad">Guptkashi / Sersi / Phata Helipad</option>
-                          <option value="New Delhi NCR (IGI Airport GA / Rohini)">New Delhi NCR (IGI Airport GA / Rohini)</option>
-                          <option value="Mumbai (Juhu Aerodrome Hangar 4)">Mumbai (Juhu Aerodrome Hangar 4)</option>
-                          <option value="Custom Private Helipad / Venue">Custom Private Helipad / Wedding Venue</option>
-                        </select>
+                          onChange={(departureBase) => setFormData({ ...formData, departureBase, selectedAirport: null })}
+                          onSelect={(selectedAirport) => setFormData((prev) => ({ ...prev, selectedAirport }))}
+                        />
                       </div>
 
                       <div>

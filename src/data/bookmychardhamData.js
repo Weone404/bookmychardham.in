@@ -422,7 +422,7 @@ export const REGISTERED_OFFICE = {
   city: 'New Delhi',
   kind: 'Registered office',
   venue: 'Book My CharDham',
-  address: 'C-705, Sector 7, Dwarka, New Delhi 110077, Delhi',
+  address: 'C705, Sector 7, Block C, Palam Extension, Dwarka, Delhi 110077',
   coordinates: '28.6149\u00b0 N, 77.0218\u00b0 E',
 };
 
