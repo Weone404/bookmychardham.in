@@ -21,10 +21,10 @@ export const Navbar = ({ currentPage: propCurrentPage, onNavigate }) => {
 
   const navItems = [
     { id: 'home', label: 'HOME', href: '/' },
-    { id: 'charter', label: 'CHARTER SERVICES', href: '/charter' },
-    { id: 'flower-dropping', label: 'FLOWER DROPPING', href: '/flower-dropping' },
+    { id: 'private-jet-charter', label: 'PRIVATE JET', href: '/private-jet-charter' },
+    { id: 'helicopter-charter-services', label: 'HELICOPTER CHARTER', href: '/helicopter-charter-services' },
     { id: 'fleet', label: 'FLEET', href: '/fleet' },
-    { id: 'chardham', label: 'CHARDHAM & KEDARNATH', href: '/chardham' },
+    { id: 'char-dham-yatra-by-helicopter', label: 'CHARDHAM & KEDARNATH', href: '/char-dham-yatra-by-helicopter' },
     { id: 'about', label: 'ABOUT US', href: '/about' },
     { id: 'contact', label: 'CONTACT', href: '/contact' },
   ];

@@ -67,7 +67,7 @@ export function serviceSchema({ name, description, path, price, priceType }) {
     '@id': `${SITE.url}${path}#service`,
     name,
     description,
-    serviceType: 'Helicopter charter',
+    serviceType: name,
     provider: { '@id': ORG_ID },
     areaServed: AREA_SERVED.map((n) => ({ '@type': 'Place', name: n })),
     offers: offer,

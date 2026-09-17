@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /booking/
 
-Sitemap: https://bookmychardham.in/sitemap.xml
+Sitemap: https://www.bookmychardham.in/sitemap.xml

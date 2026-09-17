@@ -1,4 +1,5 @@
 import { SITE, LAST_MODIFIED } from '../lib/site';
+import { privateAviationPageOrder } from '../data/privateAviationPages';
 
 // Real per-page dates. Uniform "now" timestamps get discounted as fake freshness.
 const PAGES = [
@@ -7,16 +8,11 @@ const PAGES = [
   { path: '/char-dham-yatra-by-helicopter', priority: 0.9, changeFrequency: 'weekly' },
   { path: '/helicopter-flower-dropping', priority: 0.8, changeFrequency: 'monthly' },
   { path: '/private-helicopter-charter', priority: 0.8, changeFrequency: 'monthly' },
-  { path: '/private-jet-charter', priority: 0.8, changeFrequency: 'monthly' },
-  { path: '/private-jet-charter-booking', priority: 0.8, changeFrequency: 'monthly' },
-  { path: '/private-jet-booking-india', priority: 0.8, changeFrequency: 'monthly' },
-  { path: '/charter-flight-booking', priority: 0.8, changeFrequency: 'monthly' },
-  { path: '/aircraft-charter-services-india', priority: 0.8, changeFrequency: 'monthly' },
-  { path: '/private-jet-hire', priority: 0.8, changeFrequency: 'monthly' },
-  { path: '/business-jet-charter', priority: 0.8, changeFrequency: 'monthly' },
-  { path: '/private-jet-charter-delhi', priority: 0.8, changeFrequency: 'monthly' },
-  { path: '/corporate-jet-charter', priority: 0.8, changeFrequency: 'monthly' },
-  { path: '/helicopter-charter-services', priority: 0.8, changeFrequency: 'monthly' },
+  ...privateAviationPageOrder.map((slug) => ({
+    path: `/${slug}`,
+    priority: 0.8,
+    changeFrequency: 'monthly',
+  })),
   { path: '/fleet', priority: 0.7, changeFrequency: 'monthly' },
   { path: '/fleet/avanti-180', priority: 0.7, changeFrequency: 'monthly' },
   { path: '/fleet/cessna-caravan-208b', priority: 0.7, changeFrequency: 'monthly' },

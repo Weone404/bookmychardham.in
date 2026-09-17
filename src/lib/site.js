@@ -10,7 +10,7 @@ export const SITE = {
   url: 'https://www.bookmychardham.in',
   logo: 'https://www.bookmychardham.in/logo.png',
   description:
-    'Independent helicopter charter operator for Kedarnath, Badrinath and Char Dham yatra, aerial flower dropping and VIP charter flights.',
+    'BookMyChardham provides private jet charter, helicopter charter, aircraft charter, and charter flight services for business, leisure, VIP, and pilgrimage travel across India.',
   locale: 'en_IN',
   languages: ['English', 'Hindi'],
   priceRange: '₹₹₹',
@@ -92,6 +92,8 @@ export const LAST_MODIFIED = {
   '/private-jet-charter-delhi': '2026-09-14',
   '/corporate-jet-charter': '2026-09-14',
   '/helicopter-charter-services': '2026-09-14',
+  '/helicopter-booking': '2026-09-17',
+  '/corporate-helicopter-charter': '2026-09-17',
   '/helicopter-flower-dropping': '2026-09-02',
   '/fleet': '2026-09-03',
   '/fleet/avanti-180': '2026-09-07',

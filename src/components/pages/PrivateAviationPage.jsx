@@ -61,7 +61,6 @@ export function PrivateAviationPage({
             src={heroImage}
             alt={title}
             fill
-            priority
             sizes="100vw"
             className="object-cover object-center opacity-90"
           />

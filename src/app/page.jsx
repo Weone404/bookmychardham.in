@@ -4,9 +4,9 @@ import { pageMetadata } from '../lib/site';
 import { JsonLd } from '../components/JsonLd';
 import { graph, organizationSchema, websiteSchema, webPageSchema, breadcrumbSchema } from '../lib/schema';
 
-const TITLE = 'Kedarnath & Char Dham Helicopter Charter | Book My CharDham';
+const TITLE = 'Private Jet & Helicopter Charter Services in India | BookMyChardham';
 const DESC =
-  'Helicopter charter for Kedarnath, Badrinath & Char Dham yatra from Dehradun. VIP darshan, flower dropping ceremonies, same-day return. Call +91 93556 11996.';
+  'BookMyChardham arranges private jet charter, business jet charter, helicopter charter, aircraft charter, and charter flight services across India for business, leisure, and pilgrimage travel.';
 
 export const metadata = pageMetadata({ title: TITLE, description: DESC, path: '/' });
 

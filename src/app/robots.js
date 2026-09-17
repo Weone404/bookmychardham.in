@@ -24,6 +24,8 @@ const PUBLIC_ROUTES = [
   '/private-jet-charter-delhi',
   '/corporate-jet-charter',
   '/helicopter-charter-services',
+  '/helicopter-booking',
+  '/corporate-helicopter-charter',
   '/fleet',
   '/fleet/avanti-180',
   '/fleet/cessna-caravan-208b',
@@ -36,16 +38,18 @@ const PUBLIC_ROUTES = [
   '/blogs',
 ];
 
+const CRAWLER_RULES = [
+  { userAgent: '*', allow: PUBLIC_ROUTES, disallow: ['/booking'] },
+  ...AI_CRAWLERS.map((ua) => ({
+    userAgent: ua,
+    allow: PUBLIC_ROUTES,
+    disallow: ['/booking'],
+  })),
+];
+
 export default function robots() {
   return {
-    rules: [
-      { userAgent: '*', allow: PUBLIC_ROUTES, disallow: ['/booking'] },
-      ...AI_CRAWLERS.map((ua) => ({
-        userAgent: ua,
-        allow: PUBLIC_ROUTES,
-        disallow: ['/booking'],
-      })),
-    ],
+    rules: CRAWLER_RULES,
     sitemap: `${SITE.url}/sitemap.xml`,
     host: SITE.url,
   };

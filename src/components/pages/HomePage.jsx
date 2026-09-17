@@ -91,7 +91,7 @@ export const HomePage = () => {
                       Starting from <span className="text-[#6B4E3D] font-bold text-base">₹95,000</span> / seat
                     </div>
                     <NavigationButton
-                      page="chardham"
+                      page="char-dham-yatra-by-helicopter"
                       className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#6B4E3D] bg-[#A67C52]/10 hover:bg-[#A67C52] px-4 py-2.5 transition-all cursor-pointer"
                     >
                       <span>View All Packages</span>
@@ -138,7 +138,7 @@ export const HomePage = () => {
                       Packages from <span className="text-[#6B4E3D] font-bold text-base">50kg - 500kg</span>
                     </div>
                     <NavigationButton
-                      page="flower-dropping"
+                      page="helicopter-flower-dropping"
                       className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#6B4E3D] bg-[#A67C52]/10 hover:bg-[#A67C52] px-4 py-2.5 transition-all cursor-pointer"
                     >
                       <span>Ceremony Details</span>
@@ -169,7 +169,7 @@ export const HomePage = () => {
                 <div className="pt-4 border-t border-[#A67C52]/20 flex items-center justify-between">
                   <span className="text-xs text-[#A67C52]">Bell 407 GX &amp; Airbus Fleet</span>
                   <NavigationButton
-                    page="charter"
+                    page="private-jet-charter"
                     className="text-xs font-bold uppercase tracking-wider text-[#6B4E3D] hover:text-[#8B6639] transition-colors flex items-center gap-1.5 cursor-pointer"
                   >
                     <span>Explore Charters</span>
@@ -205,7 +205,7 @@ export const HomePage = () => {
                     <span>Emergency Hotline: +91 93556 11996</span>
                   </a>
                   <NavigationButton
-                    page="charter"
+                    page="private-jet-charter"
                     className="text-xs font-bold uppercase tracking-wider text-[#6B4E3D] hover:text-[#8B6639] transition-colors cursor-pointer"
                   >
                     Details →

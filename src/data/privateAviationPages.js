@@ -1,7 +1,7 @@
 export const privateAviationPages = {
   'private-jet-charter': {
     slug: 'private-jet-charter',
-    title: 'Private Jet Charter | Tailored Aviation for Business & Leisure',
+    title: 'Private Jet Charter & Booking in India | BookMyChardham',
     header: 'Private Jet Charter',
     eyebrow: 'PRIVATE AVIATION / INDIA',
     description:
@@ -74,7 +74,7 @@ export const privateAviationPages = {
   },
   'private-jet-charter-booking': {
     slug: 'private-jet-charter-booking',
-    title: 'Private Jet Charter Booking | Request a Quote for Flexible Travel',
+    title: 'Private Jet Charter Booking in India | Request a Quote',
     header: 'Private Jet Charter Booking',
     eyebrow: 'BOOKING & QUOTATION',
     description:
@@ -146,7 +146,7 @@ export const privateAviationPages = {
   },
   'private-jet-booking-india': {
     slug: 'private-jet-booking-india',
-    title: 'Private Jet Booking India | Domestic Charter Travel Planning',
+    title: 'Private Jet Booking in India | Request a Charter Quote',
     header: 'Private Jet Booking India',
     eyebrow: 'INDIA PRIVATE AVIATION',
     description:
@@ -218,7 +218,7 @@ export const privateAviationPages = {
   },
   'charter-flight-booking': {
     slug: 'charter-flight-booking',
-    title: 'Charter Flight Booking | Private and Corporate Aviation Enquiries',
+    title: 'Charter Flight Booking & Aircraft Charter India | BookMyChardham',
     header: 'Charter Flight Booking',
     eyebrow: 'AIRCRAFT BOOKING',
     description:
@@ -290,7 +290,7 @@ export const privateAviationPages = {
   },
   'aircraft-charter-services-india': {
     slug: 'aircraft-charter-services-india',
-    title: 'Aircraft Charter Services India | Executive, Leisure & Private Aviation',
+    title: 'Aircraft Charter Services India | BookMyChardham',
     header: 'Aircraft Charter Services India',
     eyebrow: 'INDIA AIRCRAFT CHARTER',
     description:
@@ -362,7 +362,7 @@ export const privateAviationPages = {
   },
   'private-jet-hire': {
     slug: 'private-jet-hire',
-    title: 'Private Jet Hire | Flexible Charter Access for Business & Leisure',
+    title: 'Private Jet Hire in India | Flexible Charter Access',
     header: 'Private Jet Hire',
     eyebrow: 'PRIVATE JET HIRE',
     description:
@@ -434,7 +434,7 @@ export const privateAviationPages = {
   },
   'business-jet-charter': {
     slug: 'business-jet-charter',
-    title: 'Business Jet Charter | Executive Travel for Meetings & Multi-City Routes',
+    title: 'Business Jet Charter in India | Executive Travel',
     header: 'Business Jet Charter',
     eyebrow: 'EXECUTIVE AVIATION',
     description:
@@ -504,9 +504,153 @@ export const privateAviationPages = {
     faqTitle: 'Business Jet Charter FAQs',
     sectionLabel: 'EXECUTIVE MOBILITY',
   },
+  'helicopter-booking': {
+    slug: 'helicopter-booking',
+    title: 'Helicopter Booking in India | Request a Charter Quote',
+    header: 'Helicopter Booking',
+    eyebrow: 'HELICOPTER BOOKING / INDIA',
+    description:
+      'Helicopter booking in India supports pilgrimage travel, executive movement, remote-access travel, and event or private charter coordination with a clear booking workflow and route planning support.',
+    trustHighlights: [
+      'Fast Route Planning',
+      'Private Charter Coordination',
+      'Pilgrimage & Corporate Support',
+      '24/7 Booking Assistance',
+      'Flexible Timing',
+    ],
+    introTitle: 'A practical helicopter booking process for route-sensitive travel.',
+    introParagraphs: [
+      'Helicopter booking is often chosen when time sensitivity, remote access, or direct point-to-point travel matters more than scheduled commercial movement. This can apply to Char Dham travel, VIP movement, business operations, and private transfers to destinations that are difficult to reach by road or fixed flights.',
+      'The booking process usually starts with a few important details: origin, destination, travel date, passenger count, and the preferred timing. Once those requirements are clear, the charter coordination can suggest the best operational approach for the route and any passenger or weather considerations.',
+      'BookMyChardham supports helicopter booking with a practical, responsive process designed to keep travel planning straightforward. Whether the aim is a quick transfer, a pilgrimage journey, or a business charter, the focus remains on clarity, route feasibility, and alignment with the actual trip requirement.',
+    ],
+    introPoints: [
+      'Booking support for pilgrimage, corporate, and private travel',
+      'Planning aligned with route, timing, and passenger requirements',
+      'Flexible dispatch for time-sensitive movement',
+      'Clear communication from enquiry to approval',
+    ],
+    benefits: [
+      { title: 'Route Planning', description: 'We help shape a practical booking plan around the actual origin, destination, and timing requirements.', icon: 'route' },
+      { title: 'Time-Sensitive Travel', description: 'Useful when direct movement matters more than waiting for standard airline schedules.', icon: 'clock' },
+      { title: 'Private & VIP Support', description: 'Well suited to business, personal, and high-priority travel arrangements.', icon: 'shield' },
+      { title: 'Pilgrimage Coordination', description: 'Helpful for Char Dham, remote temple access, and route-sensitive travel plans.', icon: 'map' },
+      { title: 'Operational Clarity', description: 'The booking process focuses on real trip requirements instead of generic fixed offerings.', icon: 'support' },
+      { title: 'Flexible Scheduling', description: 'A charter plan can be shaped around your preferred flying window and passenger needs.', icon: 'timer' },
+    ],
+    fleet: [
+      { name: 'Executive Helicopter Travel', description: 'A convenient option for private and business travel where timing and direct access matter.', note: 'Best for time-sensitive and premium travel movement.' },
+      { name: 'Pilgrimage & Remote Access', description: 'Useful for religious travel, terrain-sensitive routes, and destination access where road travel is less practical.', note: 'Ideal for direct route coordination.' },
+      { name: 'Corporate Movement', description: 'Helpful for leadership travel, client visits, and executive mobility across India.', note: 'Designed around business travel efficiency.' },
+    ],
+    process: [
+      { title: 'Share Route Details', description: 'Tell us the departure point, destination, date, and passenger count.' },
+      { title: 'Define Timing Needs', description: 'Share your preferred travel window and any operational considerations.' },
+      { title: 'Receive Booking Guidance', description: 'We review route feasibility and suggest a practical coordination approach.' },
+      { title: 'Confirm the Charter Plan', description: 'Approve the route, timing, and communication details before final confirmation.' },
+      { title: 'Travel On Schedule', description: 'Proceed with a clear, direct charter plan built around your journey.' },
+    ],
+    whyChoose: [
+      'Simple, route-focused helicopter booking support',
+      'Approach suited to business, pilgrimage, and private travel',
+      'Clear communication from the first enquiry',
+      'Planning based on actual route and timing needs',
+      'Practical support for premium air mobility',
+    ],
+    useCases: ['Pilgrimage travel', 'Business trips', 'VIP transfers', 'Remote destination access', 'Event movement'],
+    destinations: ['Delhi', 'Dehradun', 'Haridwar', 'Rishikesh', 'Kedarnath', 'Badrinath', 'Uttarakhand', 'NCR', 'Himalayan routes'],
+    faqs: [
+      { question: 'What does helicopter booking involve?', answer: 'It involves planning the trip around route, timing, passenger count, and operational feasibility before confirming the charter arrangement.' },
+      { question: 'Can I book a helicopter for a private trip?', answer: 'Yes. Private and personal helicopter movement is a common requirement for executive, pilgrimage, and special travel plans.' },
+      { question: 'Is helicopter booking suitable for pilgrimage travel?', answer: 'Yes. It is often used when direct access to remote pilgrimage destinations is important and road travel is not the preferred option.' },
+      { question: 'What details do I need before booking?', answer: 'Travel date, origin, destination, passenger count, and timing preference are usually enough to start the coordination process.' },
+      { question: 'How long does booking take?', answer: 'Timing depends on the route, weather, and operational readiness, but clear requirements typically allow a faster planning decision.' },
+    ],
+    internalLinks: [
+      { label: 'Helicopter Charter Services', href: '/helicopter-charter-services' },
+      { label: 'Private Helicopter Charter', href: '/private-helicopter-charter' },
+      { label: 'Char Dham Yatra by Helicopter', href: '/char-dham-yatra-by-helicopter' },
+      { label: 'Corporate Helicopter Charter', href: '/corporate-helicopter-charter' },
+      { label: 'Private Jet Charter', href: '/private-jet-charter' },
+    ],
+    faqTitle: 'Helicopter Booking FAQs',
+    sectionLabel: 'BOOKING SUPPORT',
+  },
+  'corporate-helicopter-charter': {
+    slug: 'corporate-helicopter-charter',
+    title: 'Corporate Helicopter Charter in India | BookMyChardham',
+    header: 'Corporate Helicopter Charter',
+    eyebrow: 'CORPORATE HELICOPTER CHARTER',
+    description:
+      'Corporate helicopter charter supports executive movement, strategic site access, and time-sensitive business travel across India with a focus on schedule control and route flexibility.',
+    trustHighlights: [
+      'Executive Mobility',
+      'Route Flexibility',
+      'Business Travel Support',
+      'Private Coordination',
+      '24/7 Planning',
+    ],
+    introTitle: 'Helicopter charter designed around business efficiency and executive mobility.',
+    introParagraphs: [
+      'Corporate helicopter charter is useful when leadership teams need direct access to destinations that are difficult to reach through standard road or commercial air travel. It is particularly relevant for site visits, meetings, high-value client movement, and time-sensitive executive schedules.',
+      'For business travel, the key variables are route, timing, number of passengers, and the level of discretion required. A helicopter charter can simplify travel planning when the goal is to avoid unnecessary delays and keep movement aligned with a strict business schedule.',
+      'BookMyChardham supports corporate helicopter charter planning with an emphasis on efficiency, route practicality, and clear communication. The arrangement is suited to organisations that need direct travel support without the rigidity of scheduled aviation.',
+    ],
+    introPoints: [
+      'Useful for executive and leadership travel',
+      'Supports direct access to remote or time-sensitive locations',
+      'Better aligned to business schedules than fixed commercial flights',
+      'Private communication and planning support',
+    ],
+    benefits: [
+      { title: 'Executive Efficiency', description: 'Reduce delays and keep business travel aligned with tightly planned meeting schedules.', icon: 'briefcase' },
+      { title: 'Remote Access', description: 'Useful for destinations where road access is constrained or travel time is a major factor.', icon: 'route' },
+      { title: 'Private Travel Experience', description: 'Offers a more discreet and controlled travel environment for business teams and VIP guests.', icon: 'shield' },
+      { title: 'Special Event Movement', description: 'Ideal for dignitary, investor, and high-priority client movement during time-sensitive trips.', icon: 'star' },
+      { title: 'Operational Flexibility', description: 'Coordination can be shaped around the exact business travel plan and route requirements.', icon: 'clock' },
+      { title: 'Responsive Support', description: 'A clear booking process helps simplify coordination before the flight is approved.', icon: 'support' },
+    ],
+    fleet: [
+      { name: 'Executive Helicopter Transfer', description: 'A direct, route-efficient option for leadership and VIP movement.', note: 'Best for premium business travel.' },
+      { name: 'Regional Corporate Charter', description: 'Useful for intercity business appointments and operational movement across India.', note: 'Optimised for time-sensitive business needs.' },
+      { name: 'Remote Site Access', description: 'Helpful for project sites, remote meetings, and route-sensitive operations.', note: 'Designed around schedule and access efficiency.' },
+    ],
+    process: [
+      { title: 'Define Business Needs', description: 'Share origin, destination, date, and the purpose of travel.' },
+      { title: 'Confirm Passenger & Timing Details', description: 'Include passenger count and any schedule-sensitive movement considerations.' },
+      { title: 'Review Route Match', description: 'The team evaluates feasibility against the business itinerary and route.' },
+      { title: 'Approve the Plan', description: 'Confirm the charter plan and supporting details before flight coordination.' },
+      { title: 'Travel Efficiently', description: 'Move with a plan tailored to your corporate schedule and access requirements.' },
+    ],
+    whyChoose: [
+      'Business-focused helicopter charter planning',
+      'Helps reduce delays in executive and site travel',
+      'Well suited to time-sensitive leadership movement',
+      'Responsive communication and route guidance',
+      'A practical aviation option for business mobility',
+    ],
+    useCases: ['Executive travel', 'Senior leadership movement', 'Client visits', 'Remote project access', 'Business events'],
+    destinations: ['Delhi', 'NCR', 'Dehradun', 'Haridwar', 'Rishikesh', 'Uttarakhand', 'Remote business destinations'],
+    faqs: [
+      { question: 'What is corporate helicopter charter?', answer: 'It is a private helicopter travel arrangement designed to support executive mobility, business meetings, and time-sensitive company travel.' },
+      { question: 'Who typically uses corporate helicopter charter?', answer: 'Executives, leadership teams, government delegations, and businesses with route-specific or time-sensitive travel needs.' },
+      { question: 'Can it support remote business travel?', answer: 'Yes. It is often chosen when a destination is difficult to reach by conventional transport or when schedule control is critical.' },
+      { question: 'How do I plan a corporate charter?', answer: 'The process begins with your itinerary, passenger count, route, date, and the urgency or flexibility of the movement.' },
+      { question: 'Does helicopter charter work for urgent business trips?', answer: 'Yes. It is commonly used when direct movement and timing control matter more than scheduled commercial travel options.' },
+    ],
+    internalLinks: [
+      { label: 'Helicopter Charter Services', href: '/helicopter-charter-services' },
+      { label: 'Helicopter Booking', href: '/helicopter-booking' },
+      { label: 'Private Helicopter Charter', href: '/private-helicopter-charter' },
+      { label: 'Private Jet Charter', href: '/private-jet-charter' },
+      { label: 'Charter Flight Booking', href: '/charter-flight-booking' },
+    ],
+    faqTitle: 'Corporate Helicopter Charter FAQs',
+    sectionLabel: 'BUSINESS AVIATION',
+  },
   'private-jet-charter-delhi': {
     slug: 'private-jet-charter-delhi',
-    title: 'Private Jet Charter Delhi | Direct Aviation for NCR, India & Beyond',
+    title: 'Private Jet Charter Delhi | BookMyChardham',
     header: 'Private Jet Charter Delhi',
     eyebrow: 'DELHI PRIVATE AVIATION',
     description:
@@ -578,7 +722,7 @@ export const privateAviationPages = {
   },
   'corporate-jet-charter': {
     slug: 'corporate-jet-charter',
-    title: 'Corporate Jet Charter | Business Aviation for Executive Travel',
+    title: 'Corporate Jet Charter India | Executive Air Travel',
     header: 'Corporate Jet Charter',
     eyebrow: 'CORPORATE AVIATION',
     description:
@@ -650,7 +794,7 @@ export const privateAviationPages = {
   },
   'helicopter-charter-services': {
     slug: 'helicopter-charter-services',
-    title: 'Helicopter Charter Services | VIP, Corporate & Remote Access Flights',
+    title: 'Helicopter Charter Services in India | BookMyChardham',
     header: 'Helicopter Charter Services',
     eyebrow: 'HELICOPTER AVIATION',
     description:
@@ -712,6 +856,8 @@ export const privateAviationPages = {
     ],
     internalLinks: [
       { label: 'Private Helicopter Charter', href: '/private-helicopter-charter' },
+      { label: 'Helicopter Booking', href: '/helicopter-booking' },
+      { label: 'Corporate Helicopter Charter', href: '/corporate-helicopter-charter' },
       { label: 'Chardham & Kedarnath', href: '/char-dham-yatra-by-helicopter' },
       { label: 'Flower Dropping', href: '/helicopter-flower-dropping' },
       { label: 'Fleet', href: '/fleet' },
@@ -733,4 +879,6 @@ export const privateAviationPageOrder = [
   'private-jet-charter-delhi',
   'corporate-jet-charter',
   'helicopter-charter-services',
+  'helicopter-booking',
+  'corporate-helicopter-charter',
 ];

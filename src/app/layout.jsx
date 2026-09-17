@@ -23,10 +23,11 @@ const devanagari = Noto_Sans_Devanagari({
 export const metadata = {
   metadataBase: new URL(SITE.url),
   title: {
-    default: 'Kedarnath & Char Dham Helicopter Yatra | Book My CharDham',
-    template: '%s | Book My CharDham',
+    default: 'Private Jet & Helicopter Charter Services in India | BookMyChardham',
+    template: '%s | BookMyChardham',
   },
-  description: SITE.description,
+  description:
+    'BookMyChardham provides private jet charter, helicopter charter, and aircraft charter services across India for business, leisure, and pilgrimage travel.',
   applicationName: SITE.name,
   manifest: '/site.webmanifest',
   openGraph: {
