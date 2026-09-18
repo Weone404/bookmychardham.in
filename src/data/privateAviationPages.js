@@ -19,6 +19,23 @@ export const privateAviationPages = {
       'Unlike commercial flights, a private charter can be planned around your preferred departure time, routing, and destination. This makes it well suited to executive meetings, multi-city business travel, family holidays, destination weddings, and VIP movement across India. In a typical itinerary, the traveler can coordinate departure times, choose an aircraft category, and keep the journey more streamlined and discreet.',
       'At BookMyChardham, we coordinate with trusted charter providers to help simplify planning and keep every detail aligned with your route and destination requirements. From route planning to passenger coordination, the service is designed to be responsive and practical.',
     ],
+    answerSections: [
+      {
+        question: 'What is private jet charter?',
+        answer: 'Private jet charter allows a traveller or group to arrange an aircraft for a specific route and trip requirement instead of relying on scheduled airline service.',
+        detail: 'The booking is typically shaped around travel dates, departure point, stopovers or airport access, passenger count, and the overall purpose of the trip.',
+      },
+      {
+        question: 'What factors affect private jet charter pricing?',
+        answer: 'Charter pricing generally depends on aircraft type, route length, flight duration, positioning, passenger requirements, and timing or availability.',
+        detail: 'A shorter domestic route may be more cost sensitive than a long-range or multi-leg itinerary, while aircraft availability and destination requirements can also influence the final quotation.',
+      },
+      {
+        question: 'What information is needed to request a charter?',
+        answer: 'A typical quote request begins with departure city, destination, travel date, passenger count, and any timing preferences or special requirements.',
+        detail: 'Once the travel brief is clear, the charter team can suggest suitable aircraft profiles and help structure the route around the intended trip.',
+      },
+    ],
     introPoints: [
       'Private routing tailored to your itinerary',
       'Faster airport access and reduced waiting times',
@@ -92,6 +109,23 @@ export const privateAviationPages = {
       'The booking journey usually begins with a few important details: preferred departure city, destination, travel date, cabin requirements, and any special requests. From there, the charter team can recommend suitable aircraft options and confirm timing, routing, and operational feasibility. The goal is to give you a travel plan that feels personal, precise, and easy to act on.',
       'BookMyChardham helps simplify those decisions by aligning your request with the right charter route and service level. This keeps the process responsive while preserving the level of support and professionalism expected for premium air travel.',
     ],
+    answerSections: [
+      {
+        question: 'What information is needed to start a charter booking?',
+        answer: 'The most useful starting details are departure city, destination, travel date, passenger count, and any timing or cabin preferences you already know.',
+        detail: 'This helps the charter team identify likely aircraft categories and route options before a quotation is prepared.',
+      },
+      {
+        question: 'How does the quote process work?',
+        answer: 'Once the route and trip brief are clear, the charter team reviews available aircraft approaches and suggests the most suitable option for the journey.',
+        detail: 'The final quote can then be shaped around factors such as route, flight duration, passenger requirements, and operational considerations.',
+      },
+      {
+        question: 'What happens before final confirmation?',
+        answer: 'Before a flight is confirmed, the itinerary and charter details are reviewed to ensure the route, timing, and travel profile align with the intended trip.',
+        detail: 'This gives travellers more clarity on the booking and reduces the risk of surprises once the trip is being coordinated.',
+      },
+    ],
     introPoints: [
       'Clear route and timing coordination',
       'Support for business, leisure, and VIP travel',
@@ -163,6 +197,23 @@ export const privateAviationPages = {
       'Private jet booking in India often serves travellers who need more control over their route, timing, and travel experience than a scheduled airline can provide. For business leaders, family travelers, and VIP guests, this flexibility matters when distance, time, and convenience all carry weight.',
       'Whether you are flying between Indian metros, coordinating a business itinerary, or planning a leisure trip with multiple stops, private aviation can help reduce the friction of time-sensitive travel. Instead of working around fixed commercial schedules, you can move in a way that fits your day and priorities.',
       'BookMyChardham supports premium charter planning across significant Indian routes, helping travellers keep itinerary management simple and response-driven. The result is a cleaner journey with more discretion, less waiting, and more direct connectivity.',
+    ],
+    answerSections: [
+      {
+        question: 'How does private jet booking work in India?',
+        answer: 'The booking process usually starts with the route, travel date, passenger count, and preferred timing so the right aircraft profile can be matched to the trip.',
+        detail: 'From there, the charter team reviews aircraft options, travel logistics, and operational requirements before finalising a suitable plan.',
+      },
+      {
+        question: 'What information is required for a booking quote?',
+        answer: 'A useful quote request normally includes your departure city, destination, travel date, passenger count, and any special requirements such as baggage or cabin preferences.',
+        detail: 'These details help determine whether the route is suitable and which aircraft profile is likely to match the itinerary.',
+      },
+      {
+        question: 'How far in advance should I request a charter?',
+        answer: 'Earlier booking is often better, particularly on popular routes or during busy travel windows, but the best timing depends on the route, passenger profile, and aircraft availability.',
+        detail: 'The goal is to give the charter team enough lead time to review suitable aircraft and coordinate the plan with operational feasibility.',
+      },
     ],
     introPoints: [
       'Ideal for domestic business and luxury travel',
@@ -236,6 +287,23 @@ export const privateAviationPages = {
       'The booking exercise typically begins with the route and date, followed by passenger requirements and cabin preferences. Once the travel profile is clear, the charter team can review timing, routing, and available aircraft profiles to match the journey. This allows the flight to be planned in a more responsive and personalised manner.',
       'BookMyChardham focuses on helping clients move efficiently and confidently by coordinating private aviation arrangements around their actual needs. Instead of forcing a trip into a fixed commercial structure, valid charter planning keeps the travel experience more direct and more aligned with the purpose of the trip.',
     ],
+    answerSections: [
+      {
+        question: 'What is charter flight booking?',
+        answer: 'Charter flight booking is the process of arranging an aircraft for a specific trip rather than booking seats on a scheduled airline service.',
+        detail: 'This is often useful when route flexibility, cabin privacy, or travel timing is more important than fixed airline departure times.',
+      },
+      {
+        question: 'When is charter flight booking most useful?',
+        answer: 'It is most useful when travel plans are time-sensitive, involve a specific route, or require a more tailored approach than standard commercial travel can offer.',
+        detail: 'Executive travel, family movement, VIP itineraries, and multi-leg travel often fit this model well.',
+      },
+      {
+        question: 'What information should be prepared before booking?',
+        answer: 'The key details are origin, destination, travel date, passenger count, preferred timing, and any baggage or cabin preferences.',
+        detail: 'These practical inputs let the charter team narrow the aircraft choice and build a route that matches the trip.',
+      },
+    ],
     introPoints: [
       'Flexible departure windows and direct routing',
       'Useful for business, VIP, and personal travel',
@@ -307,6 +375,23 @@ export const privateAviationPages = {
       'Aircraft charter services in India are useful when your travel needs cannot be neatly folded into a scheduled airline timetable. Whether it is a high-priority executive trip, a multi-city business itinerary, or a personal journey requiring privacy and flexibility, charter services provide a more direct and personalised mode of movement.',
       'The right aircraft category depends on route, passenger count, and the presence of any particular comfort or timing requirements. By aligning the aircraft profile with the travel plan, charter customers can keep the experience efficient while maintaining a premium cabin environment.',
       'BookMyChardham supports aircraft charter coordination through a practical, responsive approach so you can plan a trip without losing momentum or comfort. The service is tailored to those who want more control over how and when they travel.',
+    ],
+    answerSections: [
+      {
+        question: 'What is aircraft charter service in India?',
+        answer: 'Aircraft charter service refers to arranging a private aircraft for a specific route and trip profile instead of travelling on a fixed public airline schedule.',
+        detail: 'This is often chosen by travellers who need a direct route, more route control, or a higher level of cabin privacy and convenience.',
+      },
+      {
+        question: 'How is the right aircraft selected?',
+        answer: 'Aircraft selection usually depends on passenger count, route distance, travel timing, cabin requirements, and the overall purpose of the trip.',
+        detail: 'Shorter trips may favour lighter aircraft, while longer or more comfort-focused operations may require a larger cabin profile or a different route plan.',
+      },
+      {
+        question: 'What affects charter pricing?',
+        answer: 'Charter pricing is influenced by the aircraft type, route, flight duration, passenger requirements, repositioning needs, and timing or availability.',
+        detail: 'The final quotation is therefore shaped by the actual trip profile rather than a single fixed formula.',
+      },
     ],
     introPoints: [
       'Flexible aircraft selection for business and leisure needs',
@@ -380,6 +465,23 @@ export const privateAviationPages = {
       'From executive movement to relaxed family travel, private jet hire can be tailored to suit different trip priorities. The journey is planned around your preferred route and timetable, making it more useful than a standard airline ticket when flexibility matters most.',
       'BookMyChardham helps align the travel request with the right aviation solution so the process stays smooth and relevant. The priority is a premium experience shaped around the route and travel objective, not around generic templates or fixed schedules.',
     ],
+    answerSections: [
+      {
+        question: 'What is private jet hire?',
+        answer: 'Private jet hire means arranging an aircraft for a travel requirement rather than booking individual seats on a scheduled service.',
+        detail: 'It is often used by travellers who want flexibility, privacy, and a better-fit route for a specific trip.',
+      },
+      {
+        question: 'Who usually uses private jet hire?',
+        answer: 'It is commonly used by executives, families, VIP travellers, and time-sensitive personal or business guests who value speed and convenience.',
+        detail: 'The travel brief may include route, passenger count, departure timing, and comfort requirements that do not fit a standard airline pattern well.',
+      },
+      {
+        question: 'What information is needed to begin?',
+        answer: 'A route, travel date, passenger count, and timing preference are normally enough to start the charter discussion.',
+        detail: 'Once this is clear, the charter team can suggest suitable aircraft profiles and define the most practical route to meet the trip purpose.',
+      },
+    ],
     introPoints: [
       'Time-efficient movement for executive and leisure travel',
       'Tailored to route and travel timing needs',
@@ -452,6 +554,23 @@ export const privateAviationPages = {
       'For business travelers, an aircraft charter can provide a more direct route, more predictable timing, and a more professional travel experience than standard airline service. It is frequently used by executives, management teams, investors, and specialists moving between key destinations.',
       'BookMyChardham supports this form of travel planning with clear communication and practical route guidance. The emphasis remains on efficient movement, cabin comfort, and a professional charter experience shaped around business needs.',
     ],
+    answerSections: [
+      {
+        question: 'What is business jet charter?',
+        answer: 'Business jet charter is a private aviation arrangement built around executive or professional travel needs rather than fixed airline departure schedules.',
+        detail: 'It is commonly used when time sensitivity, direct routing, or team movement are more important than a standard commercial flight pattern.',
+      },
+      {
+        question: 'Who typically uses business jet charter?',
+        answer: 'Business leaders, management teams, investors, specialists, and time-sensitive travellers often use business jet charter for meetings, site visits, and multi-city operations.',
+        detail: 'The value is in reducing delays and aligning aviation with the actual pace of business activity.',
+      },
+      {
+        question: 'What factors influence aircraft selection?',
+        answer: 'Route length, passenger count, flight duration, baggage requirements, and meeting or departure timing all help determine the most suitable aircraft profile.',
+        detail: 'The goal is to match the aircraft to the trip purpose so the journey remains practical and comfortable for the travelling team.',
+      },
+    ],
     introPoints: [
       'Designed for executives and management teams',
       'Useful for multi-city business itineraries',
@@ -485,8 +604,8 @@ export const privateAviationPages = {
       'Premium coordination with a time-conscious approach',
       'A smoother way to keep critical business plans on schedule',
     ],
-    useCases: ['CEOs & executives', 'Management teams', 'Business delegations', 'Site inspection teams', 'Multi-city business travel'],
-    destinations: ['Delhi', 'Mumbai', 'Bengaluru', 'Hyderabad', 'Chennai', 'Kolkata', 'Jaipur', 'Ahmedabad', 'Dubai', 'Goa'],
+    useCases: ['CEOs & founders', 'Executive meetings', 'Investor and client meetings', 'Short-notice business travel', 'Multi-city executive schedules', 'Executive site visits', 'Time-sensitive corporate appointments', 'Smaller executive groups'],
+    destinations: ['Delhi', 'Mumbai', 'Bengaluru', 'Hyderabad', 'Gurugram', 'Pune', 'Ahmedabad', 'Jaipur', 'Dubai', 'Goa'],
     faqs: [
       { question: 'Is business jet charter useful for executive travel?', answer: 'Yes. It helps leadership teams travel on time, with more route and schedule flexibility than scheduled commercial flights.' },
       { question: 'Can I fly between multiple cities in one trip?', answer: 'Yes. Multi-city itineraries are a common application for business charter planning.' },
@@ -665,14 +784,31 @@ export const privateAviationPages = {
     introTitle: 'A Delhi private jet charter service shaped around speed, convenience, and route flexibility.',
     introParagraphs: [
       'Delhi is a major hub for corporate, government, and high-value personal travel in India. A private jet charter from Delhi gives travellers a more controlled, efficient way to move across the region without depending on fixed commercial airline schedules.',
-      'This is especially useful for leadership teams, investors, VIPs, and travellers with demanding timing requirements. The route can be tailored to your departure window and destination, making the experience smoother and less time intensive than standard commercial travel.',
-      'BookMyChardham supports charter requests from the Delhi market by aligning travel planning with route preferences, passenger requirements, and timing priorities. The focus is on making the journey more direct, more personal, and easier to manage.',
+      'For Delhi-based travellers, the key advantage is flexibility: you can align departure times around meetings, site visits, family plans, or multi-city travel rather than travel around a fixed airline timetable. It is especially useful for leadership teams, investors, VIPs, and travellers handling time-sensitive trips across India.',
+      'Common charter routes from Delhi include major business corridors such as Mumbai, Bengaluru, Hyderabad, Jaipur, Goa, and Dehradun. The service is designed to make route planning more direct, more private, and more responsive to the actual journey requirement.',
     ],
     introPoints: [
       'Ideal for executives and VIP travellers from Delhi',
       'Strong option for business and leisure charters',
       'Flexible routing across India and beyond',
-      'Smooth coordination for timing-sensitive plans',
+      'Fast coordination for time-sensitive private travel',
+    ],
+    answerSections: [
+      {
+        question: 'What is a private jet charter from Delhi?',
+        answer: 'It is a private aviation arrangement for travelling from Delhi on a route and schedule that fits your trip rather than a fixed commercial timetable.',
+        detail: 'This is often useful for business, VIP, or time-sensitive travel that needs more control over departure timing and destination access.',
+      },
+      {
+        question: 'Which routes are commonly booked from Delhi?',
+        answer: 'Popular Delhi charter routes include major business and leisure destinations such as Mumbai, Bengaluru, Hyderabad, Jaipur, Goa, Dehradun, and other key Indian hubs.',
+        detail: 'The best route depends on your purpose, timing, passenger list, and overall travel preferences.',
+      },
+      {
+        question: 'What information do I need to start?',
+        answer: 'A route, desired date, passenger count, and any timing or comfort considerations are usually enough to begin planning the charter.',
+        detail: 'From there, we can align aircraft suitability and route options to your travel needs.',
+      },
     ],
     benefits: [
       { title: 'Delhi Departure Flexibility', description: 'Fly when it suits your itinerary rather than around a fixed airline timetable.', icon: 'clock' },
@@ -705,6 +841,8 @@ export const privateAviationPages = {
     destinations: ['Delhi', 'Mumbai', 'Bengaluru', 'Hyderabad', 'Chennai', 'Jaipur', 'Goa', 'Kolkata', 'Dehradun', 'Dubai'],
     faqs: [
       { question: 'Can I arrange a private jet from Delhi?', answer: 'Yes. Delhi is a strong base for charter planning, especially for executive, luxury, and time-sensitive travel.' },
+      { question: 'How much in advance should I book a private jet from Delhi?', answer: 'Popular routes and peak travel periods benefit from earlier planning, but charter requests can usually be shaped around your route and timing priorities once the trip requirements are clear.' },
+      { question: 'Which cities are commonly served from Delhi?', answer: 'Popular Delhi charter routes include Mumbai, Bengaluru, Hyderabad, Jaipur, Goa, Dehradun, and other major business and leisure destinations across India.' },
       { question: 'Is private jet charter good for business travel from Delhi?', answer: 'Yes. It is a highly practical option for leadership meetings, client visits, and time-sensitive business movement.' },
       { question: 'Can I fly to other Indian cities from Delhi?', answer: 'Yes. Private charter travel can be arranged between Delhi and several major Indian destinations.' },
       { question: 'What information do you need for a quote?', answer: 'Your route, travel date, passenger count, and timing preference are usually enough to start the conversation.' },
@@ -740,6 +878,23 @@ export const privateAviationPages = {
       'Unlike routine airline travel, corporate charter planning is shaped around business priorities. That typically means more flexibility in timing, a more direct route, and a more professional experience for the travelling team. It can also support a smoother way to move staff across important business corridors in India and beyond.',
       'BookMyChardham helps coordinate this kind of travel with a clear, response-oriented approach. The goal is to support your team with a premium and efficient aviation experience that complements the seriousness of the business itinerary.',
     ],
+    answerSections: [
+      {
+        question: 'What is corporate jet charter?',
+        answer: 'Corporate jet charter is a private aviation arrangement used to support management travel, team movement, and operational travel that needs a more flexible, direct, and time-conscious approach.',
+        detail: 'It is designed for business requirements rather than the fixed timing of a scheduled airline service.',
+      },
+      {
+        question: 'When is corporate charter most useful?',
+        answer: 'It is most useful when organisations need to move leaders or teams quickly between cities, manage site visits, or maintain momentum across a busy business schedule.',
+        detail: 'Time-sensitive meetings, multiple destinations, and senior-level travel often make corporate charter a practical option.',
+      },
+      {
+        question: 'What information is needed for a corporate quote?',
+        answer: 'A quote request usually needs the route, travel date, passenger count, trip purpose, and any timing or travel preferences important to the team.',
+        detail: 'This helps tailor the aircraft type and planning approach to the company itinerary rather than applying a generic aviation pattern.',
+      },
+    ],
     introPoints: [
       'Excellent for leadership and management travel',
       'Helps keep decision-making timelines on track',
@@ -773,8 +928,8 @@ export const privateAviationPages = {
       'A direct route to more efficient business travel',
       'Professional coordination from first enquiry to final plan',
     ],
-    useCases: ['CEOs & executives', 'Management teams', 'Business delegations', 'Site inspection teams', 'Multi-city business travel'],
-    destinations: ['Delhi', 'Mumbai', 'Bengaluru', 'Hyderabad', 'Chennai', 'Kolkata', 'Jaipur', 'Goa', 'Dubai', 'Ahmedabad'],
+    useCases: ['Larger leadership groups', 'Employee and team movement', 'Board meetings', 'Corporate delegations', 'Project teams', 'Conferences and events', 'Group site visits', 'Multi-location corporate operations', 'Scheduled organisational travel', 'Coordinated team movement'],
+    destinations: ['Delhi', 'Mumbai', 'Bengaluru', 'Hyderabad', 'Chennai', 'Kolkata', 'Ahmedabad', 'Jaipur', 'Goa', 'Dubai'],
     faqs: [
       { question: 'Can corporate jet charter support leadership travel?', answer: 'Yes. It is designed for executives and management teams needing a more time-efficient and premium travel option.' },
       { question: 'How is corporate charter different from regular travel?', answer: 'The planning is built around the business purpose, schedule, and travel priorities rather than fixed public flight timings.' },
@@ -817,6 +972,23 @@ export const privateAviationPages = {
       'Useful for executive and VIP travel plans',
       'Supports time-critical movement and urgent access',
       'A direct alternative to slower ground-based travel',
+    ],
+    answerSections: [
+      {
+        question: 'What is helicopter charter used for?',
+        answer: 'Helicopter charter is used when speed, direct access, and flexibility matter more than conventional transport options or fixed flight schedules.',
+        detail: 'It is commonly helpful for remote destinations, executive transfers, VIP movements, and time-sensitive travel plans.',
+      },
+      {
+        question: 'When is helicopter charter more practical than road travel?',
+        answer: 'It becomes more practical when the destination is difficult to reach by road, when timing is critical, or when you need a direct point-to-point journey without the delays of ground logistics.',
+        detail: 'This is especially useful in hilly, remote, or otherwise access-constrained regions.',
+      },
+      {
+        question: 'What details are needed before I request a helicopter quote?',
+        answer: 'Typical requirements include the route, date, passenger count, and any time-sensitive or access-related preferences that shape the trip.',
+        detail: 'That information helps determine the most suitable helicopter charter setup for your itinerary.',
+      },
     ],
     benefits: [
       { title: 'Remote Destination Access', description: 'Reach areas that are difficult to access by road or scheduled airline service.', icon: 'route' },

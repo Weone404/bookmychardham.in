@@ -1,5 +1,33 @@
 User-agent: *
 Allow: /
-Disallow: /booking/
+Disallow: /booking
+Disallow: /api/
+Disallow: /admin/
+Disallow: /login
+Disallow: /_next/
+
+User-agent: Googlebot
+Allow: /
+Disallow: /booking
+
+User-agent: OAI-SearchBot
+Allow: /
+Disallow: /booking
+
+User-agent: GPTBot
+Allow: /
+Disallow: /booking
+
+User-agent: ClaudeBot
+Allow: /
+Disallow: /booking
+
+User-agent: Claude-SearchBot
+Allow: /
+Disallow: /booking
+
+User-agent: PerplexityBot
+Allow: /
+Disallow: /booking
 
 Sitemap: https://www.bookmychardham.in/sitemap.xml

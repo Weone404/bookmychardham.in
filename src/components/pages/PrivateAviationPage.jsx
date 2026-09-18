@@ -46,6 +46,7 @@ export function PrivateAviationPage({
   whyChoose = [],
   useCases = [],
   destinations = [],
+  answerSections = [],
   faqs = [],
   internalLinks = [],
   heroImage = '/images/airplane_sunset_bg_1788159475386-optimized.webp',
@@ -188,6 +189,29 @@ export function PrivateAviationPage({
           </div>
         </div>
       </section>
+
+      {answerSections.length > 0 && (
+        <section className="mx-auto max-w-7xl px-4 py-18 sm:px-6 md:px-10 lg:px-12 lg:py-24">
+          <div className="mb-10 max-w-2xl">
+            <span className="mb-3 block text-[11px] font-bold uppercase tracking-[0.24em] text-[#A67C52]">
+              QUICK ANSWERS
+            </span>
+            <h2 className="text-3xl font-black uppercase leading-tight text-[#6B4E3D] sm:text-4xl">
+              What travellers usually ask before booking
+            </h2>
+          </div>
+
+          <div className="space-y-5">
+            {answerSections.map((section) => (
+              <div key={section.question} className="rounded-sm border border-[#A67C52]/20 bg-[#E6D5C1] p-5">
+                <h3 className="text-lg font-black uppercase tracking-tight text-[#6B4E3D]">{section.question}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-[#6B4E3D]/80">{section.answer}</p>
+                {section.detail && <p className="mt-3 text-sm leading-relaxed text-[#6B4E3D]/75">{section.detail}</p>}
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
 
       <section className="mx-auto max-w-7xl px-4 py-18 sm:px-6 md:px-10 lg:px-12 lg:py-24">
         <div className="mb-10 max-w-2xl">
